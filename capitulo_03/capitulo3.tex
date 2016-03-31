@@ -1,0 +1,436 @@
+\fancyhead{}
+\fancyfoot{}
+
+
+\lhead{VPN - Definición - Tipos}
+
+\chapter{Definición de VPN}
+Es habitual encontrar varias definiciones sobre VPN, aunque éstas no difieren en esencia. Algunas de ellas pueden ser:
+\begin{itemize}
+	\item ``Una VPN es una red privada construida dentro de una infraestructura de red pública, como la red Internet''
+	\item ``La idea básica de una VPN es muy simple. Una corporación podría tener un número de oficinas (o grupos de ellas) en diferentes lugares, y en cada uno de estos tener su propia red local. Muchas corporaciones han aumentado la cantidad de empleados que deben trabajar en forma remota, ya sea desde sus hogares o en forma itinerante. Interconectar estas redes y lugares mediante una red compartida (no privada) crea una VPN''
+	\item ``Una red privada virtual basada en Internet utiliza la infraestructura abierta y distribuida de Internet para transmitir datos entre sitios corporativos'' 
+	\item ``Una red privada virtual es una red privada de datos que utiliza una infraestructura de telecomunicación pública, manteniendo la privacidad mediante protocolos de túnel y procedimientos seguros. El propósito principal de una VPN es dar a la compañía la misma capacidad que otorgan los enlaces dedicados contratados pero a un costo menor, utilizando medios de comunicación públicos.'' 
+\end{itemize}
+Se puede definir a una VPN de manera más formal. Esta definición aparece publicada en el artículo \textit{What Is a VPN? Part 1} escrito por Ferguson y Houston para la publicación mensual The Internet Protocol Journal de Cisco System en Marzo de 2001:
+\textit{``Una VPN es un ambiente de comunicaciones en el cual existe un control de acceso, para permitir la conexión entre sistemas pares únicamente dentro de una comunidad de interés definida, y está creado considerando alguna forma de partición de un medio de comunicación subyacente, donde este brinda servicios a la red de una forma no exclusiva.''}
+De acuerdo a estas definiciones se puede decir que una red privada virtual es una red, que comunica dos o más dispositivos finales (estos a su vez pueden interconectar una red completa) que pueden estar ubicados geográficamente distantes y representan una comunidad de interés. Para esto se utiliza como medio de transmisión una estructura compartida común a varios usuarios. Ésta puede ser Internet o la red principal o backbone de un proveedor de servicios de comunicaciones.\\
+Se dice privada porque los dispositivos que no participan en esta comunicación no tienen acceso al contenido de la misma y de hecho no son conscientes de su establecimiento. El acceso a esta red y su administración está restringido solo a un número limitado de dispositivos. La privacidad se aplica también al espacio de direccionamiento y esquema de enrutamiento utilizado en una VPN, en el sentido de que están separados o difieren de aquellos instrumentados en alguna otra red privada existente o en la infraestructura de red subyacente por donde ocurre la comunicación.\\
+El concepto de virtual, por definición es la representación de un objeto no existente mediante la ejecución de funciones que simulan su existencia. En el contexto de una VPN, significa que esta última representa una red de comunicaciones, que no tiene una contraparte física real. Este concepto fundamenta la naturaleza discreta o de separación, de una red lógica privada funcionando sobre una infraestructura de comunicaciones compartida y real. El aspecto de privacidad, definido en el párrafo anterior, está en función de la virtualización.\cite{what:2001}
+\subsection{Terminología}
+La literatura relacionada con redes privadas virtuales está llena de acrónimos, siglas, términos muy específicos que tornan difícil la interpretación de cualquier lectura relacionada con el tema. Esta sección define los principales elementos que componen un escenario VPN.
+\begin{itemize}
+	\item Sitio: ubicación geográfica con uno o más usuarios o uno o más servidores o una combinación de servidores y usuarios. El usuario refiere al host o estación de trabajo.
+	\item Servidor VPN: software o firmware VPN el cual se ejecuta en un dispositivo. Tiene la función de establecer un túnel con un cliente VPN. Previamente verifica la identidad del cliente para autorizar su acceso y determinar los permisos de este para acceder a los recursos locales. El dispositivo donde se ejecuta el servidor VPN puede ser un host, router o switch. Este equipo comunica la red local con la red pública. Otras acepciones pueden ser: gateway VPN, servidor de túneles.
+	\item Cliente VPN: software o firmware VPN ejecutándose en un dispositivo, cuya función es establecer un túnel con un servidor VPN. Previamente, debe presentar las credenciales correctas al servidor. Otra acepción puede ser cliente de túnel.
+	\item Túnel: Enlace lógico entre el servidor y cliente VPN, creado por un protocolo de túnel. Por este canal se envían los datos que han sido encapsulados y quizás encriptados por el protocolo. Es posible transmitir datos sin encriptar por un túnel. Un túnel puede establecerse en diferentes capas del modelo ISO/OSI de protocolos de comunicaciones.
+	\item Extremos de un túnel: dispositivos que gestionan la creación, el establecimiento y la finalización de un túnel mediante la ejecución de software o firmware dedicado para tal fin, por lo tanto se encargan también del procesamiento relacionado con la des/encapsulación, des/encriptación y transmisión de los paquetes recibidos.
+	\item \Gls{nas} : servidor de acceso de red, un dispositivo que representa una interface entre un medio de acceso como la red de telefonía y una red de conmutación de paquetes, como el backbone de un proveedor o Internet. En una VPN este dispositivo permite que un usuario utilizando un acceso telefónico acceda a su red mediante un túnel creado por el NAS hacia el servidor de acceso remoto de la red destino.
+	\item Túnel voluntario (Voluntary Tunnel): Túnel creado y configurado a partir de la solicitud de un cliente VPN. Esta clase de túnel es común en las VPN de acceso remoto, donde uno de los extremos es una computadora personal o notebook de un usuario hogareño o móvil.
+	\item Túnel obligatorio (Compulsory Tunnel): Túnel asociado con las VPN de acceso remoto. Su creación y configuración está a cargo de un dispositivo denominado servidor de acceso de red o NAS. Éste se ubica entre la PC del usuario y el servidor VPN. En el NAS se ubica el extremo del túnel donde funciona el cliente VPN. Es posible que múltiples usuarios conectados al servidor de acceso de red, compartan el túnel en forma concurrente. En general el NAS es propiedad y es administrado por un proveedor de servicios.
+	\item Dispositivo de borde: Es el dispositivo ubicado en la frontera entre la red local y la red pública.
+	\item CE: Dispositivo de borde del cliente (Customer Edge Device). Es el equipo perteneciente a un cliente de un servicio de comunicaciones que se sitúa en el borde de la red privada local y conecta con la red del proveedor del servicio a través de un PE. Un CE puede ser un router o switch.
+	\item C: Dispositivo que pertenece al cliente y que se ubica dentro de la red del mismo. Estos no tienen conectividad directa con la red del Proveedor ni participan de la VPN. Pueden ser routers o switchs.
+	\item PE: Dispositivo de borde del proveedor (Provider Edge Device). Este es propiedad del proveedor de servicio de comunicaciones. Se conecta directamente a la red del cliente a través del CE. Un PE puede ser un router, switch o un dispositivo que combine ambas funciones.
+	\item P: Dispositivos que componen el núcleo de la red del Proveedor. No tienen conectividad directa con la red del cliente ni participan de las VPN. Estos son equipos como routers y switches.
+\end{itemize}
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .9]{figuras/figura017.png}
+\caption{Componentes de una VPN \cite{red:vpn}}
+\label{componet-vpn}
+\end{center}
+\end{figure}
+\subsection{Clasificación}
+Se pueden encontrar varias clasificaciones de las VPN, lo cual puede generar cierta confusión. Esto se debe a que existen diversos tipos de tecnologías y clases de redes privadas virtuales, lo que permite más de un criterio de organización.
+Las clasificaciones generales y más habituales son:
+\begin{itemize}
+\item De acuerdo a quien implementa y administra el servicio: la propia organización o un proveedor de servicios.
+\item Según que comunican: redes entre sí o usuarios a la red.
+\item Según la capa del modelo de referencia de pila ISO/OSI para comunicaciones donde se establece la VPN: capa 2, 3 y las VPNs de capa de aplicación/transporte que utilizan el protocolo \Gls{ssl/tls}. Estas representan una clase particular de VPN que se describen aparte.\cite{ssl:2011}
+\end{itemize}
+Otros criterios pueden ser:
+\begin{itemize}
+\item Según si los dispositivos de borde de un proveedor participan o no en el enrutamiento del tráfico de datos del cliente: VPN peer to peer o VPN overlay.
+\item Según si son orientadas o no a la conexión.
+\item Si son confiables o seguras.
+\end{itemize}
+\subsection{VPNs provistas por el cliente o por el proveedor}
+Uno de los principales criterios para clasificar las VPN, define quien está a cargo de la implementación y administración de la red privada virtual, ya sea el cliente (la organización) o el proveedor de servicios de comunicaciones. Esto se refiere a la definición de las políticas a cumplir con esta solución, los requerimientos para la implementación, la adquisición y configuración de equipamiento, mantenimiento, resolución de problemas y monitoreo, especificación del espacio de direccionamiento a utilizar, esquema de enrutamiento etc.
+\subsection{VPNS provistas por el cliente (CE o CPE VPN)}
+También denominadas VPNs del ámbito del cliente (Customer Promises VPN). Estas VPNs son definidas e implementadas por el cliente de un servicio de comunicaciones. Generalmente este tiene acceso al backbone de un proveedor o bien posee un servicio de acceso a Internet. En este contexto el cliente puede tener más de un sitio propio, geográficamente distante que desea conectar o bien requiere hacerlo con otra red fuera de su dominio, también remota. En este tipo de VPN, el túnel se establece, únicamente, entre los equipos del cliente. Estos representan los extremos del o los túneles. Los equipos del proveedor o PE, no participan de la VPN. Tampoco del esquema de direccionamiento que esta utiliza o del enrutamiento necesario. Tratan a los paquetes o tramas como proveniente de un cliente del servicio, es decir solo lo reenvían. En el caso de la utilización de Internet, los routers intermedios también lo hacen con los paquetes IP, sin tener en cuenta el contenido encapsulado por el túnel de la VPN.\\
+La ventaja de esta clase de VPN radica en que el cliente tiene el control de la seguridad aplicada a los datos que transmite. Para el proveedor sus dispositivos de borde no requieren ninguna configuración especial para el tratamiento de los paquetes de las VPN, además no surgen problemas de escalabilidad al momento de aumentar la cantidad de VPNs o los sitios a interconectar mediante estas ya que, como se mencionó anteriormente, estos equipos no participan en este escenario virtual.\\
+Como desventaja, el cliente debe hacerse cargo básicamente de todo. Esto puede implicar un gran costo, tanto en la compra de equipamiento, como en la preparación de personal para la configuración y el mantenimiento de la VPN. Esta solución presenta problemas de escalabilidad para el cliente cuando existen varios sitios para interconectar.
+
+Los tipos de VPN provistas por el cliente son:
+\begin{itemize}
+\item VPN \Gls{ipsec} 
+\item VPN \Gls{gre} 
+\item VPN \Gls{ssl/tls} 
+\end{itemize}
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .9]{figuras/figura018.png}
+\caption{VPN Provista por el Cliente \cite{red:vpn}}
+\label{vpn-provista-cliente}
+\end{center}
+\end{figure}
+\subsection{VPNs provistas por el Proveedor (PPVPN)}
+En esta clase de VPN el proveedor de servicio se encarga de su implementación. Los equipos de borde o PE participan activamente de la red virtual como así también, pero en menor grado, los dispositivos de borde del cliente. Esto significa que los PE realizan la mayor parte del procesamiento específico de la VPN, permitiendo que los equipos CE puedan ser routers o switches estándar sin necesidad de comprar equipamiento especial. El proveedor es responsable de la administración de la VPN, liberando al cliente de estas tareas. Esto resulta, para este último, en un menor costo de implementación respecto de un emprendimiento propio.
+Actualmente los proveedores ofrecen un servicio de VPN mejorado, donde suman además de la conectividad, acuerdos de nivel de servicio, calidad y diferenciación de servicio, seguridad, ingeniería de tráfico, etc. Esto redunda en un producto con valor agregado que beneficia a ambas partes. Las soluciones VPN de esta clase, pueden operar en la red de un único proveedor, entre un conjunto de proveedores de servicio y sobre Internet. En este último caso se asume que los routers de núcleo de Internet, no mantendrán información referida a la VPN, sin considerar si se utilizan protocolos de enrutamiento para distribuir o no dicha información. Existen cuatro escenarios donde pueden desplegarse estas VPN6:
+\begin{itemize}
+\item Único Proveedor, único Sistema Autónomo o AS (Autonomous System): escenario más simple, el servicio se brinda a través del AS de un único proveedor.
+\item Único Proveedor, múltiples AS: un proveedor administra varios AS (adquisición de varias redes). Este escenario implica la distribución con restricciones de la información de enrutamiento entre los diversos Sistemas Autónomos.
+\item Multi Proveedor: es el caso más complejo, debido a que es necesario negociar relaciones de confianza entre los backbones de los diversos proveedores para cumplir con las medidas de seguridad y niveles de servicio acordados para la VPN de un cliente. En este caso el servicio se denomina VPN inter-AS o ínter proveedor.
+\item Proveedor de Proveedores (Carrier's Carrier): este es un caso especial del primer escenario, excepto que los clientes son proveedores de servicios de comunicaciones que contratan el servicio de VPN a un proveedor principal, para ofrecerlo a su vez a sus propios clientes.
+\end{itemize}
+Los tipos de VPN provistas por el Proveedor son:
+
+\begin{itemize}
+\item VPN \Gls{vpws} 
+\item VPN \Gls{vpls} 
+\item VPN \Gls{ipls} 
+\item VPN basada en routers virtuales
+\item VPN IPSec
+\item VPN \Gls{mpls} 
+\end{itemize}
+\subsection{VPNs Sitio a Sitio y de Acceso Remoto}
+Otra forma general de distinguir las VPN es en función de si conectan redes entre sí o usuarios a una red. Una VPN sitio a sitio (site-to- site VPN) conecta dos o más redes entre sí que están geográficamente dispersas, estas pueden pertenecer a una o varias organizaciones.
+Si las redes pertenecen a una misma organización, esta clase de VPN se denomina intranet. Si las redes pertenecen a varias organizaciones se conoce como extranet. La intención en este último caso es comunicar organizaciones diferentes que persiguen un objetivo común y requieren compartir información útil para el conjunto. El servicio de VPN entre sitios debería ser independiente del alcance geográfico de la implementación.
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .9]{figuras/figura019.png}
+\caption{VPN Sitio a Sitio\cite{red:vpn}}
+\label{vpn-sitio-sitiol}
+\end{center}
+\end{figure}
+Las VPN de Acceso Remoto o RAVPN (Remote Access VPN), también denominadas VPN de acceso, permiten a los usuarios móviles o itinerantes y a los usuarios hogareños de una organización o tele trabajadores, acceder en forma remota a la red. Esta clase de VPN puede establecer un túnel en modo voluntario u obligatorio.
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .9]{figuras/figura020.png}
+\caption{VPN de Acceso Remoto\cite{red:vpn}}
+\label{vpn-accesoremoto}
+\end{center}
+\end{figure}
+Las tecnologías y protocolos asociados a esta clasificación son:
+VPNs sitio a sitio:
+
+\begin{itemize}
+\item IPSec
+\item GRE
+\item \Gls{atom} (Any Transport over MPLS)
+\item \Gls{l2tpv3} (Layer 2 Tunneling Protocol version 3)
+\item \Gls{ieee802q}
+\item \Gls{mplslsp} (MPLS Label Switched Path)
+\end{itemize}
+VPNs de acceso remoto:
+
+\begin{itemize}
+\item \Gls{l2f}
+\item \Gls{pptp} 
+\item L2TPv2/v3
+\item IPSec
+\item SSL/TLS
+\end{itemize}
+
+\subsection{VPNs de capa 2 y capa 3}
+El criterio de esta clasificación se basa en las capas, del modelo de referencia ISO/OSI de protocolo de comunicaciones, por donde se establece el túnel de la VPN. Esta clasificación surge a partir de la variedad de tecnologías existentes que se utilizan para implementar la VPN.
+Esta distinción tiene sentido cuando se la aprecia en el contexto de las clasificaciones anteriores.\\
+Las VPN de capa 2 permiten la conectividad a nivel de la capa de enlace de datos y puede ser establecida entre switches, routers o hosts. La comunicación está basada en el direccionamiento de capa 2 y el reenvío del tráfico está basado respecto del enlace entrante y la información de encabezados de dicha capa, tales como direcciones \Gls{mac}  o \Gls{dlci}.\\
+Las VPN de capa 3 interconectan hosts o routers, la comunicación se basa en el direccionamiento a nivel de capa de red. El reenvío del tráfico se lleva a cabo teniendo en cuenta el enlace entrante y las direcciones del encabezado IP.
+
+\subsection{Integración de las clasificaciones}
+Las clasificaciones anteriores se pueden integrar para tener una perspectiva más práctica y operativa de las VPN. Esta integración muestra las VPN provista por el cliente o proveedor como el criterio de clasificación más general, dentro de la cual se pueden diferenciar las VPN sitio a sitio y remota. Finalmente se consideran según las tecnologías VPN de capa 2 y 3. El siguiente esquema muestra esta relación:
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .9]{figuras/figura021.png}
+\caption{Clasificación de las VPN \cite{red:vpn}}
+\label{clasifi:vpnl}
+\end{center}
+\end{figure}
+VPN Sitio a Sitio Provistas por el Proveedor de Capa 2 (L2VPN)
+Estas VPN pueden ser establecidas entre switches, routers y hosts, permitiendo la conectividad a nivel de capa de enlace entre sitios separados. Tanto el direccionamiento como el reenvío del tráfico de la VPN se llevan a cabo en función del enlace entrante y de la información del encabezado de capa 2.
+Dentro de las L2VPN se pueden distinguir dos categorías:
+
+\begin{itemize}
+\item VPNs basadas en circuitos \Gls{p2p}: conocidas también como \Gls{vpws}. Se implementan usando MPLS o circuitos emulados (pseudowires) L2TPv3.
+\item VPNs \Gls{m2m}: en esta categoría entran las VPN \Gls{vpls} e \Gls{ipls}
+\end{itemize}
+\subsection{VPN VPWS}
+
+La red del proveedor puede considerarse como una emulación de un conjunto de enlaces punto a punto o pseudowires entre los sitios del cliente. Es útil en escenarios donde el cliente ya posee circuitos virtuales \Gls{atm} o Frame Relay que interconectan sus redes. En lugar de que el tráfico del cliente atraviese el backbone hasta su destino en su formato nativo de capa 2, éste es encapsulado y enrutado sobre la infraestructura IP del Proveedor. El cliente mantiene las conexiones de capa 2 al backbone. Los routers CE deben seleccionar el circuito virtual a usar para enviar el tráfico al sitio destino.\\
+Este esquema permite el reemplazo de redes con topologías estrella que requieren la interconexión de redes satélites hacia una red central, permitiendo alternativas de rutas hacia un destino. Unas de las tecnologías habituales, en el núcleo de la red del proveedor, para esta clase de VPN es MPLS junto a extensiones conocidas como PWE3 (Pseudowire Emulation Edge to Edge). Un enfoque más escalable, respecto de la administración del servicio, utiliza \Gls{bgp} (Border Gateway Protocol) como protocolo de señalización y auto detección. En este caso, los dispositivos PE usan BGP multiprotocolo para anunciar los dispositivos CE y VPN que controlan, junto con las etiquetas MPLS utilizadas para encaminar el tráfico. De esta forma, cuando los otros CE reciben esta información, saben cómo establecer los pseudowires.
+\subsection{VPN VPLS}
+En este caso la red LAN ethernet de cada sitio del cliente se extiende hasta el borde de la red backbone del proveedor. Luego, una vez allí, se emula la función de un bridge o switch para conectar todas las LANs del cliente. De esta forma se emula, en la red del proveedor, una única LAN ethernet. Esta solución provee un servicio punto a multipunto donde los routers CE envían todo el tráfico, destinados a los otros sitios, directamente al router PE. Este servicio se basa en la utilización de pseudowires, combinados en una topología de malla completa (full mesh) de interconexiones entre los dispositivos PE que participan en una VPN determinada. Éstos llevan a cabo el aprendizaje de las direcciones MAC, de la misma forma que un switch ethernet para reenviar las tramas desde un CE a otro. Así, un CE puede reenviar tráfico en una forma punto a multipunto a otros CE. Existe un problema de escalabilidad con este servicio, y tiene que ver con el incremento de sitios del cliente. Es necesario mantener en los PE un gran número de direcciones MAC para el reenvío de tramas por sitio de cliente.
+
+\subsection{VPN IPLS}
+Si se requiere intercambiar tráfico IP exclusivamente y los dispositivos CE son routers IP, entonces es posible el servicio IP sobre LAN. Si bien se transmiten datagramas IP, el mecanismo de reenvío se basa en información de encabezado de capa 2. Dado que el siguiente salto o hop para cada datagrama IP es otro CE, las únicas direcciones MAC que un PE debe aprender, cuando reenvía las tramas de capa 2, son aquellas de los routers CE. Esto es una ventaja respecto del servicio VPLS por el reducido número de direcciones MAC a preservar por sitio de cliente.
+
+\subsection{VPN Sitio a Sitio Provistas por el Proveedor de Capa 3 (L3VPN)}
+Esta clase de VPN se basa en tecnologías más estables que las empleadas en las L2VPN, debido al estudio y desarrollo de las mismas. Esto le permite al proveedor de servicio tener mayor seguridad al momento de implementar una u otra solución.
+Se pueden dividir a su vez en:
+\begin{itemize}
+\item VPN basadas en PE: Los dispositivos PE participan en el enrutamiento y reenvío del tráfico del cliente basado en el espacio de direcciones de la red del cliente. En este caso los CE no participan de la VPN. El tráfico del cliente se reenvía entre los PE a través de túneles MPLS LSP, IPSec, L2TPv3 o GRE.
+\item VPN basadas en CE: En este caso los túneles son creados entre los equipos CE, mientras los PE no participan en la VPN, solo reenvían el tráfico del cliente. Se utiliza IPSec o GRE para establecer los túneles.
+\end{itemize}
+\subsection{Confiables y Seguras}
+Esta es una clasificación donde se tiene en cuenta si es o no necesaria la encriptación y autenticación de los datos a transferir entre los nodos de la VPN. Los proveedores que no utilizan encriptación para los datos de sus clientes debido a que utilizan circuitos virtuales de capa 2 se pueden definir como VPN Confiables. Podemos mencionar las redes FRAME RELAY, ATM y MPLS. En cambio en las VPN Seguras el tráfico de datos es autenticado y encriptado sobre el backbone del proveedor del servicio. Utilizan los protocolos IPSEC, SSL, L2TP asegurado mediante IPSEC, PPTP asegurado con MPPE (Microsoft Point-to-Point Encryption).
+
+\subsection{Overlay y Peer}
+Las VPN overlay se dan entre dispositivos CE, los dispositivos PE no participan en el enrutamiento de los clientes de la red, sino que reenvían tráfico de clientes basados en direccionamiento globalmente único, por lo tanto no tiene conocimiento del direccionamiento utilizado por el cliente.\\
+Los túneles son configurados entre dispositivos CE usando protocolos como IPSec y GRE. Cabe observar que el modelo overlay tiene serios problemas de escalabilidad debido a que si se cuenta con muchos nodos de egreso el número de adyacencias se incrementa en directa proporción con el número de nodos.
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .9]{figuras/figura022.png}
+\caption{Adyacencias del Ruteo \cite{red:vpn}}
+\label{adyac:ruteo}
+\end{center}
+\end{figure}
+Pueden ser implementadas a nivel de capa física usando líneas telefónicas (dialup), a nivel de capa 2 utilizando Frame Relay, X-25 y ATM, o a nivel de capa 3 utilizando túneles IP o GRE. Con el fin de clarificar veamos un ejemplo, un esquema en el que figuran tres sitios. Un sitio se conecta a través de los circuitos virtuales $ VC  1º $ Y $ VC 2º $ con otros dos sitios. Si suponemos que el sitio principal es Londres y los otros son Paris y Zurich podríamos ver que la percepción que poseen los routers CE 
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .9]{figuras/figura023.png}
+\caption{Infraestructura del proveedor\cite{red:vpn}}
+\label{infra:provee}
+\end{center}
+\end{figure}
+Si son reemplazados los dispositivo PE por routers y estos participan en el enrutamiento entonces es una VPN tipo Peer. Los routers tienen que poseer conocimiento del direccionamiento que utiliza el cliente. Esto es necesario debido a que las rutas se intercambian entre dispositivos CE y los dispositivos PE. Estas VPN son provistas por un proveedor de servicios.
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .9]{figuras/figura024.png}
+\caption{VPNs tipo Peer\cite{red:vpn}}
+\label{vpn:peer}
+\end{center}
+\end{figure}
+En la Figura anterior podemos observar que al reemplazar los switches por routers se convierte en una VPN tipo Peer. No Orientadas y orientadas a la conexión\\
+Son orientadas o no orientadas a la conexión dependiendo si el proveedor provee o no circuitos virtuales dedicados.\\
+Orientada a la conexión: Son en las que provee el proveedor un circuito virtual dedicado. Por ejemplo FRAME RELAY y ATM.\\
+No orientadas a la conexión: Son las que no poseen un circuito virtual. Por ejemplo las VPN basadas en IP.\\
+\subsection{VPNs de capa de transporte/aplicación}
+El protocolo SSH (Secure Shell) desarrollado por Communications Security Ltd., permite acceder a otro dispositivo a través de una red insegura, ejecutar comandos a una maquina remota y mover archivos de una computadora a otra. Utilizando encriptación sobre canales inseguros provee una fuerte autenticación y encriptación.\\
+Existen dos versiones incompatibles entre sí. Son dos protocolos totalmente diferentes que usan distinto cifrado.
+
+
+\begin{table}[H]
+\begin{center}
+\caption{SSH v1, SSH v2}
+\label{ssh-v1-ssh-v2}
+\begin{tabular}{|||l|l|r||}
+\hline
+&SSH v1&SSH v2\\
+\hline
+\multirow{1}{*}{Autenticación de Sistemas}&Llaves de servidor y clientes&Llaves de hosts\\
+\hline
+\multirow{1}{*}{Autenticación}&Llaves&Certificados\\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+SSH2 es una completa reescritura del protocolo que lo hace más seguro y utiliza una implementación de red totalmente distinta que SSH1. Debido a la diferente implementación ambos protocolos son incompatibles. Por ejemplo se lo utiliza para asegurar un túnel PPP. El principio de funcionamiento es el mismo que el de SSL diferenciándose en la capa en la que actúan y el método de autenticación.
+\begin{table}[H]
+\begin{center}
+\caption{SSH, SSL}
+\label{ssh-ssl}
+\begin{tabular}{|||l|l|r|||}
+\hline
+&SSH &SSL\\
+\hline
+\multirow{1}{*}{Capa en la que trabaja}&Aplicación&Transporte\\
+\hline
+\multirow{1}{*}{Autenticación}&Certificados&Llaves\\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+También es posible establecer túneles en la capa de aplicación. Para esto se utiliza un browser del lado del cliente, por lo que no es necesario instalar ningún programa. La conexión se realiza a un sitio web seguro mediante el protocolo \Gls{https}. Además, existen otros productos los cuales ofrecen una combinación de gran flexibilidad, seguridad y que intentan lograr una configuración que no requiera mucho conocimiento. La seguridad es lograda mediante cifrado del tráfico usando el protocolo SSL/TLS.
+
+\subsection{VPN multiservicio}
+Trabajan sobre MPLS, cuyo sello distintivo es la calidad de servicio o \Gls{qos}. El objetivo de estas VPN es integrar diferentes aplicaciones en una sola conexión: voz, datos, multimedia, etc.
+
+\subsection{Aplicaciones}
+Las VPN se utilizan en situaciones donde es necesario establecer una comunicación en forma segura utilizando un medio o infraestructura compartida de transmisión. Además de comunicar redes propias de la organización, usuarios móviles, tele trabajadores etc., también es posible comunicar distintas organizaciones entre sí. Esta alternativa surge a partir de la necesidad de establecer lazos de negocios, o la concreción de intereses comunes. La extranet refleja dichos intereses mediante la interconexión de las redes de datos de las distintas organizaciones. En realidad solo comparten los recursos necesarios para cumplir con los objetivos comunes, por lo que el acceso es parcial y controlado.\\
+Finalmente las VPN se pueden considerar como un negocio con valor agregado en la forma de un servicio. El hecho de que hoy en día las organizaciones dependan fuertemente de las tecnologías de información para su desenvolvimiento y que sus necesidades sean diferentes, plantea un mercado donde las soluciones de comunicaciones de datos son casi a la medida del cliente. No existe una única solución para todos los tipos de organizaciones. Es por esto que los proveedores de servicios han sumado a su oferta de soluciones empresariales, el servicio de VPN, donde una buena relación costo-beneficio para el cliente es posible.
+\subsection{Extranets}
+Una extranet es un conjunto de intranets de organizaciones diferentes que se interconectan entre sí para cumplir con objetivos comunes. Esta relación está bien definida y es establecida bajo un estricto control del acceso. Se puede definir también como la intersección de un grupo de intranets de varias empresas, lo cual indica que solo se comparte una porción de la intranet hacia el resto de la extranet.\\
+Por otro lado Internet es el medio común que resuelve problemas de incompatibilidad entre sistemas de empresas muy diferentes. Es decir, ofrece una interfaz común que permite una interacción difícil de lograr con otras tecnologías. Por lo tanto, como en el caso de las intranets, adoptan las tecnologías basadas en estándares abiertos propias de Internet para lograr comunicación dentro de la extranet.\\
+Una extranet puede tener un impacto notable en las relaciones e interrelaciones con las demás empresas que la integran. De hecho puede modificar notablemente la posición de la organización frente a sus clientes y competidores. Por esta razón la decisión de su implementación debe responder a fines estratégicos, por lo cual deberá ser tomada por la alta gerencia de la organización.\\
+Las VPNs son la forma más efectiva de implementar las extranets, ya que pueden hacer uso de Internet para lograr la interconexión de los diferentes sitios. Nuevamente los puntos más importantes a considerar son la seguridad en cuanto al acceso solo de los usuarios autorizados mediante mecanismos de autenticación, como también el transporte a través de la encapsulación y encriptado de los datos. Como se ha visto en este capítulo, existen diversos protocolos de túnel utilizados en VPNs, los cuales se aplican obviamente en las extranets. Algunos de ellos como IPSec, encapsulan los paquetes originales y encriptar la información sensible, otros como PPTP y L2TP se valen de IPSec para brindar la confidencialidad.
+
+\subsection{Servicio VPN provisto por un proveedor}
+Las corporaciones y organizaciones dependen cada vez más de las telecomunicaciones y redes de datos. Es muy importante la interconexión de redes propias en diferentes sitios. Esta necesidad fue resuelta por proveedores de servicios de telecomunicaciones, principalmente a través de conexiones Frame Relay, ATM y más recientemente mediante Ethernet y túneles basados en IP. Estas organizaciones, requieren con más frecuencia, servicios de conectividad sobre uno o más backbones, incluso a través de Internet, pero que este servicio incluya contratos de nivel de servicio (Service Level Agreement), \Gls{qos}, y otros parámetros que permitan una comunicación segura, estable, con alto grado de disponibilidad, con un umbral de ancho de banda, con priorización de tráfico, etc.\\
+Estas características son difíciles de lograr cuando la comunicación entre sitios debe atravesar redes de diferentes proveedores más la Internet, es decir un entorno compartido y de naturaleza no orientada a la conexión.\\
+Las VPN permiten una comunicación segura y privada mediante la encapsulación y encriptación. Es decir, aíslan el tráfico de datos privados de una organización del resto con el cual pueda compartir un canal de comunicación. Actualmente la relación costo-beneficio en la implementación de este mecanismo ha determinado la conveniencia de la contratación del servicio a proveedores, en lugar de la puesta en funcionamiento y control por parte de la propia organización.\\
+Para poder diferenciar y aislar los tráficos pertenecientes a varios clientes, el proveedor utiliza conexiones de capa 2 (VPNs tradicionales) o túneles de capa 2 o 3. Para el caso de conexiones a través de Internet, las VPN se han basado en IPSec para brindar la mayor seguridad.\\
+El concepto de servicio VPN provisto por el proveedor debe soportar los tipos tradicionales de VPN, también debe funcionar con las clases de otros proveedores ya definidos anteriormente, además de Internet: único proveedor, conjunto de proveedores y proveedor de proveedores. Existen requerimientos generales para esta clase de VPNs, un análisis detallado se expresa en la RFC 3809 . Estos requerimientos pueden clasificarse en:
+\begin{itemize}
+\item Requerimientos del servicio: atributos del servicio que el cliente puede observar o medir, por ejemplo: disponibilidad y estabilidad, garantías de seguridad, servicio de tramas o datagramas.
+\item Requerimientos del proveedor: características que el proveedor evalúa para determinar la viabilidad en términos de la relación costo-efectividad del servicio, por ejemplo escalabilidad y grado de administración.
+\item Requerimientos de Ingeniería: características de implementación que permiten cumplir con los requerimientos del proveedor y del servicio. Estos a su vez pueden clasificarse en:
+\item Requerimientos en el plano de reenvío: asociados a los mecanismos de reenvío de datos.
+\item Requerimientos en el plano de control: asociados al mecanismo de distribución de la información de enrutamiento.
+\item Requerimientos relacionados a la uniformidad de los mecanismos en esta clase de VPN respecto de otros esquemas y en general con la forma de operación de Internet.
+\end{itemize}
+\subsection{Calidad de servicio (QoS) y Acuerdos de nivel de servicio (SLA)}
+En general calidad de servicio se refiere a la habilidad de brindar servicios de redes y comunicaciones de acuerdo a un conjunto de parámetros especificados un contrato de nivel de servicio o SLA. La calidad está caracterizada por la disponibilidad del servicio, tasa de demora, de variación de la demora (jitter), tasa de proceso de paquetes (throughput), de perdida de paquetes. En particular, y desde una perspectiva de recurso de red, calidad de servicio se refiere a un conjunto de herramientas que permiten a un proveedor de servicio priorizar tráfico, controlar el ancho de banda y la demora en la red. Existen dos maneras de lograrlo en redes IP, mediante Servicios Integrados y a través de Servicios Diferenciados.\\
+El ámbito en el cual un servicio VPN cumple con calidad de servicio dependerá del proveedor de servicio. En la mayoría de los casos de VPN definida en el sistema autónomo de un único proveedor es posible cumplir con este requerimiento. El soporte de QoS en ambientes de multi proveedores o diversos sistemas autónomos estará en función de los acuerdos de cooperación entre los involucrados en la provisión del servicio y de que todos utilicen los mismos mecanismos. Es decir que los dispositivos CE y/o PE ejecuten al menos formateo y apliquen políticas al tráfico (shaping y policing).\\
+La necesidad de aplicar calidad de servicio ocurre principalmente en la red de acceso al backbone del proveedor y no en el interior del mismo, de hecho QoS sobre las conexiones PE a PE no son un inconveniente. En cuanto a la calidad de servicio en el acceso, se pueden distinguir dos enfoques:
+\begin{itemize}
+\item Desde el CE a través de la red de acceso al PE
+\item Desde el PE a través de la red de acceso al CE
+\end{itemize}
+Los dispositivos CE y PE deberían poder soportar QoS sin importar la tecnología de acceso ya sea de capa 2 o 3: circuitos virtuales ATM y Frame Relay, acceso basado en MPLS, DSL etc. \\
+Se pueden distinguir dos modelos de servicio para QoS:
+\begin{itemize}
+\item Servicio de administración del acceso: este provee QoS sobre el acceso entre CE y los puertos del lado de cliente en el PE. No es requerido en el núcleo del backbone.
+\item QoS borde a borde: brinda QoS sobre el backbone del proveedor, ya sea entre pares de dispositivos CE o pares de PE, dependiendo de los límites del túnel.
+\end{itemize}
+
+Un acuerdo de nivel de servicio \Gls{sla} es una documentación donde se expresan los resultados de una negociación entre un cliente y un proveedor de servicios. En este documento se especifican los niveles de disponibilidad, performance, nivel de servicio, forma de operación y otros atributos del servicio.\\
+A partir de un SLA se pueden determinar objetivos de nivel de servicio o \Gls{slo}, considerando métricas individuales con los valores deseados e información operacional para controlar el SLA. Estas se pueden implementarse como políticas.\\
+Una especificación de nivel de servicio o \Gls{sls} engloba a las dos anteriores, es decir especifica un acuerdo negociado y las métricas individuales y datos operacionales, para garantizar la calidad de servicio del tráfico de red para ese cliente. Una SLS puede definirse sobre la base de los siguientes objetivos y parámetros, los cuales se pueden considerar sobre la base de conexiones a la red de acceso, VPNs o sitios:
+\begin{itemize}
+\item Disponibilidad del sitio, VPN o conexión de acceso.
+\item Duración de los intervalos de no disponibilidad del servicio.
+\item Tiempo de activación del servicio.
+\item Tiempo de respuesta para la resolución de un problema.
+\item Tiempo de aviso de un inconveniente.
+\item Límites para la variación del delay y jitter.
+\end{itemize}
+El sistema de administración y monitoreo del proveedor deberá medir y generar reportes respecto si el desempeño medido cumple o no los objetivos de la SLS. Muchas veces el nivel garantizado para los parámetros de los objetivos de nivel de servicio, dependen del alcance de la VPN, por ejemplo ciertos niveles pueden ser garantizados en el ámbito de un solo sistema autónomo, mientras que otro, aún más estricto, se puede cumplir en un dominio de un único proveedor pero con varios sistemas autónomos bajo su cargo. En un escenario multi proveedor es más difícil cumplir con aquellos parámetros que requieran un alto grado de cumplimiento, por ejemplo el requerimiento de QoS.\\
+
+Resumiendo, Mediante las VPNs se obtiene:
+\begin{itemize}
+\item La administración de la red a bajo costo.
+\item Seguridad para conectarse vía Internet.
+\item Confidencialidad, integridad de los datos.
+\item Permite conexión de cualquier equipo que tenga autorización.
+\item Son sencillas de manejar, etc. 
+\end{itemize}
+No sólo es necesario mencionar las ventajas de las VPN sino que se debe presentar sus desventajas para cuidar el rendimiento de la intranet y optimizar sus recursos, las desventajas más conocidas son:
+\begin{itemize}
+\item Se deben establecer correctamente las políticas de seguridad y de acceso.
+\item Mayor carga en el cliente VPN porque debe encapsular los paquetes de datos y encriptarlos.
+\item Fallo en seguridad debido a los usuarios que accesan remotamente pueden utilizar las computadoras para abrir otras aplicaciones que amenazan la red.
+\end{itemize}
+\subsection{Creación de Túneles.}
+El túnel es el camino lógico o sentido que los paquetes encapsulados viajan a través de la red interna de tránsito, se pueden crear muchos enlaces por diferentes túneles virtuales a través de la misma infraestructura, el tunneling tiene implicaciones notorias para las VPNs.
+
+\subsection{Tunneling}
+Es un método que consiste en utilizar la infraestructura de una interred, para transportar datos de una red a otra, además hace el proceso de colocación de cada paquete de información que se envía dentro de otro encapsulado, lo que permite que los usuarios se conecten de forma segura estén donde estén a la organización.\\
+
+Los componentes básicos de un túnel son:
+\begin{itemize}
+\item Un iniciador de túnel
+\item Dispositivos de enrutamiento
+\item Terminadores de túneles.
+\end{itemize}
+
+\subsection{Comparativa entre tecnologías VPN}
+
+\subsubsection{PPTP}
+\begin{itemize}
+\item Puntos Fuertes
+	\begin{itemize}
+	\item Proporciona una capacidad multiprotocolo.
+	\item Integración con IPSec
+	\end{itemize}
+\item Puntos Débiles
+	\begin{itemize}
+	\item Precisa un servidor NT como terminador del túnel.
+	\item Está siendo sustituido por el L2TP, ya no se utiliza porque la IETF no lo reconoció como estándar.
+	\end{itemize}
+\end{itemize}
+
+\subsubsection{L2F}
+\begin{itemize}
+\item Puntos Fuertes
+	\begin{itemize}
+	\item Proporciona el tunneling multiprotocolo.
+	\item Soportado por la gran mayoría de fabricantes.
+	\end{itemize}
+\item Puntos Débiles
+	\begin{itemize}
+	\item No hay encriptación
+	\item No hay control de flujo en el túnel
+	\item Seguridad débil.
+	\end{itemize}
+\end{itemize}
+\subsubsection{L2TP}
+\begin{itemize}
+\item Puntos Fuertes
+	\begin{itemize}
+    \item Combina L2F y PPTP.
+    \item Necesidad de únicamente una red de paquetes para operar bajo X.25 y Frame Relay.
+    \end{itemize}
+\item Punto Débil
+	\begin{itemize}
+    \item Da problemas la definir una encriptación estándar. 
+    	\end{itemize}
+\end{itemize}
+
+\subsubsection{IPSEC}
+\begin{itemize}
+\item Puntos Fuertes
+\begin{itemize}    
+    \item Subconjunto de Ipv6.
+    \item Transparente a aplicaciones (por debajo de la capa de Transporte).
+     \item Provee seguridad para usuarios individuales.
+    \end{itemize}
+\item Puntos Débiles
+	\begin{itemize}    
+    \item No estandarizado
+    \item No hace gestión de usuarios.
+    \item Protocolo complejo que requiere una configuración complicada.
+    \item Puede afectar el rendimiento en recursos del CPU.
+    \item Requiere la instalación de software cliente
+    	\end{itemize}
+\end{itemize}
+
+\Gls{ssl} 
+\begin{itemize}
+\item Punto Fuerte
+\begin{itemize}    
+    \item No es necesario instalar software cliente para la vpn.
+    \end{itemize}
+\item Puntos Débiles
+\begin{itemize}    
+    \item No se usa para conexiones red a red.
+    \item Funciona a través de un servidor NAT.
+    \item No da seguridad en la estación de trabajo.
+    \item No se ajusta a unir redes completas sino al modelo negocio/cliente.
+    \item No trabaja bien con gateways.
+    	\end{itemize}
+\end{itemize}
+
+\subsubsection{SSH}
+\begin{itemize}
+\item Puntos Fuertes
+\begin{itemize}   
+    \item Simplicidad de implementación
+    \item Todos los datos que se envían en una conexión son cifrados.
+    \end{itemize}
+\item Punto Débil
+\begin{itemize}    
+    \item No soporta UDP y solo por TCP tuneliza.
+    	\end{itemize}
+\end{itemize}
+
+MPLS (Multiprotocol Label Switching)
+\begin{itemize}
+\item Puntos Fuertes
+\begin{itemize}    
+    \item Las capacidades más relevantes son: Calidad de servicio QoS, soporte multiprotocolo.
+    \item Permite transportar diferentes tipos de tráfico IP, incluyendo tráfico de voz y datos
+    \item Fácil de configurar y administrar.
+    \item Soporta multicast
+    \end{itemize}
+\item Puntos Débiles
+\begin{itemize}    
+    \item Puede crear tunneles IP a través de la red sin necesidad de encriptación o aplicación en el usuario final lo que es propensa a ataques.
+    \item No se pueden mantener los vínculos en Internet entre etiquetas MPLS y los hosts.
+    	\end{itemize}
+\end{itemize}
+
+\subsection{Aspectos Legales}
+Todos los aspectos legales se rigen por las leyes de la Compañía Nacional de Telecomunicaciones CONATEL.

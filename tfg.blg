@@ -1,0 +1,123 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: tfg.aux
+A level-1 auxiliary file: ./portada_y_ficha_catalografica/portada_y_ficha_catalografica.aux
+A level-1 auxiliary file: ./hoja_aprobacion/hoja_aprobacion.aux
+A level-1 auxiliary file: ./dedicatoria/dedicatoria.aux
+A level-1 auxiliary file: ./agradecimientos/agradecimientos.aux
+A level-1 auxiliary file: ./epigrafe/epigrafe.aux
+A level-1 auxiliary file: ./resumen/resumen.aux
+A level-1 auxiliary file: ./abstract/abstract.aux
+A level-1 auxiliary file: ./capitulo_01/introduccion.aux
+A level-1 auxiliary file: ./capitulo_01/capitulo1.aux
+A level-1 auxiliary file: ./capitulo_02/capitulo2.aux
+A level-1 auxiliary file: ./capitulo_03/capitulo3.aux
+A level-1 auxiliary file: ./capitulo_04/capitulo4.aux
+A level-1 auxiliary file: ./capitulo_05/capitulo5.aux
+A level-1 auxiliary file: ./capitulo_06/capitulo6.aux
+A level-1 auxiliary file: ./anexos/anexo.aux
+The style file: IEEEtran.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: test.bib
+I was expecting a `,' or a `}'---line 41 of file test.bib
+ :   
+ :   isbn =   ="9789702601623"
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field part---line 117 of file test.bib
+ :   isbn =   
+ :            ="84-8102-345-0"
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 136 of file test.bib
+ :   
+ :   url   = "http://dspace.ups.edu.ec/bitstream/123456789/1061/13/UPS-CT002036.pdf"
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 142 of file test.bib
+ :   
+ :   url   = "http://www.capacinet.gob.mx/Cursos/Tecnologia%20amiga/desarrolladordesoftware/Seguridad_Internet_SE.pdf"
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 148 of file test.bib
+ :   
+ :   url   = "http://www.cisco.com/web/about/ac123/ac147/about_cisco_the_internet_protocol_journal.html"
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 154 of file test.bib
+ :   
+ :   url   = "http://goo.gl/9TVJoE"
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 156 of file test.bib
+ : @misc{ipvideo:2014
+ :                   ,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 166 of file test.bib
+ :   
+ :   url   = "http://revista.seguridad.unam.mx/numero-10/el-cifrado-web-ssltls"
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 173 of file test.bib
+ :   
+ :   url   = "http://www.mikrotik.com/download/pdf/what_is_routeros.pdf"
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 196 of file test.bib
+ :   
+ :   url   = "http://www.profisica.cl/comofuncionan/como.php?id=45"
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "wireless:desarrolo"
+-- IEEEtran.bst version 1.13 (2008/09/30) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty year in gutierrez:2003
+Warning--missing publisher in redes:tanen
+
+Done.
+You've used 28 entries,
+            4039 wiz_defined-function locations,
+            939 strings with 10658 characters,
+and the built_in function-call counts, 9423 in all, are:
+= -- 651
+> -- 109
+< -- 4
++ -- 53
+- -- 25
+* -- 317
+:= -- 1680
+add.period$ -- 55
+call.type$ -- 28
+change.case$ -- 27
+chr.to.int$ -- 12
+cite$ -- 30
+duplicate$ -- 826
+empty$ -- 1069
+format.name$ -- 25
+if$ -- 2032
+int.to.chr$ -- 0
+int.to.str$ -- 28
+missing$ -- 179
+newline$ -- 135
+num.names$ -- 27
+pop$ -- 583
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 2
+skip$ -- 741
+stack$ -- 0
+substring$ -- 35
+swap$ -- 409
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 5
+type$ -- 28
+warning$ -- 2
+while$ -- 27
+width$ -- 30
+write$ -- 248
+(There were 10 error messages)

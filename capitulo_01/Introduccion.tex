@@ -1,0 +1,75 @@
+\fancyhead{}
+\fancyfoot{}
+\lhead{Introducción, el planteamiento del proyecto, motivación y los objetivos}
+
+\chapter{Introducción}
+En la actualidad las redes informáticas, se han vuelto indispensables, tanto para las personas, como para las organizaciones, les da oportunidad de interactuar con el resto del mundo, ya sea por motivos comerciales, personales o emergencias.\\
+Organizaciones con cientos de  oficinas dispersas en una amplia área geográfica esperan de manera rutinaria poder examinar el estado actual incluso de la sucursal más distante con solo presionar un botón.\\
+La aplicación de medidas de seguridad en las redes supone desplegar diversos productos: sistemas de detección de intrusos, controles de autenticación y autorización, cortafuegos y otros servicios.
+Habitualmente este despliegue se realiza utilizando productos y tecnologías de diferentes fabricantes. Cuando se habla de aspectos de seguridad, las empresas suelen seleccionar los productos con \textit{pedigrí}: en cada categoría se selecciona siempre el producto con mayor renombre y mejor prensa. Esta es una tendencia que no parece cambiar a corto o medio plazo.\\
+Esta disparidad de fabricantes origina diversas dificultades, como la problemática de gestión de los dispositivos (cada elemento de seguridad dispone de su propia aplicación de gestión), las dificultades para la interoperabilidad (los productos de seguridad tienen una mentalidad de funcionamiento aislado) y la centralización de la información generada.\\
+Este último aspecto es posiblemente uno de los principales talones de Aquiles en virtualmente cualquier red con un mínimo nivel de complejidad. A medida que van aumentando los sistemas de seguridad, se reduce proporcionalmente la capacidad de poder disponer de una visión global del estado de la seguridad corporativa.\\
+Ahora bien, en la red, esta visión global del estado de la seguridad no lo proporcionan únicamente los dispositivos tradicionales de seguridad, como son los cortafuegos y los sistemas de detección de intrusos. También otros muchos sistemas están generando una información vital para poder construir esta imagen: sistemas operativos, bases de datos, detectores de virus, servidores de archivos, \Gls{erp}.\\
+Ignorar estos datos sólo nos hará tener una visión distorsionada del estado de la seguridad. De hecho, son más importantes aquellas informaciones que nos puedan transmitir los otros elementos, que son clave para el funcionamiento de la empresa.\\
+Y existe otro factor, de una importancia notable: esta visión debe ser generada en tiempo real. No importa cuántos dispositivos tengamos, ni su dispersión geográfica o los diferentes métodos que tengan para representar las alertas. La visión del estado de la seguridad estará totalmente distorsionada si esta no se genera en tiempo real.\\
+Una vez que dispongamos de las informaciones de seguridad centralizadas, podemos aplicar reglas de correlación. De esta forma podemos identificar tendencias y similitudes en los posibles ataques que reciba la red. Con la información que se obtiene de la correlación, los equipos de seguridad pueden responder rápidamente ante un incidente, ajustando sus sistemas para ofrecer la respuesta adecuada ante el ataque (desactivar una determinada dirección, reforzando las medidas de seguridad de los sistemas más expuestos a ataques).\\
+Otra ventaja en disponer de toda la información relativa a seguridad centralizada es la facilidad en la generación de informes, que nos presenten los diferentes ataques que sufren nuestra infraestructura, el status de las diferentes líneas de negocio, el tiempo de respuesta ante los incidentes, etc. Esta información será básica para evaluar la idoneidad de las medidas de seguridad existentes y en la justificación de las inversiones necesarias. \cite{recursos}.
+
+\section{Motivación}
+La elaboración de este trabajo obedece a la necesidad de satisfacer las necesidades de centralizar los \glspl{servidor}, con la finalidad de unificar la red y por ende los datos e informaciones de suma sustancialidad para una empresa. \\
+En este sentido se propone dotar al sistema de una infraestructura sólida, segura y económica mediante el uso de radio enlaces entre sucursales de una empresa ya sea de medio o grande porte, teniendo como respaldo el uso de \gls{vpn} con fin de garantizar la comunicación del servicio aumentando su resiliencia, y por lo tanto la robustez del enlace, y contribuyendo con la seguridad de los datos, el activo primordial de toda empresa u organización.
+
+\section{Definición del problema}
+Las empresas de medio/grande portes en Paraguay, a fin de optimizar sus infraestructuras y sus recursos económicos, se ven obligados a buscar alternativas a los medios recurrentes tales como fibras ópticas, satélites o servicios de banda ancha. Ya que en muchas localidades servicios no se encuentran disponibles por el alto costo que implica su cobertura para las operadoras. Por tales motivos soluciones robustas como el uso de radio enlaces utilizando espectros libres, son una opción ideal.\\
+Debido a factores imprevisibles como inclemencias del tiempo, hurtos u hechos vandálicos, se propone respaldar la conexión por medio de VPNs via internet a fin de dar mayor estabilidad a la comunicación.\\
+Además desde el punto de vista económico, la centralización de los servidores acarrea un menor costo de implementación y mantenimiento, ya que por ejemplo para una empresa con 30 sucursales se ahorraría el costo de contar con servidores para cada local, lo que a su vez denota un ahorro tanto en simplicidad de mantenimiento como en el costo del recurso humano necesario para su correcto funcionamiento.
+
+\section{Objetivos, hipótesis, justificación y delimitación del alcance del tratado.}
+\subsection{Objetivo General}
+\begin{itemize}
+    \item Implementar una infraestructura de redundancia de enlaces por medio de \Glspl{vpn} para la centralización de servidores.
+\end{itemize}
+\subsection{Objetivo Específicos}
+\begin{itemize}
+	\item Estudiar tecnologías y metodologías para el desarrollo del proyecto.
+	\item Realizar un radio enlaces. 
+	\item Configurar \Gls{vpn}.
+	\item Configurar conexión respaldo por medio de Internet.
+	\item Realizar pruebas de conexión entre máquinas/clientes y servidores.
+\end{itemize}
+
+\subsection{Hipótesis}
+El desarrollo de este proyecto puede generar tanto beneficiarios directos como indirectos. Por el lado de los beneficiarios directos tenemos a los funcionarios \Gls{ti} al facilitar la administración de la red. \\
+Por otro lado, como beneficiarios indirectos se pueden mencionar a los funcionarios de las sucursales, por mejorar la continuidad del servicio. \\
+Además de que dicho proyecto, puede servir de base para la generación de una empresa de servicios para brindar seguridad en redes a cualquier tipo de entidad sea cual fuere su tamaño.
+
+\subsection{Justificación del Estudio.}
+La elaboración de este trabajo obedece a la necesidad de satisfacer las necesidades de centralizar los servidores, con la finalidad de unificar la red y por ende los datos e informaciones de suma sustancialidad para una empresa. \\
+En este sentido se propone dotar al sistema de una infraestructura sólida, segura y económica mediante el uso de radio enlaces entre sucursales de una empresa ya sea de medio o grande porte, teniendo como respaldo el uso de \Glspl{vpn} a fin de garantizar la comunicación del servicio aumentando su resiliencia, y por lo tanto la robustez del enlace, y contribuyendo con la seguridad de los datos, el activo primordial de toda empresa u organización.
+\subsection{Alcance del Trabajo.}
+La solución propuesta deberá atender específicamente las necesidades de la empresa a ser utilizada para la implementación. \\
+Se pretende utilizar las instalaciones de Agrofértil S.A. y a los funcionarios seleccionados para su implementación.\\
+La principal característica del proyecto es la redundancia y seguridad del enlace que representa el uso de \Glspl{vpn} entre sucursales, a fin de asegurar la comunicación de los clientes a los servidores centralizados en la casa matriz. \\
+En el proyecto se prevé la utilización de la infraestructura existente de la empresa mencionada, por lo tanto no está contemplada la compra de ningún equipo.
+
+\section{Descripción de los Contenidos por Capítulo} 
+\textbf{El trabajo está organizado en seis (VI) capítulos:}\\
+\textbf{El Capítulo I:} Se presenta una introducción, el planteamiento del proyecto, motivación y los objetivos.\\
+\textbf{El Capítulo II:} Se presenta conceptos de la Radiofrecuencia, su historia, sus protocolos de señalización; además su clasificación.\\
+\textbf{El Capítulo III:} Se presenta información sobre \gls{vpn}\\
+\textbf{El Capítulo IV:} Se presenta una breve reseña sobre el funcionamiento del Software RouterOS \\
+\textbf{El Capítulo V:} Realizar un radio enlace y túnel redundante\\
+\textbf{El Capítulo VI:} Por último se exponen las conclusiones del trabajo y las recomendaciones para trabajos futuros.
+
+
+\section{Tipo de Investigación}
+
+\subsection{Investigación Tecnológica}
+
+La investigación tecnológica busca una aplicación práctica de los conocimientos que sean útiles a la realidad, para lograr una solución factible de las problemáticas abordadas; por lo que usualmente está ligada a un campo de aplicación en particular, normalmente con un lenguaje propio, especializado y utilitario \cite{gamboa:1986}.
+
+
+\subsection{Modalidad}
+
+Esta investigación se enmarca de acuerdo con el tipo de conocimiento que se genera, correspondiendo al tipo adaptativo de esta clasificación.\\
+La investigación adaptativa es aquella cuya finalidad es implementar, en el contexto que presenta el problema, soluciones que ya existen y que se aplicaron con éxito en otras situaciones \cite{garcia:2007}.

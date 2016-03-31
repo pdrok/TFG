@@ -1,0 +1,323 @@
+\fancyhead{}
+\fancyfoot{}
+
+
+\lhead{Radiofrecuencia, su historia, sus protocolos de señalización}
+
+\chapter{RadioFrecuencia}
+
+\section{Marco Teórico}
+Es de sobra conocido que vivimos en la era de la información. Este hecho tiene unas connotaciones inmediatas que también son conocidas universalmente. La primera de ellas es que en la sociedad actual la información tiene un gran valor, es más, en muchas ocasiones la información es el propio ``valor'' o, al menos, la información es el valor que marca la diferencia. \\
+Muchas empresas y organizaciones, solo gestionan y negocian con información. Para ellas, la información es el único activo y, por lo tanto, el más valioso. Como tal elemento de valor, la información debe ser custodiada con el máximo cuidado porque, sin lugar a duda, será buscada por otros. \cite{gutierrez:2003}\\
+Hoy en día así como han crecido potencialmente las tecnologías, la masificación del uso de Internet y el uso de aplicaciones en red, también han crecido las amenazas informáticas, las cuales pueden provocar desde una infección en la computadora con virus hasta interrumpir completamente la funcionalidad de un sistema empresarial.\cite{sanchez:2012}\\
+A fin de garantizar la seguridad de este bien de las empresas u organizaciones, es imprescindible protegerla, de forma a que se evite las pérdidas por eventos accidentales o intencionales.\\
+
+Entre los términos de seguridad dentro del ámbito de las Tics, se pueden definir los siguientes:\\
+\begin{itemize}
+	\item Amenaza es un evento que puede desencadenar un incidente en la organización propietaria, produciendo daños materiales o perdidas inmateriales en sus activos.
+	\item Activos son recursos para que la organización funcione correctamente con el fin de alcanzar sus objetivos propuestos. En el caso que nos compete, el activo principal es la información y los activos secundarios son los propios sistemas informáticos (hardware). 
+	\item Vulnerabilidad es la posibilidad de ocurrencia de la materialización de una amenaza sobre un activo.
+	\item Impacto es la consecuencia sobre un activo de la materialización de una amenaza sobre el activo.
+	\item Riesgo es la probabilidad de que se produzca un impacto determinado en un activo de la organización.\cite{seguridad:2013}
+\end{itemize}
+
+Desde del inicio de las telecomunicaciones, cuando una información es transmitida por un canal de comunicación está sometida a riesgos porque existe amenazas y el canal de comunicación tiene vulnerabilidades (un canal de comunicación es, en la mayoría de los casos, esencialmente inseguro e inestable).\cite{seguridad:2004}\\
+
+\subsection{Radiofrecuencia} 
+Cuando hablamos de radio, la mayoría de la gente piensa en la radio FM, que usa una frecuencia de alrededor de 100 MHz. Entre la radio y el infrarrojo encontramos la región de las microondas con frecuencias de 1 GHz a 300 GHz, y longitudes de onda de 30 cm a 1 mm.\\
+Las frecuencias más importantes para nosotros son las de 2 400 - 2 495 MHz, usadas por los estándares 802.11b y 802.11g (correspondientes a longitudes de onda de alrededor de 12.5 cm), y las de 5.150 - 5.850 GHz (correspondientes a longitudes de onda de alrededor de 5 a 6 cm), usadas por 802.11a. El estándar 802.11n puede trabajar en cualquiera de estas bandas. en la (Fig. \ref{espectro-electromagnetico}) nos muestra el uso de cada frecuencia.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{figuras/figura005.png}
+\caption{Escala del espectro electromagnético \cite{wireless:desarrollo}}
+\label{espectro-electromagnetico}
+\end{center}
+\end{figure}
+\subsection{Ancho de Banda}
+Un término que vamos a encontrar a menudo en la física de radio es ancho de banda. El ancho de banda es simplemente una medida de rango de frecuencia. Si un dispositivo usa el rango de 2.40 GHz a 2.48 GHz, decimos que el ancho de banda sería 0.08 GHz (es decir 80 MHz).
+Se puede ver fácilmente que el ancho de banda que defnimos aquí esta muy relacionado con la cantidad de datos que se pueden trasmitir a mayor cantidad de frecuencias disponibles, mayor cantidad de datos se pueden transmitir en un momento dado. El término ancho de banda es a menudo utilizado para algo que deberíamos más bien denominar tasa de transmisión de datos, por ejemplo ``mi conexión a Internet tiene 1 Mbps de ancho de banda'', lo que signifca que ésta puede trasmitir datos a 1 megabit por segundo.\cite{wireless:desarrollo}
+
+\subsection{Ondas Electromagnéticas}
+La forma de propagación de las ondas electromagnéticas se genera por la aceleración de una carga eléctrica. Estas viajan a una velocidad cercana a los 300.000 km/s, sin embargo cuando esta viaja a través de la materia las velocidades que alcanza son mucho menores, a mayor densidad menor velocidad.\cite{wireless:desarrollo}\\
+La radiación electromagnética se propaga por el universo como ondas interactivas de campos eléctricos y magnéticos; y se puede ordenar en un espectro que va desde ondas de frecuencias elevadas hasta ondas con frecuencia muy bajas.\\
+Existe una división del espectro de frecuencias que fue establecida por el Consejo Consultivo Internacional de las Comunicaciones de Radio (\Gls{CCIR}) en el año 1953.\cite{ccir:1927}\\
+
+
+\subsection{Polarización} 
+Es aquel fenómeno que se produce cuando el campo eléctrico oscila solo en un plano determinado, denominado plano de polarización. Este plano puede definirse por dos vectores, uno de ellos paralelo a la dirección de propagación de la onda y otro perpendicular a esa misma dirección el mismo que indica la dirección del campo eléctrico.
+
+\subsection{Tipos de Polarización}
+Como se describió anteriormente la polarización está definida por la trayectoria que describe el campo eléctrico o magnético sobre un plano, en función de esto la polarización se clasifica en: polarización lineal, circular, elíptica. En el siguiente grafico se ilustra de mejor manera dicha clasificación, en donde el campo eléctrico está representado por el color azul, los componentes X, Y por el color rojo y verde, el eje vertical representa el tiempo, y el color purpura es la trayectoria que describe el vector en el plano.
+\begin{figure}[htb]
+\begin{center}
+\includegraphics[scale = .9]{figuras/figura006.png}
+\caption{Tipos de Polarización \cite{suqui:2010}}
+\label{tipos-polarizacion}
+\end{center}
+\end{figure}
+\subsection{Usos de la Polarización}
+Cada vez que se realiza un radioenlace, necesitamos el uso de antemas para conseguir un mayor alcance para la señal a emitir, sin embargo, en el momento de instalarlas nos encontramos con la posibilidad de elegir entre una polarización horizontal o vertical, la diferencia está prácticamente que cuando se alineada verticalmente (el trozo de alambre recto), los electrones solo se mueven de arriba a abajo, no hacia los lados (porque no hay lugar hacia donde moverse) y por consiguiente los campos eléctricos solo apuntan hacia arriba o hacia abajo verticalmente. El campo que abandona el alambre y viaja como una onda tiene una polarización estrictamente lineal (y en este caso vertical). Por otra parte la polarización horizontal tendremos un movimiento de los electrones de izquierda a derecha, por lo tanto el campo que abandona el alambre viaja como una onda con polarización lineal horizontal.
+Cabe señalar que cuando se alinean dos antenas, así consigamos los mejores niveles de señal, y si estas no se encuentran polarizadas correctamente, no podremos transmitir información por el enlace
+\subsection{Características fundamentales de las ondas de radio}
+El comportamiento de las ondas dependerá del medio de transmisión, del tipo de información que se desee enviar, y de los equipos a utilizar. En resumen las características principales de las ondas de radio son:
+\begin{itemize}
+	\item La distancia que pueden llegar a recorrer, ya que dependerá de la potencia del equipo transmisor.
+	\item La cantidad de información que se podrá transmitir, esto dependerá de la cantidad de ondas que puedan entrar en un periodo de un segundo (frecuencia). Cuanto más rápida sea la oscilación o ciclo de la onda, mayor cantidad de información puede transportar.
+	\item Cuanto más corta sea la onda más alta será su frecuencia.
+	\item Las ondas con longitudes de onda más larga tienden a viajar más lejos que las que tienen longitudes de onda más cortas.
+	\item Las ondas más largas rodean los obstáculos. La distancia que una onda puede viajar depende de la relación entre la longitud de onda de la misma y el tamaño de los obstáculos en su camino de propagación.
+\end{itemize}
+\subsection{Reflexión Y Refracción De Ondas}
+Si bien es cierto las ondas electromagnéticas pueden viajar en el vacío, pero por lo general estas se propagan por un medio que puede ser elástico u homogéneo. Cuando las ondas viajan a través de un medio inicial, su trayectoria se ve afectada, produciéndose así los efectos conocidos como reflexión, refracción y dispersión de ondas.
+
+\subsection{Reflexión y Transmisión}
+Cuando una onda viaja, y esta se encuentra con otro tipo de superficie, la mayor parte de la onda incidente que se refleja sobre dicha superficie se conoce como reflexión. La reflexión puede ser de dos tipos: especular cuando la superficie de incidencia es lisa (el ángulo de incidencia es igual al reflejado), y difusa cuando la superficie de incidencia tiene imperfecciones. La reflexión y transmisión de perturbaciones oscilatorias es común tanto a las ondas mecánicas como a la luz y ondas electromagnéticas.\\
+Las dos leyes que resumen el fenómeno de la reflexión con respecto al medio de separación son:
+\begin{enumerate}[(I)] 
+ \item Cada rayo de la onda incidente y el rayo correspondiente de la onda reflejada están contenidos en un mismo plano, que es perpendicular a la superficie de separación entre los dos medios en el punto de incidencia.
+ \item El ángulo que forman el rayo incidente y el rayo reflejado con la recta perpendicular a la frontera son iguales. Estos ángulos se conocen, respectivamente, como ángulo de incidencia y ángulo de reflexión. Es decir, los rayos incidentes y reflejados se encuentran en el mismo plano, que es perpendicular al de incidencia, y forman un mismo ángulo con la normal en el punto de incidencia.
+\end{enumerate}
+\begin{figure}[htb]
+\begin{center}
+\includegraphics[scale = .9]{figuras/figura007.png}
+\caption{Rayo incidente y reflejado \cite{suqui:2010}}
+\label{incidente-reflejado }
+\end{center}
+\end{figure}
+\subsection{Refracción}
+Durante la transmisión de una onda cuando esta se encuentra con un segundo medio, parte de la onda se refleja, y resto es absorbida por el segundo medio (onda refractada), a este fenómeno se conoce con el nombre de refracción, resumiendo tenemos que la refracción se rige por dos leyes principales:
+\begin{enumerate}[(I)] 
+ \item Cada rayo de la onda incidente y el rayo correspondiente de la onda refractada forman un plano que es perpendicular a la superficie de separación entre los medios en el punto de incidencia.
+\item El ángulo que forma el rayo refractado con la normal, llamado ángulo de refracción, está relacionado con el ángulo de incidencia por una formula denominada ley de Snell, (1580-1626). Expresada matemáticamente esta ley indica que: los rayos incidentes y refractados están situados en un mismo plano, que es perpendicular al de la superficie de separación entre los medios. Los ángulos que determinan la dirección de propagación guardan entre sí una relación regida por la ley de Snell.\cite{ley:snell}
+\end{enumerate}
+\begin{figure}[htb]
+\begin{center}
+\includegraphics[scale = .9]{figuras/figura008.png}
+\caption{Rayo incidente y refractado \cite{suqui:2010}}
+\label{incidente-refractado }
+\end{center}
+\end{figure}
+\subsection{Dispersión}
+La velocidad de la luz en un medio dado depende de la longitud de onda. De este modo, al incidir sobre una superficie de separación con un mismo ángulo de incidencia, se refracta con un ángulo de refracción diferente para cada longitud de onda (y, por tanto, para cada frecuencia, que determina el color). Así, si se hace incidir un haz de luz blanca sobre una superficie de separación, cada color de la luz se refracta con un ángulo diferente, para formar un efecto de arco iris. Este fenómeno se denomina dispersión de la luz.
+
+\subsection{Difracción}
+Difracción es el comportamiento de las ondas cuando al incidir en un objeto dan la impresión de doblarse. Es el efecto de ?`ondas doblando las esquinas?. Imagine una onda en el agua viajando en un frente de onda plana, tal como una ola llegando a una playa oceánica. Ahora ponemos en su camino una barrera sólida, como una cerca de madera, para bloquearla. Luego practicamos una estrecha rendija en esa pared, como una pequeña puerta. Desde esta abertura va a comenzar una onda circular, y por supuesto va a alcanzar puntos que están en una línea directa detrás de esa abertura, pero también a ambos lados de ella. Si miramos este frente de onda, y pudiera ser también una onda electromagnética, como un haz de luz, sería difícil explicar cómo logra alcanzar puntos que están ocultos por una barrera. Este fenómeno se puede apreciar mejor en la siguiente figura:
+\begin{figure}[htb]
+\begin{center}
+\includegraphics[scale = .9]{figuras/figura009.png}
+\caption{Difracción a través de una ranura pequeña \cite{wireless:desarrollo}}
+\label{difraccion}
+\end{center}
+\end{figure}
+
+Se debe tener en cuenta que en la difracción se genera una pérdida de potencia, la potencia de la onda difractada es significativamente menor que el frente de onda que la provoca. Pero en algunas aplicaciones muy específicas, se puede aprovechar el efecto de difracción para rodear obstáculos.
+Interferencia de ondas electromagnéticas\\
+Es fenómeno se produce cuando dos ondas de la misma frecuencia avanzan más o menos en la misma dirección y tienen una diferencia de fase que permanece constante en el transcurso del tiempo, pueden combinarse de tal manera que su energía no se distribuye uniformemente en el espacio, sino que es máxima en ciertos puntos y mínima en otros 
+\begin{figure}[htb]
+\begin{center}
+\includegraphics[scale = .9]{figuras/figura010.png}
+\caption{Interferencia de ondas: constructiva (izquierda) y destructiva (derecha)\cite{wireless:desarrollo}}
+\label{constructiva-destructiva}
+\end{center}
+\end{figure}
+Los múltiples sistemas radio eléctricos existentes en nuestro medio operan sobre un único rango de frecuencias, y para poder tener acceso a él es necesario obtener un permiso previo de la entidad encargada de administrar el espectro en cada país. Los sistemas radioeléctricos actuales pueden soportar varias interfaces permitiendo incorporar diferentes equipos de radioenlaces a una red ya instalada. La información de un sistema de radioenlaces se difunde desde un transmisor hacia un receptor por medio de una frecuencia fija.
+\begin{figure}[htb]
+\begin{center}
+\includegraphics[scale = .9]{figuras/figura011.png}
+\caption{Longitud de onda, amplitud, y frecuencia \cite{wireless:desarrollo}}
+\label{amplitud-frecuencia}
+\end{center}
+\end{figure}
+\subsection{Transmisión y Recepción}
+Para conseguir la propagación de las ondas electromagnéticas, se sigue todo un proceso que inicia en el emisor cuya función es la de producir una onda portadora, en donde características son modificadas dependiendo del tipo de señal a transmitir, una vez que se ha propagado la onda a través de una frecuencia fija, el receptor capta la onda y la desmodula con el fin de obtener así la señal original.
+
+En el sistema de modulación de amplitud (\Gls{am}), la señal (de baja frecuencia) se superpone a la amplitud de ondas hertzianas portadora (de alta frecuencia). En el sistema de modulación de frecuencia (\Gls{fm}), la amplitud de la onda portadora se mantiene constante, pero la frecuencia varía según la cadencia de las señales moduladoras. Este sistema permite eliminar parásitos e interferencias, y reproduce el sonido con mayor fidelidad.
+
+\subsection{Usos de la radiofrecuencia}
+Originalmente los sistemas de radiofrecuencia se utilizaron para la comunicación naval, hoy en día, este término abarca muchas más aplicaciones entre las cuales se incluye las redes inalámbricas, comunicaciones móviles de todo tipo, y la radiodifusión.
+A continuación describiremos más detalladamente en que aplicaciones se usa los sistemas de radio frecuencia.
+
+\begin{itemize}
+\item Audio
+\begin{itemize}
+	\item Transmisión voz y servicios interactivos con el sistema de radio Digital
+	\item Servicios civiles y militares en alta frecuencia (HF) en la banda de Onda Corta, para comunicación con barcos en alta mar y con poblaciones o instalaciones aisladas y a muy largas distancias.
+	\item Sistemas telefónicos celulares digitales para uso cerrado (policía, defensa, ambulancias, etc.) Distinto de los servicios públicos de telefonía móvil.
+\end{itemize}
+\item Telefonía
+\item Video
+\item Navegación
+\item Servicios de emergencia
+\item Transmisión de datos por radio digital
+\end{itemize}
+\subsection{Características y tipos de enlaces}
+Una vez conocido como se propaga las ondas en nuestro medio, debemos tener en cuenta algunas características con respecto a un enlace inalámbrico, desde que es, como funciona, y hasta los factores que debemos considerar para establecer un enlace.
+
+\subsection{Propagación radioeléctrica}
+La propagación a través del espacio dependerás de la superficie de la tierra, su forma y su constitución (mar, tierra cultivada, desierto, etc.), y la atmósfera, tanto la troposfera como la ionosfera.
+\begin{figure}[htb]
+\begin{center}
+\includegraphics[scale = .9]{figuras/figura012.png}
+\caption{Propagación de las ondas sobre la superficie terrestre \cite{propa:onda}}
+\label{ondas-superficie}
+\end{center}
+\end{figure}
+
+Cuando la señal se transmite esta viaja en todas direcciones, aunque la energía sigue la curvatura de la tierra, es decir que la propagación está relacionada directamente con la banda de frecuencia en la que se trabaja.
+\begin{itemize}
+	\item En frecuencias inferiores a 30 \Gls{khz}, existe un mecanismo de propagación por guía-ondas tierra ionosfera.
+	\item En frecuencias desde 10KHz y hasta 3 \Gls{mhz} el principal mecanismo de propagación utilizado es la onda de superficie.
+	\item En frecuencias por encima de 3 MHz (1 MHz) y hasta unos 30 MHz el mecanismo fundamentalmente utilizado es la onda ionosférica. Por reflexión ionosférica se consiguen enlaces de hasta 4000 Km en un solo salto, y más por múltiples reflexiones ionosfera tierra (mar).
+	\item En frecuencias por encima de unos 30 MHz, el principal mecanismo es la onda espacial. Debido a la curvatura de la superficie terrestre, a partir del horizonte el mecanismo posible de propagación son las ondas difractadas, que a estas frecuencias tienen alcances muy pequeños.
+	\item A partir de 40 o 50 MHz la ionosfera no refleja las ondas electromagnéticas por lo que puede utilizarse para comunicaciones extraterrestres.
+\end{itemize}
+\subsection{Sistemas de radiocomunicaciones inalámbricas}
+La comunicación inalámbrica inicio con la postulación de las ondas electromagnéticas por James Clerk Maxwell (1860), la demostración de la existencia de estas ondas fueron confirmadas por Heinrich Rudolf Hertz (1880), y con la invención del telégrafo inalámbrico por Guillermo Marconi. Pero no fue sino hasta el año de 1896 en donde se concedió la primera patente de comunicaciones inalámbricas a Guillermo Marconi en el Reino Unido. Desde aquel momento, entonces el número de desarrollos en el campo de las comunicaciones inalámbricas tomaron ese sitio. La comunicación inalámbrica fue un suceso novedoso y muy importante ya que este permitió cruzar barreras a la que las conexiones guiadas nos mantenían atadas, especialmente por las distancias que se podía conseguir con estas.\cite{radio:2009}\\
+Un enlace inalámbrico es aquel que no necesita de un medio guiado para la transmisión de información, este presenta grandes ventajas frente a la conexión por cable, ya que su instalación puede llegar a lugares geográficos imposible para una red cableada, con la facilidad de transportar datos y voz. En la actualidad las redes inalámbricas ofrecen igual o hasta mejor confiablidad, calidad y velocidad en comparación con algunas conexiones de Internet vía satélite, estos enlaces se realizan desde un punto donde exista la posibilidad de contratar un acceso a Internet hasta el punto donde sea necesaria dicha conexión.
+
+\subsection{Línea de vista directa}
+El término línea vista, a menudo abreviada como LOS (por su sigla en inglés, Line of Sight), es fácil de comprender cuando se habla acerca de la luz visible, si podemos ver un punto B desde un punto A donde estamos, tenemos línea de vista directa. La línea visual que necesitamos para tener una conexión inalámbrica optima desde un punto A hasta otro B, es más que simplemente una línea delgada, su forma es más bien la de un cigarro, un elipsoide. Su ancho puede ser descrito por medio del concepto de zonas de Fresnel.
+
+\subsection{La Zona de Fresnel}
+La teoría exacta de las zonas de Fresnel es algo complicada. Sin embargo el concepto es fácilmente entendible, se sabe por el principio de Huygens que por cada punto de un frente de onda comienzan nuevas ondas circulares, por ende se sabe que los haces de microondas se ensanchan. También que las ondas de una frecuencia pueden interferir unas con otras. La teoría de zona de Fresnel simplemente examina a la línea desde A hasta B y luego al espacio alrededor de esa línea que contribuye a lo que está llegando al punto B. Algunas ondas viajan directamente desde A hasta B, mientras que otras lo hacen en trayectorias indirectas. Consecuentemente, su camino es más largo, introduciendo un desplazamiento de fase entre los rayos directos e indirectos. Siempre que el desplazamiento de fase es de una longitud de onda completa, se obtiene una interferencia constructiva, las señales se suman óptimamente. Tomando este enfoque, y haciendo los cálculos, se encuentra con que hay zonas anulares alrededor de la línea directa de A hacia B que contribuyen a que la señal llegue al punto B. Se debe tener en cuenta que existen muchas zonas de Fresnel, pero para este caso interesa principalmente la zona 1. Si ésta fuera bloqueada por un obstáculo, por ejemplo un árbol o un edificio, la señal que llegue al destino lejano será atenuada. Entonces, cuando se planea enlaces inalámbricos, se debe estar seguro de que esta zona va estará libre de obstáculos. En la práctica de redes inalámbricas ya se puede trabajar con que al menos el 60 por ciento de la primera zona de Fresnel esté libre.\cite{ipvideo:2014}\\
+\begin{figure}[htb]
+\begin{center}
+\includegraphics[scale = .9]{figuras/figura013.png}
+\caption{La zona de Fresnel está bloqueada parcialmente en este enlace aunque la línea visual (line of sight) no está obstruida \cite{wireless:desarrolo}}
+\label{zona-fresnel}
+\end{center}
+\end{figure}
+La siguiente ecuación es la fórmula para calcular la primera zona de Fresnel:\\
+\begin{equation}
+r=17.31*\sqrt{(((d1*d2)/( f*d)))}
+\end{equation}
+
+Donde r es el radio de la primera zona en metros, d1 y d2 son las distancias desde el obstáculo a los extremos del enlace en metros, d es la distancia total del enlace en metros, y f es la frecuencia en MHz. Note que esta fórmula calcula el radio de la zona. Para calcular la altura sobre el terreno, debe sustraerse este resultado de una línea trazada directamente entre la cima de las dos torres.
+
+\subsection{Energía}
+La potencia P es clave para lograr que los enlaces inalámbricos funcionen, se necesita cierto mínimo de potencia para que el receptor le dé sentido a la señal. Ahora vamos a discutir brevemente cómo se define y calcula la potencia P. El campo eléctrico se mide en \Gls{v/m} , la potencia contenida en él es proporcional al campo eléctrico al cuadrado, expresado en la ecuación.
+
+\begin{equation}
+P \approx E^2
+\end{equation}
+En la práctica, se mide la potencia por medio de algún tipo de receptor, por ejemplo una antena y un voltímetro, un medidor de potencia, un osciloscopio, o inclusive una tarjeta inalámbrica y una computadora portátil. La potencia es proporcional al cuadrado del voltaje de la señal.
+
+\subsection{Cálculo en dBs}
+La técnica sin duda más importante para calcular la potencia es por decibeles (\gls{db}). No hay física nueva en esto, es solamente un método conveniente que hace que los cálculos sean muy simples. El decibel es una unidad sin dimensión, es decir, define la relación entre dos medidas de potencia. Se define como en la ecuación:
+
+\begin{equation}
+dB = 10 * log(P1/P0)
+\end{equation}
+
+Donde $P1$ y $P0$ pueden ser de los dos valores cualesquiera que se quiere comparar. Típicamente, en este caso, se tratará de potencia.\\
+Aquí hay algunos valores utilizados comúnmente que es importante recordar:\\
+\begin{itemize}
+\item +3 dB = doble potencia
+\item -3 dB = potencia media
+\item +10 dB = orden de magnitud (10 veces la potencia)
+\item -10 dB = un décimo de potencia
+\end{itemize}
+Además de los dBs a dimensionales, hay cierto número de definiciones relacionadas que están basadas en una referencia P0 fija. Los más relevantes para nosotros son:\\
+\begin{itemize}
+\item dBm relativo a P0 = 1 mW
+\item dBi relativo a una antena isotrópica ideal
+\end{itemize}
+Una antena isotrópica es una antena hipotética que distribuye uniformemente la potencia en todas direcciones. La antena que más se aproxima a este concepto es el dipolo, pero una antena isotrópica perfecta no puede ser construida en la realidad. El modelo isotrópico es útil para describir la ganancia de potencia relativa de una antena real.
+\subsection{Ventajas de un enlace inalámbrico}
+A continuación se da a conocer algunas ventajas de este tipo de redes permitiendo comprender cuál es su alcance real.
+\begin{itemize}
+	\item Accesibilidad: en la actualidad existen equipos que permiten enlazar zonas geográficas imposibles de llegar con una red cableada, o que simplemente resultaría costoso, permitiendo a un usuario final tener acceso a esta red, siempre y cuando se encuentre dentro del área de cobertura, lugar en donde se encuentran los equipos de difusión.
+	\item Movilidad: especialmente para los usuarios que disponen de una línea celular, permitiéndoles acceder a la red, cuando este en movimiento y desde cualquier lugar siempre y cuando este en un lugar en donde haya cobertura.
+	\item Productividad: El poder tener acceso a la información permite disminuir la brecha digital existente en algunos sectores. El Internet en la actualidad es una herramienta fundamental en cada negocio, porque esta no solo permite establecer una comunicación, sino que también la mayoría de transacciones se las hace a través del internet.
+	\item Fácil Instalación: El hecho de no utilizar un medio guiado, la instalación se la puede realizar en un tiempo más corto, y por ende resultará más rentable.
+	\item Escalabilidad: A medida que una empresa crece, necesita también ampliar su cobertura, como es el caso de los I.S.P. que generalmente su área de cobertura no se ve limitado, y conforme crecen pueden expandirse a otros sectores, con solo establecer el nuevo punto de enlace para poder llegar con el servicio al usuario que lo necesite.
+	\item Seguridad: Las instalaciones inalámbricas son fáciles de monitorear, y por ende poseen seguridades sólidas, permitiendo únicamente al personal capacitado, poder acceder a estas.
+	\item Costos: Con una red inalámbrica se puede reducir los costes, ya que se eliminan o se reducen los costes de cableado durante los traslados configuraciones o expansiones.
+\end{itemize}
+\subsection{Estructura de un radio enlace}
+Un radio enlace está constituido por estaciones terminales y repetidoras intermedias, con equipos transceptores, antenas y elementos de supervisión y reserva. Además de las estaciones repetidoras, existen las estaciones nodales donde se desmodula la señal y de la baja a banda base y en ocasiones se extraen o se insertan canales. Al tramo terminal estación nodal se lo denomina sección de conmutación y es una entidad de control, protección y supervisión.
+En cuanto a los repetidores se los puede clasificar en activos o pasivos.
+\begin{itemize}
+	\item Activos: En ellos se recibe la señal en la frecuencia de portadora y se la baja a una frecuencia intermedia (FI) para amplificarla y retransmitirla en la frecuencia de salida. No hay demodulación y son transceptores.
+	\item Pasivos: Se comportan como espejos que reflejan la señal y se los puede dividir en pasivos convencionales, que son una pantalla reflectora y los pasivos back-back, que están constituidos por dos antenas espalda a espalda. Se los utiliza en ciertos casos para salvar obstáculos aislados y de corta distancia.
+\end{itemize}
+Los enlaces son estructuralmente sistemas en serie, de tal manera que si uno falla se pierde la comunicación a través de la red. Por ello se le exige los equipos en cada nodo posean una alta disponibilidad y confiabilidad Esto también implica que utilicen sistemas de supervisión y control de alto rendimiento para detectar fácilmente una falla en el sistema.
+Conceptos de diseño
+Como se mencionó anteriormente la forma de garantizar el correcto funcionamiento del enlace es necesario que entre dos puntos a conectar exista línea de vista directa, es decir que entre el enlace exista una altura libre de obstáculos para la adecuada propagación en toda época del año, tomando en cuenta las variaciones de las condiciones atmosféricas de la región. Para poder calcular las alturas libres debe conocerse la topografía del terreno, así como la altura y ubicación de los obstáculos que puedan existir en el trayecto.
+El diseño de un radio enlace se puede resumir en los siguientes pasos:
+\begin{itemize}
+	\item Definir el modo de transmisión, es decir en condiciones de visibilidad directa, este puede ser punto a punto o transmisión omnidireccional.
+	\item Tener en cuenta los diferentes factores que pueden degradar nuestra señal como por ejemplo el ruido.
+	\item El alcance deseado dependerá especialmente de la potencia de los equipos a transmitir.
+	\item Tener en cuenta bajo qué condiciones se producirá las pérdidas o atenuación de la señal.
+\end{itemize}
+Una vez analizado la parte técnica, para la implementación del enlace se debe considerar:
+\begin{itemize}
+	\item Elección del sitio de instalación.
+	\item Relevamiento del perfil del terreno y cálculo de la altura del mástil para la antena.
+	\item Cálculo completo del radio enlace, estudio de la trayectoria del mismo y los efectos a los que se encuentra expuesto.
+	\item Prueba posterior a la instalación del radio enlace, y su posterior puesta en servicio con tráfico real.
+\end{itemize}
+\subsection{Enlaces Punto - Punto}
+Las redes punto a punto son aquellas que responden a un tipo de arquitectura de red en las que cada canal de datos se usa para comunicar únicamente dos nodos. En una red punto a punto, los dispositivos en red actúan como socios iguales, o pares entre sí. Los enlaces que interconectan los nodos de una red punto a punto se pueden clasificar en tres tipos según el sentido de las comunicaciones que transportan:
+\begin{itemize}
+	\item Simplex: La transacción sólo se efectúa en un solo sentido.
+	\item Half-dúplex: La transacción se realiza en ambos sentidos, pero de forma alternativa, es decir solo uno puede transmitir en un momento dado, no pudiendo transmitir los dos al mismo tiempo.
+	\item Full-Dúplex: La transacción se puede llevar a cabo en ambos sentidos simultáneamente.\end{itemize}
+Cuando la velocidad de los enlaces Semi-dúplex y Dúplex es la misma en ambos sentidos, se dice que es un enlace simétrico, en caso contrario se dice que es un enlace asimétrico. 
+\begin{figure}[htb]
+\begin{center}
+\includegraphics[scale = .9]{figuras/figura014.png}
+\caption{Enlace Punto - Punto \cite{wireless:desarrolo}}
+\label{punto-punto}
+\end{center}
+\end{figure}
+Los enlaces punto - punto pueden conseguir un mayor alcance utilizando antenas de grilla o plato tanto en el receptor como en el transmisor, permitiendo expandir a una red de forma fácil y rápida. La velocidad de transferencia conseguida con estos tipos de enlaces tiene un promedio 20Mbytes, sin ninguna dificultad.
+
+\subsection{Enlaces Punto - Multipunto}
+El enlace punto a multipunto es la versión del punto a punto para la conexión rápida y fiable de más de dos instalaciones. Para reducir costes, este sistema consta de una instalación central dotada de una antena multidireccional, a la que apuntan las antenas direccionales del resto de centros. Esto permite una capacidad igual a la del punto a punto, pero extensible hasta a 16 centros.
+\begin{figure}[htb]
+\begin{center}
+\includegraphics[scale = .9]{figuras/figura015.png}
+\caption{Enlace Punto Multipunto \cite{wireless:desarrolo}}
+\label{enlace-punto-multipunto}
+\end{center}
+\end{figure}
+Algunas de las aplicaciones de este tipo de redes permiten:
+\begin{itemize}
+	\item Mantener una constante comunicación con las diferentes sucursales de una empresa, permitiéndome compartir base de datos, acceso, etc.
+	\item Implementar redes de voz sobre IP, permitiéndome reducir costos de llamadas entre sucursales.
+	\item Venta de acceso a Internet (I.S.P.).
+	\item Monitoreo a través de cámaras de vigilancia.
+\end{itemize}
+\subsection{Conexión De Rejilla O Malla}
+La siguiente configuración es una consecuencia de las dos anteriores usada especialmente en redes inalámbricas privadas. Es configuración conocida como rejilla o malla en donde cada punto o nodo puede trasmitir a cualquier otro que esté disponible o accesible. Esta configuración es muy flexible ya que permite a un nodo trasmitir a otro vía cualquier otro nodo.
+\begin{figure}[htb]
+\begin{center}
+\includegraphics[scale = .9]{figuras/figura016.png}
+\caption{Conexión Malla \cite{wireless:desarrolo}}
+\label{conexion-malla}
+\end{center}
+\end{figure}
+\subsection{Distribución De Acceso Inalámbrico (HotSpot)}
+La distribución HotSpot, no es un tipo de enlace, sino más bien parte de uno. El HotSpot consiste en puntos de conexión en zonas públicas o privadas como aeropuertos, parques, institutos educativos, restaurantes, etc., permitiendo que el usuario que disponga de un equipo WIFI acceda al internet banda ancha. Los HotSpots permiten que el acceso inalámbrico sea una realidad mucho más compleja y extensible que el Internet que hoy se conoce. No se trata solo de estar en un lugar físicamente y poder conectarte a la Red sin el cable, es mucho más. El concepto lleva a que Internet, la oficina, la empresa, se va con el usuario, por lo que se puede arriesgar a pensar en una incursión similar a la del móvil.
+
+\subsection{Sistemas de microondas}
+El control de tráfico aéreo, navegación marina, control de misiles, aviación, telecomunicaciones, son algunas de las aplicaciones de las microondas, en la actualidad las frecuencias de microondas son utilizadas cada vez más en telecomunicaciones, cuando se utilizan antenas repetidoras, necesarias a lo largo de un camino o trayecto de comunicación. Las microondas comprenden frecuencias que trabajan en el rango de los 109 a 1012 Hertz, que corresponden a longitudes de onda que van de los 30 cm. (centímetros) a 0.3 mm. (Milímetros). Estas longitudes de onda son del mismo orden de magnitud que las dimensiones de los circuitos empleados en su generación. La transmisión en un sistema de microondas se utiliza para cubrir distancias mayores, el receptor recibe la señal enviada por un transmisor en una frecuencia inicial, la convierte a sus propiedades eléctricas y la retransmite a otra estación de microonda, en algunos casos puede hacerlo cambiando de frecuencia para retransmitir.\cite{sistema:micro}
+\subsection{Radiocomunicaciones por satélite}
+Podemos definir a la comunicación por satélite como: ``un repetidor radioeléctrico ubicado en el espacio, recibe señales generadas en la tierra, las amplifica y las vuelve a enviar a la tierra''. Un satélite ofrece grandes ventajas con respecto a otros sistemas, entre los más importantes está mayor potencia de transmisión y mayor área de cobertura. La transmisión por satélite se ha utilizado comúnmente en nuestro medio, para comunicaciones de larga distancia, y comunicaciones internacionales transatlánticas. Pero el elevado costo que implica el disponer de una estación terrestre, equipos electrónicos para la conexión satelital, ocasionan que el usuario opte por otro medio de comunicación como la microonda, fibra ópticas, radioenlaces, etc., cuyos costos de instalación son mucho menores cada día, mientras que los costos para un enlace satelital se mantienen siempre elevados. Con los sistemas por satélite se dispone de gran cantidad de ancho de banda puesto que el espectro de frecuencias puede asignarse a una base de acceso fijo o bajo demanda. Puesto que la señal se debe transmitir al satélite situado a 22300 millas, el costo de alquiler de un canal no es sensible a la distancia, por lo que las ventajas que presentan los satélites en el momento de transmisión, pesan más que los inconvenientes que ocasionan.\\
+Con respecto a las desventajas, cabe citar el elevadísimo costo inicial, el cual solo podría ser afrontado mediante la gestión de grandes emprendimientos, aunque puede considerarse que no constituye obstáculo insalvable, sino que el principal inconveniente estaría dado en la necesidad de tomar una decisión política a través de la cual, se superen intereses sectoriales y contradictorios en lo que atañe a este tema, y se implemente definitivamente el sistema teniendo en miras fundamentalmente el bien de toda la comunidad.\cite{comunicacion:satelite}
+\subsection{Red Privada}
+Las redes de datos interconectaban, en un principio en forma local, las computadoras personales de una organización, permitiendo compartir la información, y el trabajo en grupo de una forma más ágil y eficiente. Sin embargo esto requirió considerar el aspecto de la seguridad, ya que si bien se trabajaba en un mismo ámbito, es decir dentro de la misma empresa, no todos los usuarios debían acceder a los datos por igual. Este esquema funcionó para pequeñas organizaciones, pero para aquellas cuyas estructuras, incluida sitios geográficamente alejados, surgió la necesidad de interconectar también dichos lugares.\\
+
+La solución vino de la mano de los proveedores de servicio de red de área amplia de datos o \Gls{wan}, a través de la contratación de enlaces dedicados, los cuales conectaban las redes distantes con la red central. Esta solución implicaba un costo, que resultó prohibitivo para la mayoría, excepto para aquellos que podían abonar un costo fijo de contratación más un valor que variaba proporcionalmente a la distancia existente entre los sitios a interconectar (mile-age fee). En la actualidad existen tecnologías WAN (Frame Relay, ATM) donde el costo está en función del caudal de datos o ancho de banda comprometido del enlace, que una organización está dispuesta a pagar, sin considerar ya la distancia geográfica. De esta forma se cuenta con una red privada o estructura de comunicación propia, en el sentido de que el control y la administración de la red están bajo el dominio de la organización. Las políticas de uso, los servicios suministrados, los medios activos y pasivos de comunicación por donde fluyen los datos están bajo un control propio. Si bien las comunicaciones de área amplia son suministradas por un proveedor, este se compromete a respetar los requerimientos de la organización cliente, además, los datos que atraviesan su red, no estarán al alcance de otros clientes.
+\subsection{Red Pública}
+Uno de los eventos más importantes que acompañó al desarrollo de las redes en las organizaciones, fue la rápida evolución de la mayor de las redes IP existentes, Internet. Esta se define como un sistema cooperativo de interconexión de redes que suministra un servicio de comunicación universal. De esta manera satisface la necesidad de los usuarios de comunicar dos puntos cualesquiera, también denominados sistemas o nodos finales, pudiendo acceder a recursos más allá de los disponibles en un único sistema y ubicados fuera de los límites de la red local. Los datos atraviesan redes intermedias hasta llegar a su destino, en una operación no orientada a la conexión, mediante el uso de equipos especiales denominados routers, también conocidos como sistemas o nodos intermedios. La naturaleza no orientada a la conexión de Internet, significa que no hay una ruta preestablecida o circuito virtual dedicado entre los sistemas que se comunican, tampoco niveles de servicio, priorización o separación de tráfico que puedan aplicarse a los datos que se transmiten.\\
+La función de los routers es interconectar al menos dos redes, transfiriendo paquetes desde una red a otra. Estas pertenecen a diversas organizaciones y proveedores. Esto convierte a Internet en una red pública, en el sentido de que son muchos los que participan en su conformación y los medios de transmisión son compartidos. Dependerá de quien utilice la infraestructura de Internet para comunicar dos sistemas finales, tomar las medidas de seguridad apropiadas para asegurar la confidencialidad, autenticidad, integridad y no repudio de los datos transmitidos.\cite{red:vpn}
+\subsection{Red Privada Virtual}
+El funcionamiento de algunas organizaciones, determinaron la necesidad de permitir el acceso a la red propia a usuarios que se encontraban geográficamente fuera de los límites de ésta. Éstos requerían desplazarse con frecuencia y en algún momento acceder a sus archivos en la red local, revisar su correo electrónico o utilizar un sistema de información. En un principio se utilizaron servicios de acceso remoto mediante la implementación de servidores para tal fin o RAS (Remote Access Server), el uso de líneas discadas para la conexión y pools de módems para atender las llamadas. Toda esta infraestructura era costeada por la organización la cual era responsable de su administración y mantenimiento. Si bien se solucionaba el problema de acceso a la red local, se lograba a un costo económicamente alto.\\
+Otra necesidad fue la de encontrar una alternativa más económica de interconectar diversas redes entre sí y ya no solamente las de una misma organización, sino redes de diferentes organizaciones. Razones de política estratégica justificaban este desafío, ya sea a nivel empresarial, universitario o gubernamental. Ambos requerimientos tuvieron su solución a partir de la idea de utilizar Internet, teniendo en cuenta su alcance global y su capacidad de entrega de datos a casi cualquier sistema final a un bajo costo. Dado que se utiliza Internet para transmitir datos, no hay garantía de que estos no puedan ser captados por terceros. También es claro que los sistemas finales que se comunican están expuestos.\\
+En la actualidad no solo se considera a Internet como medio donde una organización puede implementar una VPN. Los proveedores de servicios de comunicaciones o SP (Service Provider) ofrecen servicios de VPN de acuerdo a las necesidades del cliente a través de su red backbone. Un SP puede administrar múltiples VPNs pertenecientes a varios clientes operando a través de su backbone.
+
+

@@ -1,0 +1,290 @@
+\fancyhead{}
+\fancyfoot{}
+
+
+\lhead{Anexo A.}
+%\rhead{\today}
+%\rfoot{\thepage}
+
+\chapter{Anexo A.}
+
+\section{Configuraciones del MK1}
+\begin{verbatim}
+# mar/02/2016 19:28:43 by RouterOS 6.15
+# software id = SLWX-PKH2
+/ip firewall nat
+ add action=masquerade chain=srcnat
+/system identity
+ set name=MK1
+/ip address
+ add address=192.168.0.1/24 interface=ether5 network=192.168.0.0
+ add address=10.0.0.1/24 interface=ether2 network=10.0.0.0
+/ppp secret
+ add local-address=11.0.0.1 name=vpn1 password=vpn1 \
+ remote-address=11.0.0.2 routes="192.168.1.0/24 11.0.0.2 1"
+ add local-address=12.0.0.1 name=vpn2 password=vpn2 \
+ remote-address=12.0.0.2 routes="192.168.1.0/24 12.0.0.2 1"
+/interface pptp-server server
+ set enabled=yes max-mru=1460 max-mtu=1460
+/interface wireless security-profiles
+ set [ find default=yes ] supplicant-identity=MikroTik
+ add authentication-types=wpa-psk,wpa2-psk eap-methods="" \
+ management-protection=allowed mode=dynamic-keys name=profile1 \
+ supplicant-identity="" wpa-pre-shared-key="123.123.!" \
+ wpa2-pre-shared-key="123.123.!"
+/user
+ add comment="system default user" group=full name=admin
+/interface wireless security-profiles
+ set [ find default=yes ] supplicant-identity=MikroTik
+ add authentication-types=wpa-psk,wpa2-psk eap-methods="" \
+ management-protection=allowed mode=dynamic-keys name=profile1 \
+ supplicant-identity="" wpa-pre-shared-key="123.123.!" \
+ wpa2-pre-shared-key="123.123.!"
+/interface wireless
+ set [ find default-name=wlan1 ] disabled=no l2mtu=2290 \
+ security-profile=profile1 ssid=Azureos
+\end{verbatim}
+\section{Configuraciones del MK2}
+\begin{verbatim}
+# mar/02/2016 19:08:54 by RouterOS 6.32.1
+# software id = U9B0-UXDW
+#
+/system identity
+ set name=MK2
+ 
+/interface bridge
+ add name=bridge1
+ 
+/interface bridge port
+ add bridge=bridge1 interface=ether1
+ add bridge=bridge1 interface=ether2
+ add bridge=bridge1 interface=wlan1
+/interface bridge port
+ add bridge=bridge1 interface=ether1
+ add bridge=bridge1 interface=ether2
+ add bridge=bridge1 interface=wlan1
+ 
+/ip address
+ add address=10.0.0.2/24 interface=bridge1 network=10.0.0.0
+/interface wireless security-profiles
+ set [ find default=yes ] supplicant-identity=MikroTik
+ 
+/user
+ add comment="system default user" group=full name=admin
+/interface wireless
+ set [ find default-name=wlan1 ] disabled=no l2mtu=1600 \
+ mode=ap-bridge ssid=Link01 wds-default-bridge=bridge1 \
+ wds-mode=dynamic
+ 
+/interface wireless security-profiles
+ set [ find default=yes ] supplicant-identity=MikroTik
+\end{verbatim}
+\section{Configuraciones del MK3}
+\begin{verbatim}
+# mar/02/2016 19:09:40 by RouterOS 5.26
+# software id = IKF9-H3ZS
+#
+/system identity
+ set name=MK3
+
+/interface bridge
+ add admin-mac=00:00:00:00:00:00 ageing-time=5m arp=enabled \
+ auto-mac=yes disabled=no forward-delay=15s l2mtu=1522 \
+ max-message-age=20s mtu=1500 name=bridge1 priority=0x8000 \
+ protocol-mode=none transmit-hold-count=6
+ 
+/interface bridge port
+ add bridge=bridge1 disabled=no edge=auto external-fdb=auto \
+ horizon=none interface=wlan1 path-cost=10 point-to-point=auto \
+ priority=0x80
+ add bridge=bridge1 disabled=no edge=auto external-fdb=auto \
+ horizon=none interface=ether2 path-cost=10 point-to-point=auto \
+ priority=0x80
+ add bridge=bridge1 disabled=no edge=auto external-fdb=auto \
+ horizon=none interface=ether3 path-cost=10 point-to-point=auto \
+ priority=0x80
+ add bridge=bridge1 disabled=no edge=auto external-fdb=auto \
+ horizon=none interface=ether1 path-cost=10 point-to-point=auto \
+ priority=0x80
+ 
+/interface bridge settings
+ set use-ip-firewall=no use-ip-firewall-for-pppoe=no \ 
+ use-ip-firewall-for-vlan=no
+/interface bridge port
+ add bridge=bridge1 disabled=no edge=auto external-fdb=auto \
+ horizon=none interface=wlan1 path-cost=10 point-to-point=auto \
+ priority=0x80
+ add bridge=bridge1 disabled=no edge=auto external-fdb=auto \
+ horizon=none interface=ether2 path-cost=10 point-to-point=auto \
+ priority=0x80
+ add bridge=bridge1 disabled=no edge=auto external-fdb=auto \
+ horizon=none interface=ether3 path-cost=10 point-to-point=auto \
+ priority=0x80 
+ add bridge=bridge1 disabled=no edge=auto external-fdb=auto \
+ horizon=none interface=ether1 path-cost=10 point-to-point=auto \
+ priority=0x80
+ 
+/ip dns
+ set allow-remote-requests=no cache-max-ttl=1w cache-size=2048KiB \
+ max-udp-packet-size=4096 servers=""
+
+/ip address
+ add address=10.0.0.3/24 disabled=no interface=bridge1 \
+ network=10.0.0.0
+/interface pptp-server server
+ set authentication=mschap1,mschap2 default-profile=default-\
+ encryption enabled=no keepalive-timeout=30 max-mru=1460 max-\
+ mtu=1460 mrru=disabled
+ 
+/interface wireless security-profiles
+ set [ find default=yes ] authentication-types="" eap-met\
+ hods=passthrough group-ciphers=aes-ccm group-key-update=5m\
+ interim-update=0s \
+ management-protection=disabled management-protection-key=""\
+ mode=none \
+ name=default radius-eap-accounting=no radius-mac-accounting=no \
+ radius-mac-authentication=no radius-mac-caching=disabled \
+ radius-mac-format=XX:XX:XX:XX:XX:XX radius-mac-mode=as-username \
+ static-algo-0=none static-algo-1=none static-algo-2=none static-\
+ algo-3=none static-key-0="" static-key-1="" static-key-2="" \
+ static-key-3=""static-sta-private-algo=none static-sta-private-\
+ key="" static-transmit-key=key-0 supplicant-identity=MikroTik \
+ tls-certificate=none tls-mode=no-certificates unicast-ciphers=\
+ aes-ccm wpa-pre-shared-key="" wpa2-pre-shared-key=""
+
+/user group
+ set read name=read policy="local,telnet,ssh,reboot,read\
+ ,test,winbox,password,web,sniff,sensitive,api,!ftp,!write\
+ ,!policy" skin=default
+ set write name=write policy="local,telnet,ssh,reboot,read,\
+ write,test,winbox,password,web,sniff,sensitive,api,!ftp,!po\
+ licy" skin=default set full name=full policy="local,telnet,\
+ ssh,ftp,reboot,read,write,policy,test,winbox,password,web,sn\
+ iff,sensitive,api" skin=default
+ 
+/user
+ add address="" comment="system default user" disabled=no \
+ group=full name=admin
+/user aaa
+ set accounting=yes default-group=read exclude-groups="" \
+ interim-update=0s use-radius=no
+
+/interface wireless security-profiles
+ set [ find default=yes ] authentication-types="" eap-\
+ methods=passthrough group-ciphers=aes-ccm group-key-\
+ update=5m interim-update=0s management-protection=disa\
+ bled management-protection-key="" mode=none name=default \
+ radius-eap-accounting=no radius-mac-accounting=no radius-\
+ mac-authentication=no radius-mac-caching=disabled radius-\
+ mac-format=XX:XX:XX:XX:XX:XX radius-mac-mode=as-username \
+ static-algo-0=none static-algo-1=none static-algo-2=none \
+ static-algo-3=none static-key-0="" static-key-1="" static\
+ -key-2="" static-key-3="" static-sta-private-algo=none \
+ static-sta-private-key="" static-transmit-key=key-0 suppl\
+ icant-identity=MikroTik tls-certificate=none tls-mode=no-\
+ certificates unicast-ciphers=aes-ccm wpa-pre-shared-key=\
+ "" wpa2-pre-shared-key=""
+/interface wireless
+ set 0 adaptive-noise-immunity=none allow-sharedkey=no \
+ antenna-gain=0 antenna-mode=ant-a area="" arp=enabled \
+ band=5ghz-a basic-rates-a/g=6Mbps bridge-mode=enabled \
+ burst-time=disabled channel-width=20mhz compression=\
+ no country=no_country_set default-ap-tx-limit=0 \
+ default-authentication=yes default-client-tx-limit=0 \
+ default-forwarding=yes dfs-mode=none disable-running-\
+ check=no disabled=no disconnect-timeout=3s distance=\
+ dynamic frame-lifetime=0 frequency=5180 frequency-mode=\
+ manual-txpower frequency-offset=0 hide-ssid=no hw-fragmen\
+ tation-threshold=disabled hw-protection-mode=none hw-prote\
+ ction-threshold=0 hw-retries=7 l2mtu=2290 mac-address=\
+ 00:15:6D:6C:7D:72 max-station-count=2007 mode=station-wds \
+ mtu=1500 multicast-helper=default name=wlan1 noise-floor-\
+ threshold=default nv2-cell-radius=30 nv2-noise-floor-\
+ offset=default nv2-preshared-key="" nv2-qos=default nv2-\
+ queue-count=2 nv2-security=disabled on-fail-retry-time=100ms \
+ periodic-calibration\
+ =default periodic-calibration-interval=60 preamble-mode=both \
+ proprietary-extensions=post-2.9.25 radio-name=00156D6C7D72 \
+ rate-selection=advanced rate-set=default scan-list=default \
+ security-profile=default ssid=Link01 station-bridge-clone-mac=\
+ 00:00:00:00:00:00 supported-rates-a/g=\
+ 6Mbps,9Mbps,12Mbps,18Mbps,24Mbps,36Mbps,48Mbps,54Mbps tdma-period\
+ -size=2 tx-power-mode=default update-stats-interval=disabled wds-\
+ cost-range=50-150 wds-default-bridge=bridge1 wds-default-cost=100\ 
+ wds-ignore-ssid=no wds-mode=dynamic wireless-protocol=unspecified \
+ wmm-support=disabled
+/interface wireless manual-tx-power-table
+ set wlan1 manual-tx-powers="1Mbps:17,2Mbps:17,5.5Mbps:17,\
+ 11Mbps:17,6Mbps:17,9Mbps:17,12Mbps:17,18Mbps:17,24Mbps:17,\
+ 36Mbps:17,48Mbps:17,54Mbps:17,HT20-0:17,HT20-1:17,HT20-2:17,\
+ HT20-3:17,HT20-4:17,HT20-5:17,HT20-6:17,HT20-7:17,HT40-0:17,\
+ HT40-1:17,HT40-2:17,HT40-3:17,HT40-4:17,HT40-5:17,HT40-6:17,\
+ HT40-7:17"
+/interface wireless nstreme
+ set wlan1 disable-csma=no enable-nstreme=no enable-polling=yes \
+ framer-limit=3200 framer-policy=none
+/interface wireless align
+ set active-mode=yes audio-max=-20 audio-min=-100 audio-monitor=\
+ 00:00:00:00:00:00 filter-mac=00:00:00:00:00:00 frame-size=300 \
+ frames-per-second=25 receive-all=no ssid-all=no
+/interface wireless sniffer
+ set channel-time=200ms file-limit=10 file-name="" \
+ memory-limit=10 multiple-channels=no only-headers=no \
+ receive-errors=no streaming-enabled=no streaming-max-rate=0 \
+ streaming-server=0.0.0.0
+/interface wireless snooper
+ set channel-time=200ms multiple-channels=yes receive-errors=no
+\end{verbatim}
+\section{Configuraciones del MK4}
+\begin{verbatim}
+# mar/02/2016 19:04:59 by RouterOS 6.23
+# software id = K9T9-N0KR
+#
+/system identity
+ set name=MK4
+/ip firewall nat
+add action=masquerade chain=srcnat
+
+/ip address
+ add address=10.0.0.4/24 interface=ether2 network=10.0.0.0
+ add address=192.168.1.1/24 interface=ether3 network=192.168.1.0
+
+/ip route
+ add check-gateway=ping distance=1 dst-address=192.168.0.0/24 \
+ gateway=11.0.0.1
+ add check-gateway=ping distance=2 dst-address=192.168.0.0/24 \
+ gateway=12.0.0.1
+
+/interface pptp-client
+ add add-default-route=no allow=pap,chap,mschap1,mschap2 \
+ connect-to=10.0.0.1 dial-on-demand=no disabled=no \
+ keepalive-timeout=60 max-mru=1460 max-mtu=1460 mrru=1600 \
+ name=vpn1 password=vpn1 profile=default-encryption user=vpn1
+
+ add add-default-route=no allow=pap,chap,mschap1,mschap2 \
+ connect-to=192.168.43.90 dial-on-demand=no disabled=no \
+ keepalive-timeout=60 max-mru=1460 max-mtu=1460 mrru=1600 \
+ name=vpn2 password=vpn2 profile=default-encryption user=vpn2
+
+/interface wireless security-profiles
+ set [ find default=yes ] supplicant-identity=MikroTik
+ add authentication-types=wpa-psk,wpa2-psk eap-methods="" \
+ management-protection=allowed mode=dynamic-keys name=profile1 \
+ supplicant-identity="" wpa-pre-shared-key="123.123.!" \
+ wpa2-pre-shared-key="123.123.!"
+
+/user
+ add comment="system default user" group=full name=admin
+
+/interface wireless security-profiles
+ set [ find default=yes ] supplicant-identity=MikroTik
+ add authentication-types=wpa-psk,wpa2-psk eap-methods="" \
+ management-protection=allowed mode=dynamic-keys \
+ name=profile1 supplicant-identity="" \
+ wpa-pre-shared-key="123.123.!"wpa2-pre-shared-key="123.123.!"
+/interface wireless
+ set [ find default-name=wlan1 ] band=2ghz-b/g disabled=no \
+ frequency=auto l2mtu=2290 security-profile=profile1 \
+ ssid=Azureos
+
+\end{verbatim}

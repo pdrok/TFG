@@ -1,0 +1,263 @@
+\fancyhead{}
+\fancyfoot{}
+
+\lhead{Funcionamiento del Software RouterOS}
+
+\chapter{Software RouterOS.}
+El software routeros viene pre instalado en el mainboard el mismo que podemos acceder por medio de un software conocido como Winbox que nos servirá de interfaz entre el las diferentes configuraciones de nuestro RouterBOARD y el usuario.
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura025.png}
+\caption{RouterOS}
+\label{routeros}
+\end{center}
+\end{figure}
+
+El Mikrotik RouterOS es un sistema operativo basado en el Kernel V3.5.5 de Linux y es muy estable, la facilidad de acceso a las múltiples configuraciones dependerá del tipo de licencia a la que tengamos acceso con nuestro RouterBOARD. La licencia que este establecida en nuestro mainboard no tiene fecha de expiración, pero si un tiempo de duración en la que se podrá tener acceso a una nueva actualización.\cite{routeros:2010}
+
+\section{Winbox.}
+Winbox es un programa ejecutable en Windows, en Linux y Mac OSX por medio de WINE, que me permite acceder a las múltiples configuraciones de mi mainboard desde mi PC por medio de un entorno amigable. Es un software liviano que se lo puede descargar de la página Mikrotik\cite{winbox:down} 
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura026.png}
+\caption{Winbox}
+\label{winbox}
+\end{center}
+\end{figure}
+Conectamos nuestro RouterBoard  a nuestra máquina y le damos escanear en el botón ``...'' y nos mostrara todos los RouterBoard conectados.
+Se selecciona el equipo con el usuario por defecto es \textit{admin} sin contraseña
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura027.png}
+\caption{Escaneo de Router con Winbox}
+\label{Escaneo}
+\end{center}
+\end{figure}
+Una vez dentro del RouterBoard se selecciona: \textbf{New Terminal} y digitando \textit{``system reset''} para que vuelva a sus configuraciones de fábrica y evitar algún problema por otras configuraciones que pueden estar dentro del Router.
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura028.png}
+\caption{Reset RouterOS}
+\label{resetrouter}
+\end{center}
+\end{figure}
+
+Una vez que el RouterBoard reinicie, se accede vía WinBox, para ver como quedo la configuración.
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura029.png}
+\caption{Remover Configuraciones}
+\label{removerconfig}
+\end{center}
+\end{figure}
+
+\section{Configuración IP.}
+
+Las IP (Internet Protocol) son muy importantes en cada uno de los enlaces ya que por medio de ellas se establecerá la comunicación el enlace.
+Para asignar una dirección IP a una interfaz tenemos que. \\
+Escoger el menú \textbf{IP} $\rightarrow$  \textbf{Address}  $\rightarrow$ \textcolor{red}{\textbf{+}}\\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura030.png}
+\caption{Configura IP WAN}
+\label{ipwan}
+\end{center}
+\end{figure}
+Escoger el menú \textbf{IP} $\rightarrow$  \textbf{Address}  $\rightarrow$ \textcolor{red}{\textbf{+}}\\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura031.png}
+\caption{Configurar IP LAN}
+\label{iplan}
+\end{center}
+\end{figure}
+Escoger el menú \textbf{IP} $\rightarrow$  \textbf{Address}\\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura032.png}
+\caption{Address List}
+\label{addresslist}
+\end{center}
+\end{figure}
+Escoger el menú \textbf{IP} $\rightarrow$  \textbf{Routes}\\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura033.png}
+\caption{Puertas de Enlaces}
+\label{routelist}
+\end{center}
+\end{figure}
+Escoger el menú \textbf{IP} $\rightarrow$  \textbf{Routes} $\rightarrow$ \textcolor{red}{\textbf{+}}\\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura034.png}
+\caption{Puerta de enlace predeterminada}
+\label{default-route}
+\end{center}
+\end{figure}
+Escoger el menú \textbf{IP} $\rightarrow$  \textbf{Routes}\\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura035.png}
+\caption{Listado de puertas de enlace}
+\label{list-route}
+\end{center}
+\end{figure}
+
+Escoger el menú \textbf{IP} $\rightarrow$  \textbf{DNS}\\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura036.png}
+\caption{DNS}
+\label{fig:dns}
+\end{center}
+\end{figure}
+
+Escoger el menú \textbf{New Terminal} $\rightarrow$  \textbf{ping google.com}\\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura037.png}
+\caption{Prueba de ping}
+\label{test-ping}
+\end{center}
+\end{figure}
+
+Escoger el menú \textbf{IP} $\rightarrow$  \textbf{Firewall} $\rightarrow$ \textcolor{red}{\textbf{+}}\\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura038.png}
+\caption{Firewall - General}
+\label{firewall-general}
+\end{center}
+\end{figure}
+
+
+Escoger el menú \textbf{IP} $\rightarrow$  \textbf{Firewall} \\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura039.png}
+\caption{Firewall -Action}
+\label{firewall-action}
+\end{center}
+\end{figure}
+
+Escoger el menú \textbf{IP} $\rightarrow$  \textbf{Firewall} \\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura040.png}
+\caption{Lista reglas Nat}
+\label{firewall-nat}
+\end{center}
+\end{figure}
+
+Escoger el menú \textbf{Inicio} $\rightarrow$  \textbf{Ejecutar} $\rightarrow$  \textbf{cmd}\\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura041.png}
+\caption{Prueba de ping}
+\label{prueba-ping-cmd}
+\end{center}
+\end{figure}
+
+
+
+\section{Telnet}
+Telnet sólo sirve para acceder en modo terminal, es decir, sin gráficos, pero es una herramienta muy útil para arreglar fallos a distancia, sin necesidad de estar físicamente en el mismo sitio que la máquina que los tenía. También se usaba para consultar datos a distancia, como datos personales en máquinas accesibles por red, información bibliográfica, etc.\cite{protocolo:telnet} 
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura042.png}
+\caption{Acceso vía Telnet}
+\label{acceso-via-telnet}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura043.png}
+\caption{Credenciales vía telnet}
+\label{credenciales-via-telnet}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura044.png}
+\caption{Entorno Telnet}
+\label{entorno-telnet}
+\end{center}
+\end{figure}
+
+
+\section{Webbox}
+Es una manera de controlar y monitorear el Mikrotik RouterOS por medio de una navegador Web sin la necesidad de utilizar herramientas adicionales
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .8]{./figuras/figura045.png}
+\caption{Webbox}
+\label{webbox}
+\end{center}
+\end{figure}
+
+
+
+
+\section{SSH}
+\Gls{ssh} es un protocolo que facilita las comunicaciones seguras entre dos sistemas usando una arquitectura cliente/servidor y que permite a los usuarios conectarse a un host remotamente. A diferencia de otros protocolos de comunicación remota tales como \Gls{ftp} o Gls{telnet}, SSH encripta la sesión de conexión, haciendo imposible que alguien pueda obtener contraseñas no encriptadas.\\
+
+SSH está diseñado para reemplazar los métodos más viejos y menos seguros para registrarse remotamente en otro sistema a través de la shell de comando, tales como telnet o rsh \cite{protocolo:ssh}
+
+\begin{figure}
+\centering
+\begin{tabular}{cc}
+\subfloat[Putty]{\includegraphics[scale = .5]{./figuras/figura046.png}} &
+\subfloat[Autenticación]{\includegraphics[scale = .5]{./figuras/figura047.png}}\\
+\end{tabular}
+\caption{Putty - Autenticación}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura048.png}
+\caption{Entorno de trabajo SSH}
+\label{entorno-ssh}
+\end{center}
+\end{figure}
+
+\section{Radio Mobile}
+Es un programa de simulación de radiopropagación gratuito desarrollado por Roger Coudé para predecir el comportamiento de sistemas radio, simular radioenlaces y representar el área de cobertura de una red de radiocomunicaciones, entre otras funciones. El software trabaja en el rango de frecuencias entre 20 MHz y 20 GHz y está basado en el modelo de propagación \Gls{itm} o modelo Longley-Rice. Utiliza datos de elevación del terreno que se descargan gratuitamente de Internet para crear mapas virtuales del área de interés, vistas estereoscópicas, vistas en 3-D y animaciones de vuelo. Los datos de elevación se pueden obtener de diversas fuentes, entre ellas del proyecto de la NASA que provee datos de altitud con una precisión de 3 segundos de arco (100m).\cite{radio:mobile}
+
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .8]{./figuras/figura049.png}
+\caption{Radio Mobile, Enlace de Radio}
+\label{rmobile-enlace-radio}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .8]{./figuras/figura050.png}
+\caption{Vista con Radio Mobile}
+\label{vista-radiomobile}
+\end{center}
+\end{figure}
+
+\section{Google Earth}
+Es un programa informático que muestra un globo virtual que permite visualizar múltiple cartografía, con base en la fotografía satelital. El programa fue creado bajo el nombre de EarthViewer 3D por la compañía Keyhole Inc, financiada por la Agencia Central de Inteligencia. La compañía fue comprada por Google en 2004 absorbiendo la aplicación.\\
+El mapa de Google Earth está compuesto por una superposición de imágenes obtenidas por imágenes satelitales, fotografías aéreas, información geográfica proveniente de modelos de datos SIG de todo el mundo y modelos creados por computadora. El programa está disponible en varias licencias, pero la versión gratuita es la más popular, disponible para dispositivos móviles, tabletas y computadoras personales.\\
+La primera versión de Google Earth fue lanzada en 2005 y actualmente está disponible en PC para Windows, Mac y Linux. Google Earth también está disponible como plugin para visualizarse desde el navegador web. En 2013 Google Earth se había convertido en el programa más popular para visualizar cartografía, con más de mil millones de descargas.\\
+
+Muchos usuarios utilizan la aplicación para añadir sus propios datos, haciéndolos disponibles mediante varias fuentes, tales como el Bulletin Board Systems o blogs. Google Earth es capaz de mostrar diferentes capas de imagen encima de la base y es también un cliente válido para un Web Map Service. Google Earth soporta datos geoespaciales tridimensionales mediante los archivos \gls{kml} \cite{google:earth}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .8]{./figuras/figura051.png}
+\caption{Vista con Google Earth}
+\label{vista-googleearth}
+\end{center}
+\end{figure}
+
+

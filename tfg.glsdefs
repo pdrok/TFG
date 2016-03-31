@@ -1,0 +1,1920 @@
+\ifglsentryexists{vpn}{}%
+{%
+\gls@defglossaryentry{vpn}%
+{%
+name={VPN},%
+sort={VPN},%
+type={acronym},%
+first={Virtual Private Network\glsspace (VPN)},%
+firstplural={Virtual Private Networks\glsspace (VPNs)},%
+text={VPN},%
+plural={VPNs},%
+description={Virtual Private Network},%
+descriptionplural={Virtual Private Network\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Virtual Private Network},%
+longplural={Virtual Private Networks},%
+short={VPN},%
+shortplural={VPNs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{vpn}{}%
+{%
+\gls@defglossaryentry{vpn}%
+{%
+name={VPN},%
+sort={VPN},%
+type={acronym},%
+first={Virtual Private Network\glsspace (VPN)},%
+firstplural={Virtual Private Networks\glsspace (VPNs)},%
+text={VPN},%
+plural={VPNs},%
+description={Virtual Private Network},%
+descriptionplural={Virtual Private Network\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Virtual Private Network},%
+longplural={Virtual Private Networks},%
+short={VPN},%
+shortplural={VPNs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{servidor}{}%
+{%
+\gls@defglossaryentry{servidor}%
+{%
+name={Servidor},%
+sort={Servidor},%
+type={main},%
+first={Servidor},%
+firstplural={Servidores},%
+text={Servidor},%
+plural={Servidores},%
+description={Un servidor es una aplicación en ejecución (software) capaz de atender las peticiones de un cliente y devolverle una respuesta en concordancia. Los servidores se pueden ejecutar en cualquier tipo de computadora, incluso en computadoras dedicadas a las cuales se les conoce individualmente como «el servidor». En la mayoría de los casos una misma computadora puede proveer múltiples servicios y tener varios servidores en funcionamiento. La ventaja de montar un servidor en computadoras dedicadas es la seguridad. Por esta razón la mayoría de los servidores son procesos diseñados de forma que puedan funcionar en computadoras de propósito específico.},%
+descriptionplural={Un servidor es una aplicación en ejecución (software) capaz de atender las peticiones de un cliente y devolverle una respuesta en concordancia. Los servidores se pueden ejecutar en cualquier tipo de computadora, incluso en computadoras dedicadas a las cuales se les conoce individualmente como «el servidor». En la mayoría de los casos una misma computadora puede proveer múltiples servicios y tener varios servidores en funcionamiento. La ventaja de montar un servidor en computadoras dedicadas es la seguridad. Por esta razón la mayoría de los servidores son procesos diseñados de forma que puedan funcionar en computadoras de propósito específico.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{traceroute}{}%
+{%
+\gls@defglossaryentry{traceroute}%
+{%
+name={Traceroute},%
+sort={Traceroute},%
+type={main},%
+first={Traceroute},%
+firstplural={Traceroutes},%
+text={Traceroute},%
+plural={Traceroutes},%
+description={Traceroute es una consola de diagnóstico que permite seguir la pista de los paquetes que vienen desde un host (punto de red)},%
+descriptionplural={Traceroute es una consola de diagnóstico que permite seguir la pista de los paquetes que vienen desde un host (punto de red)},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{rf}{}%
+{%
+\gls@defglossaryentry{rf}%
+{%
+name={RF},%
+sort={RF},%
+type={main},%
+first={RF},%
+firstplural={RFs},%
+text={RF},%
+plural={RFs},%
+description={también denominado espectro de radiofrecuencia, se aplica a la porción menos energética del espectro electromagnético, situada entre 3 hercios (Hz) y 300 gigahercios (GHz)},%
+descriptionplural={también denominado espectro de radiofrecuencia, se aplica a la porción menos energética del espectro electromagnético, situada entre 3 hercios (Hz) y 300 gigahercios (GHz)},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{nas}{}%
+{%
+\gls@defglossaryentry{nas}%
+{%
+name={NAS},%
+sort={NAS},%
+type={acronym},%
+first={Network Access Server\glsspace (NAS)},%
+firstplural={Network Access Servers\glsspace (NASs)},%
+text={NAS},%
+plural={NASs},%
+description={Network Access Server},%
+descriptionplural={Network Access Server\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Network Access Server},%
+longplural={Network Access Servers},%
+short={NAS},%
+shortplural={NASs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{CCIR}{}%
+{%
+\gls@defglossaryentry{CCIR}%
+{%
+name={CCIR},%
+sort={CCIR},%
+type={main},%
+first={CCIR},%
+firstplural={CCIRs},%
+text={CCIR},%
+plural={CCIRs},%
+description={Comité Consultivo Internacional de Radiocomunicaciones (CCIR), o International Radio Consultative Committee (IRCC), con el objeto de servir como un comité de normalización de las radiocomunicaciones.},%
+descriptionplural={Comité Consultivo Internacional de Radiocomunicaciones (CCIR), o International Radio Consultative Committee (IRCC), con el objeto de servir como un comité de normalización de las radiocomunicaciones.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{am}{}%
+{%
+\gls@defglossaryentry{am}%
+{%
+name={AM},%
+sort={AM},%
+type={main},%
+first={AM},%
+firstplural={AMs},%
+text={AM},%
+plural={AMs},%
+description={La modulación de amplitud o amplitud modulada (AM) es una técnica utilizada en la comunicación electrónica, más comúnmente para la transmisión de información a través de una onda transversal de televisión. La modulación en amplitud (AM) funciona mediante la variación de la amplitud de la señal transmitida en relación con la información que se envía.},%
+descriptionplural={La modulación de amplitud o amplitud modulada (AM) es una técnica utilizada en la comunicación electrónica, más comúnmente para la transmisión de información a través de una onda transversal de televisión. La modulación en amplitud (AM) funciona mediante la variación de la amplitud de la señal transmitida en relación con la información que se envía.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{am}{}%
+{%
+\gls@defglossaryentry{am}%
+{%
+name={AM},%
+sort={AM},%
+type={main},%
+first={AM},%
+firstplural={AMs},%
+text={AM},%
+plural={AMs},%
+description={La modulación de amplitud o amplitud modulada (AM) es una técnica utilizada en la comunicación electrónica, más comúnmente para la transmisión de información a través de una onda transversal de televisión. La modulación en amplitud (AM) funciona mediante la variación de la amplitud de la señal transmitida en relación con la información que se envía.},%
+descriptionplural={La modulación de amplitud o amplitud modulada (AM) es una técnica utilizada en la comunicación electrónica, más comúnmente para la transmisión de información a través de una onda transversal de televisión. La modulación en amplitud (AM) funciona mediante la variación de la amplitud de la señal transmitida en relación con la información que se envía.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fm}{}%
+{%
+\gls@defglossaryentry{fm}%
+{%
+name={FM},%
+sort={FM},%
+type={main},%
+first={FM},%
+firstplural={FMs},%
+text={FM},%
+plural={FMs},%
+description={La modulación de frecuencia,o frecuencia modulada (FM), es una técnica de modulación que permite transmitir información a través de una onda portadora variando su frecuencia. En aplicaciones analógicas, la frecuencia instantánea de la señal modulada es proporcional al valor instantáneo de la señal moduladora},%
+descriptionplural={La modulación de frecuencia,o frecuencia modulada (FM), es una técnica de modulación que permite transmitir información a través de una onda portadora variando su frecuencia. En aplicaciones analógicas, la frecuencia instantánea de la señal modulada es proporcional al valor instantáneo de la señal moduladora},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fm}{}%
+{%
+\gls@defglossaryentry{fm}%
+{%
+name={FM},%
+sort={FM},%
+type={main},%
+first={FM},%
+firstplural={FMs},%
+text={FM},%
+plural={FMs},%
+description={La modulación de frecuencia,o frecuencia modulada (FM), es una técnica de modulación que permite transmitir información a través de una onda portadora variando su frecuencia. En aplicaciones analógicas, la frecuencia instantánea de la señal modulada es proporcional al valor instantáneo de la señal moduladora},%
+descriptionplural={La modulación de frecuencia,o frecuencia modulada (FM), es una técnica de modulación que permite transmitir información a través de una onda portadora variando su frecuencia. En aplicaciones analógicas, la frecuencia instantánea de la señal modulada es proporcional al valor instantáneo de la señal moduladora},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{hf}{}%
+{%
+\gls@defglossaryentry{hf}%
+{%
+name={HF},%
+sort={HF},%
+type={main},%
+first={HF},%
+firstplural={HFs},%
+text={HF},%
+plural={HFs},%
+description={Alta frecuencia},%
+descriptionplural={Alta frecuencia},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{v/m}{}%
+{%
+\gls@defglossaryentry{v/m}%
+{%
+name={V/m},%
+sort={V/m},%
+type={main},%
+first={V/m},%
+firstplural={V/ms},%
+text={V/m},%
+plural={V/ms},%
+description={Un campo eléctrico es un campo de fuerza creado por la atracción y repulsión de cargas eléctricas (la causa del flujo eléctrico) y se mide en Voltios por metro (V/m). El flujo decrece con la distancia a la fuente que provoca el campo.},%
+descriptionplural={Un campo eléctrico es un campo de fuerza creado por la atracción y repulsión de cargas eléctricas (la causa del flujo eléctrico) y se mide en Voltios por metro (V/m). El flujo decrece con la distancia a la fuente que provoca el campo.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{v/m}{}%
+{%
+\gls@defglossaryentry{v/m}%
+{%
+name={V/m},%
+sort={V/m},%
+type={main},%
+first={V/m},%
+firstplural={V/ms},%
+text={V/m},%
+plural={V/ms},%
+description={Un campo eléctrico es un campo de fuerza creado por la atracción y repulsión de cargas eléctricas (la causa del flujo eléctrico) y se mide en Voltios por metro (V/m). El flujo decrece con la distancia a la fuente que provoca el campo.},%
+descriptionplural={Un campo eléctrico es un campo de fuerza creado por la atracción y repulsión de cargas eléctricas (la causa del flujo eléctrico) y se mide en Voltios por metro (V/m). El flujo decrece con la distancia a la fuente que provoca el campo.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{db}{}%
+{%
+\gls@defglossaryentry{db}%
+{%
+name={dB},%
+sort={dB},%
+type={main},%
+first={dB},%
+firstplural={dBs},%
+text={dB},%
+plural={dBs},%
+description={Expresa una razón entre cantidades y no una cantidad. El decibel expresa cuantas veces más o cuantas veces menos, pero no la cantidad exacta. Es una expresión que no es lineal, sino logarítmica. Es una unidad de medida relativa. En audiofrecuencias un cambio de 1 decibel (dB) es apenas (si hay suerte) notado.},%
+descriptionplural={Expresa una razón entre cantidades y no una cantidad. El decibel expresa cuantas veces más o cuantas veces menos, pero no la cantidad exacta. Es una expresión que no es lineal, sino logarítmica. Es una unidad de medida relativa. En audiofrecuencias un cambio de 1 decibel (dB) es apenas (si hay suerte) notado.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{db}{}%
+{%
+\gls@defglossaryentry{db}%
+{%
+name={dB},%
+sort={dB},%
+type={main},%
+first={dB},%
+firstplural={dBs},%
+text={dB},%
+plural={dBs},%
+description={Expresa una razón entre cantidades y no una cantidad. El decibel expresa cuantas veces más o cuantas veces menos, pero no la cantidad exacta. Es una expresión que no es lineal, sino logarítmica. Es una unidad de medida relativa. En audiofrecuencias un cambio de 1 decibel (dB) es apenas (si hay suerte) notado.},%
+descriptionplural={Expresa una razón entre cantidades y no una cantidad. El decibel expresa cuantas veces más o cuantas veces menos, pero no la cantidad exacta. Es una expresión que no es lineal, sino logarítmica. Es una unidad de medida relativa. En audiofrecuencias un cambio de 1 decibel (dB) es apenas (si hay suerte) notado.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{wan}{}%
+{%
+\gls@defglossaryentry{wan}%
+{%
+name={WAN},%
+sort={WAN},%
+type={acronym},%
+first={Wide Area Network\glsspace (WAN)},%
+firstplural={Wide Area Networks\glsspace (WANs)},%
+text={WAN},%
+plural={WANs},%
+description={Wide Area Network},%
+descriptionplural={Wide Area Network\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Wide Area Network},%
+longplural={Wide Area Networks},%
+short={WAN},%
+shortplural={WANs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ssl/tls}{}%
+{%
+\gls@defglossaryentry{ssl/tls}%
+{%
+name={SSL/TLS},%
+sort={SSL/TLS},%
+type={main},%
+first={SSL/TLS},%
+firstplural={SSL/TLSs},%
+text={SSL/TLS},%
+plural={SSL/TLSs},%
+description={Transport Layer Security (TLS; en español seguridad de la capa de transporte) y su antecesor Secure Sockets Layer (SSL; en español capa de conexión segura) son protocolos criptográficos que proporcionan comunicaciones seguras por una red, comúnmente},%
+descriptionplural={Transport Layer Security (TLS; en español seguridad de la capa de transporte) y su antecesor Secure Sockets Layer (SSL; en español capa de conexión segura) son protocolos criptográficos que proporcionan comunicaciones seguras por una red, comúnmente},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ipsec}{}%
+{%
+\gls@defglossaryentry{ipsec}%
+{%
+name={IPsec},%
+sort={IPsec},%
+type={acronym},%
+first={Internet Protocol security\glsspace (IPsec)},%
+firstplural={Internet Protocol securitys\glsspace (IPsecs)},%
+text={IPsec},%
+plural={IPsecs},%
+description={Internet Protocol security},%
+descriptionplural={Internet Protocol security\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Internet Protocol security},%
+longplural={Internet Protocol securitys},%
+short={IPsec},%
+shortplural={IPsecs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{gre}{}%
+{%
+\gls@defglossaryentry{gre}%
+{%
+name={GRE},%
+sort={GRE},%
+type={acronym},%
+first={Generic Routing Encapsulation\glsspace (GRE)},%
+firstplural={Generic Routing Encapsulations\glsspace (GREs)},%
+text={GRE},%
+plural={GREs},%
+description={Generic Routing Encapsulation},%
+descriptionplural={Generic Routing Encapsulation\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Generic Routing Encapsulation},%
+longplural={Generic Routing Encapsulations},%
+short={GRE},%
+shortplural={GREs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{vpws}{}%
+{%
+\gls@defglossaryentry{vpws}%
+{%
+name={VPWS},%
+sort={VPWS},%
+type={acronym},%
+first={Virtual Private Wire Service\glsspace (VPWS)},%
+firstplural={Virtual Private Wire Services\glsspace (VPWSs)},%
+text={VPWS},%
+plural={VPWSs},%
+description={Virtual Private Wire Service},%
+descriptionplural={Virtual Private Wire Service\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Virtual Private Wire Service},%
+longplural={Virtual Private Wire Services},%
+short={VPWS},%
+shortplural={VPWSs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{vpls}{}%
+{%
+\gls@defglossaryentry{vpls}%
+{%
+name={VPLS},%
+sort={VPLS},%
+type={acronym},%
+first={Virtual Private Lan Service\glsspace (VPLS)},%
+firstplural={Virtual Private Lan Services\glsspace (VPLSs)},%
+text={VPLS},%
+plural={VPLSs},%
+description={Virtual Private Lan Service},%
+descriptionplural={Virtual Private Lan Service\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Virtual Private Lan Service},%
+longplural={Virtual Private Lan Services},%
+short={VPLS},%
+shortplural={VPLSs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ipls}{}%
+{%
+\gls@defglossaryentry{ipls}%
+{%
+name={IPLS},%
+sort={IPLS},%
+type={acronym},%
+first={IP only Private Lan Service\glsspace (IPLS)},%
+firstplural={IP only Private Lan Services\glsspace (IPLSs)},%
+text={IPLS},%
+plural={IPLSs},%
+description={IP only Private Lan Service},%
+descriptionplural={IP only Private Lan Service\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={IP only Private Lan Service},%
+longplural={IP only Private Lan Services},%
+short={IPLS},%
+shortplural={IPLSs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{mpls}{}%
+{%
+\gls@defglossaryentry{mpls}%
+{%
+name={MPLS},%
+sort={MPLS},%
+type={acronym},%
+first={Multiprotocol Label Switching\glsspace (MPLS)},%
+firstplural={Multiprotocol Label Switchings\glsspace (MPLSs)},%
+text={MPLS},%
+plural={MPLSs},%
+description={Multiprotocol Label Switching},%
+descriptionplural={Multiprotocol Label Switching\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Multiprotocol Label Switching},%
+longplural={Multiprotocol Label Switchings},%
+short={MPLS},%
+shortplural={MPLSs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{atom}{}%
+{%
+\gls@defglossaryentry{atom}%
+{%
+name={AtoM},%
+sort={AtoM},%
+type={acronym},%
+first={Any Transport over MPLS\glsspace (AtoM)},%
+firstplural={Any Transport over MPLSs\glsspace (AtoMs)},%
+text={AtoM},%
+plural={AtoMs},%
+description={Any Transport over MPLS},%
+descriptionplural={Any Transport over MPLS\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Any Transport over MPLS},%
+longplural={Any Transport over MPLSs},%
+short={AtoM},%
+shortplural={AtoMs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{l2tpv3}{}%
+{%
+\gls@defglossaryentry{l2tpv3}%
+{%
+name={L2TPv3},%
+sort={L2TPv3},%
+type={acronym},%
+first={Layer 2 Tunneling Protocol version 3\glsspace (L2TPv3)},%
+firstplural={Layer 2 Tunneling Protocol version 3s\glsspace (L2TPv3s)},%
+text={L2TPv3},%
+plural={L2TPv3s},%
+description={Layer 2 Tunneling Protocol version 3},%
+descriptionplural={Layer 2 Tunneling Protocol version 3\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Layer 2 Tunneling Protocol version 3},%
+longplural={Layer 2 Tunneling Protocol version 3s},%
+short={L2TPv3},%
+shortplural={L2TPv3s},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{mplslsp}{}%
+{%
+\gls@defglossaryentry{mplslsp}%
+{%
+name={MPLSLSP},%
+sort={MPLSLSP},%
+type={acronym},%
+first={MPLS Label Switched Path\glsspace (MPLSLSP)},%
+firstplural={MPLS Label Switched Paths\glsspace (MPLSLSPs)},%
+text={MPLSLSP},%
+plural={MPLSLSPs},%
+description={MPLS Label Switched Path},%
+descriptionplural={MPLS Label Switched Path\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={MPLS Label Switched Path},%
+longplural={MPLS Label Switched Paths},%
+short={MPLSLSP},%
+shortplural={MPLSLSPs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ieee802q}{}%
+{%
+\gls@defglossaryentry{ieee802q}%
+{%
+name={IEEE 802.1Q},%
+sort={IEEE 802.1Q},%
+type={main},%
+first={IEEE 802.1Q},%
+firstplural={IEEE 802.1Qs},%
+text={IEEE 802.1Q},%
+plural={IEEE 802.1Qs},%
+description={El protocolo IEEE 802.1Q, también conocido como dot1Q, fue un proyecto del grupo de trabajo 802 de la IEEE para desarrollar un mecanismo que permita a múltiples redes compartir de forma transparente el mismo medio físico, sin problemas de interferencia entre ellas (Trunking).},%
+descriptionplural={El protocolo IEEE 802.1Q, también conocido como dot1Q, fue un proyecto del grupo de trabajo 802 de la IEEE para desarrollar un mecanismo que permita a múltiples redes compartir de forma transparente el mismo medio físico, sin problemas de interferencia entre ellas (Trunking).},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{pptp}{}%
+{%
+\gls@defglossaryentry{pptp}%
+{%
+name={PPTP},%
+sort={PPTP},%
+type={acronym},%
+first={Point to Point Tunneling Protocol\glsspace (PPTP)},%
+firstplural={Point to Point Tunneling Protocols\glsspace (PPTPs)},%
+text={PPTP},%
+plural={PPTPs},%
+description={Point to Point Tunneling Protocol},%
+descriptionplural={Point to Point Tunneling Protocol\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Point to Point Tunneling Protocol},%
+longplural={Point to Point Tunneling Protocols},%
+short={PPTP},%
+shortplural={PPTPs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{l2f}{}%
+{%
+\gls@defglossaryentry{l2f}%
+{%
+name={L2F},%
+sort={L2F},%
+type={acronym},%
+first={Layer 2 Forwarding\glsspace (L2F)},%
+firstplural={Layer 2 Forwardings\glsspace (L2Fs)},%
+text={L2F},%
+plural={L2Fs},%
+description={Layer 2 Forwarding},%
+descriptionplural={Layer 2 Forwarding\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Layer 2 Forwarding},%
+longplural={Layer 2 Forwardings},%
+short={L2F},%
+shortplural={L2Fs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{mac}{}%
+{%
+\gls@defglossaryentry{mac}%
+{%
+name={MAC},%
+sort={MAC},%
+type={acronym},%
+first={Media Access Control\glsspace (MAC)},%
+firstplural={Media Access Controls\glsspace (MACs)},%
+text={MAC},%
+plural={MACs},%
+description={Media Access Control},%
+descriptionplural={Media Access Control\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Media Access Control},%
+longplural={Media Access Controls},%
+short={MAC},%
+shortplural={MACs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{dlci}{}%
+{%
+\gls@defglossaryentry{dlci}%
+{%
+name={DLCI},%
+sort={DLCI},%
+type={acronym},%
+first={Frame Relay Data Link Connection Identifier\glsspace (DLCI)},%
+firstplural={Frame Relay Data Link Connection Identifiers\glsspace (DLCIs)},%
+text={DLCI},%
+plural={DLCIs},%
+description={Frame Relay Data Link Connection Identifier},%
+descriptionplural={Frame Relay Data Link Connection Identifier\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Frame Relay Data Link Connection Identifier},%
+longplural={Frame Relay Data Link Connection Identifiers},%
+short={DLCI},%
+shortplural={DLCIs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{m2m}{}%
+{%
+\gls@defglossaryentry{m2m}%
+{%
+name={M2M},%
+sort={M2M},%
+type={acronym},%
+first={Multipunto a Multipunto\glsspace (M2M)},%
+firstplural={Multipunto a Multipuntos\glsspace (M2Ms)},%
+text={M2M},%
+plural={M2Ms},%
+description={Multipunto a Multipunto},%
+descriptionplural={Multipunto a Multipunto\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Multipunto a Multipunto},%
+longplural={Multipunto a Multipuntos},%
+short={M2M},%
+shortplural={M2Ms},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{p2p}{}%
+{%
+\gls@defglossaryentry{p2p}%
+{%
+name={P2P},%
+sort={P2P},%
+type={acronym},%
+first={Punto a Punto\glsspace (P2P)},%
+firstplural={Punto a Puntos\glsspace (P2Ps)},%
+text={P2P},%
+plural={P2Ps},%
+description={Punto a Punto},%
+descriptionplural={Punto a Punto\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Punto a Punto},%
+longplural={Punto a Puntos},%
+short={P2P},%
+shortplural={P2Ps},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ti}{}%
+{%
+\gls@defglossaryentry{ti}%
+{%
+name={TI},%
+sort={TI},%
+type={acronym},%
+first={T\'ecnologia de la Informaci\'on\glsspace (TI)},%
+firstplural={T\'ecnologia de la Informaci\'ons\glsspace (TIs)},%
+text={TI},%
+plural={TIs},%
+description={Técnologia de la Información},%
+descriptionplural={Técnologia de la Información\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={T\'ecnologia de la Informaci\'on},%
+longplural={T\'ecnologia de la Informaci\'ons},%
+short={TI},%
+shortplural={TIs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{bgp}{}%
+{%
+\gls@defglossaryentry{bgp}%
+{%
+name={BGP},%
+sort={BGP},%
+type={acronym},%
+first={Border Gateway Protocol\glsspace (BGP)},%
+firstplural={Border Gateway Protocols\glsspace (BGPs)},%
+text={BGP},%
+plural={BGPs},%
+description={Border Gateway Protocol},%
+descriptionplural={Border Gateway Protocol\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Border Gateway Protocol},%
+longplural={Border Gateway Protocols},%
+short={BGP},%
+shortplural={BGPs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{atm}{}%
+{%
+\gls@defglossaryentry{atm}%
+{%
+name={ATM},%
+sort={ATM},%
+type={main},%
+first={ATM},%
+firstplural={ATMs},%
+text={ATM},%
+plural={ATMs},%
+description={El modo de transferencia asíncrona (Asynchronous Transfer Mode, ATM) es una tecnología de telecomunicación desarrollada para hacer frente a la gran demanda de capacidad de transmisión para servicios y aplicaciones, basada en la conmutación por etiquetas.},%
+descriptionplural={El modo de transferencia asíncrona (Asynchronous Transfer Mode, ATM) es una tecnología de telecomunicación desarrollada para hacer frente a la gran demanda de capacidad de transmisión para servicios y aplicaciones, basada en la conmutación por etiquetas.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{https}{}%
+{%
+\gls@defglossaryentry{https}%
+{%
+name={HTTPS},%
+sort={HTTPS},%
+type={acronym},%
+first={Hypertext Transfer Protocol Secure\glsspace (HTTPS)},%
+firstplural={Hypertext Transfer Protocol Secures\glsspace (HTTPSs)},%
+text={HTTPS},%
+plural={HTTPSs},%
+description={Hypertext Transfer Protocol Secure},%
+descriptionplural={Hypertext Transfer Protocol Secure\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Hypertext Transfer Protocol Secure},%
+longplural={Hypertext Transfer Protocol Secures},%
+short={HTTPS},%
+shortplural={HTTPSs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{qos}{}%
+{%
+\gls@defglossaryentry{qos}%
+{%
+name={QoS},%
+sort={QoS},%
+type={acronym},%
+first={Quality of Service\glsspace (QoS)},%
+firstplural={Quality of Services\glsspace (QoSs)},%
+text={QoS},%
+plural={QoSs},%
+description={Quality of Service},%
+descriptionplural={Quality of Service\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Quality of Service},%
+longplural={Quality of Services},%
+short={QoS},%
+shortplural={QoSs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{sla}{}%
+{%
+\gls@defglossaryentry{sla}%
+{%
+name={SLA},%
+sort={SLA},%
+type={acronym},%
+first={Service Level Agreement\glsspace (SLA)},%
+firstplural={Service Level Agreements\glsspace (SLAs)},%
+text={SLA},%
+plural={SLAs},%
+description={Service Level Agreement},%
+descriptionplural={Service Level Agreement\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Service Level Agreement},%
+longplural={Service Level Agreements},%
+short={SLA},%
+shortplural={SLAs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{slo}{}%
+{%
+\gls@defglossaryentry{slo}%
+{%
+name={SLO},%
+sort={SLO},%
+type={acronym},%
+first={Service Level Objective\glsspace (SLO)},%
+firstplural={Service Level Objectives\glsspace (SLOs)},%
+text={SLO},%
+plural={SLOs},%
+description={Service Level Objective},%
+descriptionplural={Service Level Objective\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Service Level Objective},%
+longplural={Service Level Objectives},%
+short={SLO},%
+shortplural={SLOs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{sls}{}%
+{%
+\gls@defglossaryentry{sls}%
+{%
+name={SLS},%
+sort={SLS},%
+type={acronym},%
+first={Service Level Specification\glsspace (SLS)},%
+firstplural={Service Level Specifications\glsspace (SLSs)},%
+text={SLS},%
+plural={SLSs},%
+description={Service Level Specification},%
+descriptionplural={Service Level Specification\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Service Level Specification},%
+longplural={Service Level Specifications},%
+short={SLS},%
+shortplural={SLSs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ssl}{}%
+{%
+\gls@defglossaryentry{ssl}%
+{%
+name={SSL},%
+sort={SSL},%
+type={acronym},%
+first={Secure Sockets Layer\glsspace (SSL)},%
+firstplural={Secure Sockets Layers\glsspace (SSLs)},%
+text={SSL},%
+plural={SSLs},%
+description={Secure Sockets Layer},%
+descriptionplural={Secure Sockets Layer\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Secure Sockets Layer},%
+longplural={Secure Sockets Layers},%
+short={SSL},%
+shortplural={SSLs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ssh}{}%
+{%
+\gls@defglossaryentry{ssh}%
+{%
+name={SSH},%
+sort={SSH},%
+type={main},%
+first={SSH},%
+firstplural={SSHs},%
+text={SSH},%
+plural={SSHs},%
+description={protocolo y del programa que lo implementa, y sirve para acceder a máquinas remotas a través de una red. Permite manejar por completo la computadora mediante un intérprete de comandos, y también puede redirigir el tráfico de X (Sistema de Ventanas X) para poder ejecutar programas gráficos si tenemos ejecutando un Servidor X (en sistemas Unix y Windows).},%
+descriptionplural={protocolo y del programa que lo implementa, y sirve para acceder a máquinas remotas a través de una red. Permite manejar por completo la computadora mediante un intérprete de comandos, y también puede redirigir el tráfico de X (Sistema de Ventanas X) para poder ejecutar programas gráficos si tenemos ejecutando un Servidor X (en sistemas Unix y Windows).},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ftp}{}%
+{%
+\gls@defglossaryentry{ftp}%
+{%
+name={FTP},%
+sort={FTP},%
+type={main},%
+first={FTP},%
+firstplural={FTPs},%
+text={FTP},%
+plural={FTPs},%
+description={protocolo de red para la transferencia de archivos entre sistemas conectados a una red TCP (Transmission Control Protocol), basado en la arquitectura cliente-servidor. Desde un equipo cliente se puede conectar a un servidor para descargar archivos desde él o para enviarle archivos, independientemente del sistema operativo utilizado en cada equipo.},%
+descriptionplural={protocolo de red para la transferencia de archivos entre sistemas conectados a una red TCP (Transmission Control Protocol), basado en la arquitectura cliente-servidor. Desde un equipo cliente se puede conectar a un servidor para descargar archivos desde él o para enviarle archivos, independientemente del sistema operativo utilizado en cada equipo.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ftp}{}%
+{%
+\gls@defglossaryentry{ftp}%
+{%
+name={FTP},%
+sort={FTP},%
+type={main},%
+first={FTP},%
+firstplural={FTPs},%
+text={FTP},%
+plural={FTPs},%
+description={protocolo de red para la transferencia de archivos entre sistemas conectados a una red TCP (Transmission Control Protocol), basado en la arquitectura cliente-servidor. Desde un equipo cliente se puede conectar a un servidor para descargar archivos desde él o para enviarle archivos, independientemente del sistema operativo utilizado en cada equipo.},%
+descriptionplural={protocolo de red para la transferencia de archivos entre sistemas conectados a una red TCP (Transmission Control Protocol), basado en la arquitectura cliente-servidor. Desde un equipo cliente se puede conectar a un servidor para descargar archivos desde él o para enviarle archivos, independientemente del sistema operativo utilizado en cada equipo.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{telnet}{}%
+{%
+\gls@defglossaryentry{telnet}%
+{%
+name={Telnet},%
+sort={Telnet},%
+type={main},%
+first={Telnet},%
+firstplural={Telnets},%
+text={Telnet},%
+plural={Telnets},%
+description={Protocolo de red para la transferencia de archivos entre sistemas conectados a una red TCP (Transmission Control Protocol), basado en la arquitectura cliente-servidor. Desde un equipo cliente se puede conectar a un servidor para descargar archivos desde él o para enviarle archivos, independientemente del sistema operativo utilizado en cada equipo.},%
+descriptionplural={Protocolo de red para la transferencia de archivos entre sistemas conectados a una red TCP (Transmission Control Protocol), basado en la arquitectura cliente-servidor. Desde un equipo cliente se puede conectar a un servidor para descargar archivos desde él o para enviarle archivos, independientemente del sistema operativo utilizado en cada equipo.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{telnet}{}%
+{%
+\gls@defglossaryentry{telnet}%
+{%
+name={Telnet},%
+sort={Telnet},%
+type={main},%
+first={Telnet},%
+firstplural={Telnets},%
+text={Telnet},%
+plural={Telnets},%
+description={Protocolo de red para la transferencia de archivos entre sistemas conectados a una red TCP (Transmission Control Protocol), basado en la arquitectura cliente-servidor. Desde un equipo cliente se puede conectar a un servidor para descargar archivos desde él o para enviarle archivos, independientemente del sistema operativo utilizado en cada equipo.},%
+descriptionplural={Protocolo de red para la transferencia de archivos entre sistemas conectados a una red TCP (Transmission Control Protocol), basado en la arquitectura cliente-servidor. Desde un equipo cliente se puede conectar a un servidor para descargar archivos desde él o para enviarle archivos, independientemente del sistema operativo utilizado en cada equipo.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{itm}{}%
+{%
+\gls@defglossaryentry{itm}%
+{%
+name={ITM},%
+sort={ITM},%
+type={acronym},%
+first={Irregular Terrain Model\glsspace (ITM)},%
+firstplural={Irregular Terrain Models\glsspace (ITMs)},%
+text={ITM},%
+plural={ITMs},%
+description={Irregular Terrain Model},%
+descriptionplural={Irregular Terrain Model\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Irregular Terrain Model},%
+longplural={Irregular Terrain Models},%
+short={ITM},%
+shortplural={ITMs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{strm}{}%
+{%
+\gls@defglossaryentry{strm}%
+{%
+name={STRM},%
+sort={STRM},%
+type={acronym},%
+first={Shuttle Terrain Radar Mapping Misi\'on\glsspace (STRM)},%
+firstplural={Shuttle Terrain Radar Mapping Misi\'ons\glsspace (STRMs)},%
+text={STRM},%
+plural={STRMs},%
+description={Shuttle Terrain Radar Mapping Misión},%
+descriptionplural={Shuttle Terrain Radar Mapping Misión\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Shuttle Terrain Radar Mapping Misi\'on},%
+longplural={Shuttle Terrain Radar Mapping Misi\'ons},%
+short={STRM},%
+shortplural={STRMs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{kml}{}%
+{%
+\gls@defglossaryentry{kml}%
+{%
+name={.kml},%
+sort={.kml},%
+type={acronym},%
+first={Keyhole Markup Language\glsspace (.kml)},%
+firstplural={Keyhole Markup Languages\glsspace (.kmls)},%
+text={.kml},%
+plural={.kmls},%
+description={Keyhole Markup Language},%
+descriptionplural={Keyhole Markup Language\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Keyhole Markup Language},%
+longplural={Keyhole Markup Languages},%
+short={.kml},%
+shortplural={.kmls},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ssid}{}%
+{%
+\gls@defglossaryentry{ssid}%
+{%
+name={SSID},%
+sort={SSID},%
+type={main},%
+first={SSID},%
+firstplural={SSIDs},%
+text={SSID},%
+plural={SSIDs},%
+description={Service Set Identifier: es un nombre incluido en todos los paquetes de una red inalámbrica para identificarlos como parte de esa red},%
+descriptionplural={Service Set Identifier: es un nombre incluido en todos los paquetes de una red inalámbrica para identificarlos como parte de esa red},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ap}{}%
+{%
+\gls@defglossaryentry{ap}%
+{%
+name={AP},%
+sort={AP},%
+type={acronym},%
+first={Access Point\glsspace (AP)},%
+firstplural={Access Points\glsspace (APs)},%
+text={AP},%
+plural={APs},%
+description={Access Point},%
+descriptionplural={Access Point\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Access Point},%
+longplural={Access Points},%
+short={AP},%
+shortplural={APs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{mtu}{}%
+{%
+\gls@defglossaryentry{mtu}%
+{%
+name={MTU},%
+sort={MTU},%
+type={main},%
+first={MTU},%
+firstplural={MTUs},%
+text={MTU},%
+plural={MTUs},%
+description={es un término de redes de computadoras que expresa el tamaño en bytes de la unidad de datos más grande que puede enviarse usando un protocolo de comunicaciones.},%
+descriptionplural={es un término de redes de computadoras que expresa el tamaño en bytes de la unidad de datos más grande que puede enviarse usando un protocolo de comunicaciones.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{mtu}{}%
+{%
+\gls@defglossaryentry{mtu}%
+{%
+name={MTU},%
+sort={MTU},%
+type={main},%
+first={MTU},%
+firstplural={MTUs},%
+text={MTU},%
+plural={MTUs},%
+description={es un término de redes de computadoras que expresa el tamaño en bytes de la unidad de datos más grande que puede enviarse usando un protocolo de comunicaciones.},%
+descriptionplural={es un término de redes de computadoras que expresa el tamaño en bytes de la unidad de datos más grande que puede enviarse usando un protocolo de comunicaciones.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{mhz}{}%
+{%
+\gls@defglossaryentry{mhz}%
+{%
+name={MHz},%
+sort={MHz},%
+type={main},%
+first={MHz},%
+firstplural={MHzs},%
+text={MHz},%
+plural={MHzs},%
+description={Megahercio},%
+descriptionplural={Megahercio},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{khz}{}%
+{%
+\gls@defglossaryentry{khz}%
+{%
+name={KHz},%
+sort={KHz},%
+type={main},%
+first={KHz},%
+firstplural={KHzs},%
+text={KHz},%
+plural={KHzs},%
+description={Kilohercio},%
+descriptionplural={Kilohercio},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ghz}{}%
+{%
+\gls@defglossaryentry{ghz}%
+{%
+name={GHz},%
+sort={GHz},%
+type={main},%
+first={GHz},%
+firstplural={GHzs},%
+text={GHz},%
+plural={GHzs},%
+description={Un gigahercio (MHz) es una unidad de medida de la frecuencia; equivale a $10^{9}$ hercios ( mil millones).},%
+descriptionplural={Un gigahercio (MHz) es una unidad de medida de la frecuencia; equivale a $10^{9}$ hercios ( mil millones).},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{hz}{}%
+{%
+\gls@defglossaryentry{hz}%
+{%
+name={Hz},%
+sort={Hz},%
+type={main},%
+first={Hz},%
+firstplural={Hzs},%
+text={Hz},%
+plural={Hzs},%
+description={El hercio o hertz (símbolo Hz) es la unidad de frecuencia del Sistema Internacional de Unidades. Nombrado en honor al físico alemán Heinrich Rudolf Hertz (1857-1894), que descubrió la propagación de las ondas electromagnéticas.},%
+descriptionplural={El hercio o hertz (símbolo Hz) es la unidad de frecuencia del Sistema Internacional de Unidades. Nombrado en honor al físico alemán Heinrich Rudolf Hertz (1857-1894), que descubrió la propagación de las ondas electromagnéticas.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{erp}{}%
+{%
+\gls@defglossaryentry{erp}%
+{%
+name={ERP},%
+sort={ERP},%
+type={acronym},%
+first={Sistemas de planificaci\'on de recursos empresariales\glsspace (ERP)},%
+firstplural={Sistemas de planificaci\'on de recursos empresarialess\glsspace (ERPs)},%
+text={ERP},%
+plural={ERPs},%
+description={Sistemas de planificación de recursos empresariales},%
+descriptionplural={Sistemas de planificación de recursos empresariales\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Sistemas de planificaci\'on de recursos empresariales},%
+longplural={Sistemas de planificaci\'on de recursos empresarialess},%
+short={ERP},%
+shortplural={ERPs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{erp}{}%
+{%
+\gls@defglossaryentry{erp}%
+{%
+name={ERP},%
+sort={ERP},%
+type={acronym},%
+first={Sistemas de planificaci\'on de recursos empresariales\glsspace (ERP)},%
+firstplural={Sistemas de planificaci\'on de recursos empresarialess\glsspace (ERPs)},%
+text={ERP},%
+plural={ERPs},%
+description={Sistemas de planificación de recursos empresariales},%
+descriptionplural={Sistemas de planificación de recursos empresariales\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Sistemas de planificaci\'on de recursos empresariales},%
+longplural={Sistemas de planificaci\'on de recursos empresarialess},%
+short={ERP},%
+shortplural={ERPs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ietf}{}%
+{%
+\gls@defglossaryentry{ietf}%
+{%
+name={IETF},%
+sort={IETF},%
+type={main},%
+first={IETF},%
+firstplural={IETFs},%
+text={IETF},%
+plural={IETFs},%
+description={The Internet Engineering Task Force (IETF®)},%
+descriptionplural={The Internet Engineering Task Force (IETF®)},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{tcp/ip}{}%
+{%
+\gls@defglossaryentry{tcp/ip}%
+{%
+name={TCP/IP},%
+sort={TCP/IP},%
+type={main},%
+first={TCP/IP},%
+firstplural={TCP/IPs},%
+text={TCP/IP},%
+plural={TCP/IPs},%
+description={Protocolo de control de transmisión/Protocolo de Internet},%
+descriptionplural={Protocolo de control de transmisión/Protocolo de Internet},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{internet}{}%
+{%
+\gls@defglossaryentry{internet}%
+{%
+name={Internet},%
+sort={Internet},%
+type={main},%
+first={Internet},%
+firstplural={Internets},%
+text={Internet},%
+plural={Internets},%
+description={Internet no es del todo una red, sino un inmenso conjunto de redes diferentes que usan ciertos protocolos comunes y proporcionan ciertos servicios comunes.\cite {redes:tanen}},%
+descriptionplural={Internet no es del todo una red, sino un inmenso conjunto de redes diferentes que usan ciertos protocolos comunes y proporcionan ciertos servicios comunes.\cite {redes:tanen}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%

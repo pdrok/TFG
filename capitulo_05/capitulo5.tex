@@ -1,0 +1,515 @@
+\fancyhead{}
+\fancyfoot{}
+
+
+\lhead{Realizar un radio enlace y túnel redundante}
+
+\chapter{Procedimientos generales para la instalación de los enlaces}
+
+Para que todo se entienda mejor se procederá a una demostración bastante sencilla que se ira indicando paso a paso.
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .8]{./figuras/figura052.png}
+\caption{Escenario para la Simulación}
+\label{escenario-simulacion}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .7]{./figuras/figura053.png}
+\caption{Escenario ya en limpio}
+\label{escenario-limpio}
+\end{center}
+\end{figure}
+
+\section{Equipos a ser utilizados}
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .8]{./figuras/figura054.png}
+\caption{Prueba de funcionamiento de los equipos}
+\label{funcionamiento-equipos}
+\end{center}
+\end{figure}
+
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura055.png}
+\caption{MK4 y MK3}
+\label{mk4-mk3}
+\end{center}
+\end{figure}
+
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura056.png}
+\caption{MK2 y MK1}
+\label{mk2-mk1}
+\end{center}
+\end{figure}
+
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura057.png}
+\caption{Notebook Central}
+\label{notebook-central}
+\end{center}
+\end{figure}
+
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura058.png}
+\caption{Maquina Sucursal 1}
+\label{maquina-sucursal-1}
+\end{center}
+\end{figure}
+
+\section{Configuración de radios}
+\subsection{Mikrotik RouterOS - enlaces punto - punto.}
+Para establecer la comunicación en un enlace inalámbrico punto - puntos generalmente la topología que se utiliza es la de \gls{ap} - Station. Este tipo de configuración se lo hace en el modo de operación de cada mainboard que forma parte del enlace.\\
+Antes de iniciar con la configuración respectiva de cada equipo es importante señalar que existen algunos parámetros que se deben tomar en consideración para garantizar la conexión del enlace; entre estos parámetros se encuentra: el \Gls{ssid} de la red, seguridad WEP, la banda de operación y la frecuencia de trabajo (Únicamente en el AP, ya que la estación trabajara? en la frecuencia del AP al que se conecte.)
+
+\subsection{Configuración AP}
+
+Una vez inicializada nuestra consola de Winbox, accedemos al menú Interfaces, el mismo que nos presentara la ventana Interface List que me presentara? los diferentes puertos Ethernet e inalámbricos de los que disponemos.
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura059.png}
+\caption{Escaneo de Routers}
+\label{escaneo-routers}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura060.png}
+\caption{Reseteo de configuraciones}
+\label{reseteo-configuraciones}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura061.png}
+\caption{Remover configuración}
+\label{remover-configuracion-61}
+\end{center}
+\end{figure}
+
+
+Ya que la configuración es inalámbrica procedemos a la configuración de nuestra tarjeta wlan1en el Menú Wireless wlan1 A continuación describiremos únicamente los parámetros más importantes a configurar para un enlace AP.
+\subsubsection{General}
+\textbf{Name:} Permite cambiar el nombre de la interface en la que encontramos.\\
+\textbf{Type:} Muestra el tipo de chip que utiliza la mini PcI.\\
+\textbf{\Gls{mtu}:} Expresa el tamaño en byte de la unidad de datos más grande que puede enviarse usando un Protocolo de Internet.
+\subsubsection{Wireless}
+\textbf{Mode:} Designa el modo de funcionamiento de la interfaz en este caso AP Bridge.\\
+\textbf{Band:} hace referencia al rango de frecuencia sobre el cual se va a trabajar. Frecuencia: Especifica el canal permanente sobre el cual se va a traficar la información.\\
+\textbf{SSID:} es un código incluido en todos los paquetes que se trafican por una red inalámbrica, para identificarlos como parte de la misma.\\
+\textbf{Security Profile:} Es un código Hexadecimal creado con el fin de evitar que usuarios sin una autorización formen parte de la red.\\
+\textbf{Antena Mode:} Ya que las tarjetas miniPCI dispones para dos conectores, en el momento que este se conecta en el principal (main), colocamos como antena a, si por el contrario decidimos conectar al otro puerto (aux), el modo sera? antena b.\\
+\textbf{Antena Gain:} Ganancia de la antena externa que estemos utilizando (en dBi).
+\textbf{Tx-Power:} En la opción de potencia podremos controlar la potencia de salida de las miniPCI, (en dBi).
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura062.png}
+\caption{Interface Wireless disponible}
+\label{interface-wire-dispo}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura063.png}
+\caption{Configurar AP}
+\label{configurar-ap}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura064.png}
+\caption{Habilitar Bridge - WDS}
+\label{bridge-wds}
+\end{center}
+\end{figure}
+ 
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura065.png}
+\caption{Equipos ya conectado}
+\label{equipo-conectado}
+\end{center}
+\end{figure}
+ 
+
+\subsubsection{Configuración Bridge.}
+El crear un bridge me permitirá comunicar dos o más interfaces dentro de una misma tarjera; para ello seguimos los siguientes pasos:\\
+
+Escoger el menú \textbf{Brige} $\rightarrow$ \textcolor{red}{\textbf{+}}\\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura066.png}
+\caption{Nombre Bridge}
+\label{nombre-bridge}
+\end{center}
+\end{figure}
+ Escoger el menú \textbf{Brige} $\rightarrow$ \textbf{ports} $\rightarrow$ \textcolor{red}{\textbf{+}}\\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura067.png}
+\caption{Agregar Interface al Bridge}
+\label{agregar-interface-bridge-67}
+\end{center}
+\end{figure}
+ 
+ Escoger el menú \textbf{Brige} $\rightarrow$ \textbf{ports}\\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura068.png}
+\caption{Lista de Puerto del Bridge}
+\label{lista-puerto-bridge-68}
+\end{center}
+\end{figure}
+ 
+ Escoger el menú \textbf{New Terminal} $\rightarrow$ \textbf{ping 10.0.0.3}
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura069.png}
+\caption{Prueba de ping al MK3}
+\label{prueba-ping-mk3}
+\end{center}
+\end{figure}
+ 
+ Escoger el menú \textbf{Tools} $\rightarrow$ \textbf{Bandwidth Test}
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura070.png}
+\caption{Prueba de Ancho de banda}
+\label{prueba-ancho-banda}
+\end{center}
+\end{figure}
+ 
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura071.png}
+\caption{Una vez conectado, ya muesta al escanear todas las radios}
+\label{conectado-muesta-escanear-radios}
+\end{center}
+\end{figure}
+  Escoger el menú \textbf{Inicio} $\rightarrow$ \textbf{ejecutar} $\rightarrow$ \textbf{cmd}
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura072.png}
+\caption{Prueba de ping desde la Red Central}
+\label{prueba-ping-red-central}
+\end{center}
+\end{figure}
+ 
+\subsection{Configuración Estación.}
+La configuración de nuestra estación es mucho más sencilla ya que como estación tendremos que configurar únicamente los siguientes parámetros:\\
+
+\textbf{General}\\
+\textbf{Name:} Permite cambiar el nombre de la interface en la que os encontramos.\\\
+\textbf{Type:} Muestra el tipo de chip que utiliza la mini PcI.MTU (unidad máxima de transferencia): Expresa el tamaño en byte de la unidad de datos más grande que puede enviarse usando un Protocolo de Internet. \\
+\textbf{Wireless}\\
+\textbf{Mode:} Designa el modo de funcionamiento de la interfaz en este caso AP Bridge.\\
+\textbf{Band:} hace referencia al rango de frecuencia sobre el cual se va a trabajar. 
+\textbf{Frecuencia:} Especifica el canal permanente sobre el cual se va a traficar información dado por el AP al que se conecta.\\
+\textbf{SSID:} Ya que la estación pertenecerá a la misma red del AP, esta tendrá que utilizar el mismo SSID.\\
+\textbf{Security Profile:} Al igual que con el SSID, la estación debe tener la misma seguridad para comunicar los dos equipos.\\
+\textbf{Antena Mode:} Ya que las targejas miniPCI dispones para dos conectores, en el momento que este se conecta en el principal (main), colocamos como antena a, si por el contrario decidimos conectar al otro puerto (aux), el modo será antena b.\\
+\textbf{Antena Gain:} Ganancia de la antena externa que estemos utilizando (en dBi).\\
+\textbf{Tx-Power:} En la opción de potencia podremos controlar la potencia de salida de las miniPCI, (en dBi).\\
+Escoger el menú \textbf{New Terminal} $\rightarrow$  \textbf{system reset-configuration} 
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura073.png}
+\caption{Reestablecer Configuraciones MK3}
+\label{reestablecer-configuraciones-mk3}
+\end{center}
+\end{figure}
+ Escoger el menú \textbf{Remove Configuration} 
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura074.png}
+\caption{Remover configuraciones}
+\label{remover-configuraciones-74}
+\end{center}
+\end{figure}
+ Escoger el menú \textbf{Brige} $\rightarrow$ \textcolor{red}{\textbf{+}}\\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura075.png}
+\caption{Crear Bridge}
+\label{crear-bridge}
+\end{center}
+\end{figure}
+ Escoger el menú \textbf{Bridge} $\rightarrow$  \textbf{Ports} 
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura076.png}
+\caption{Lista de interfaces en el Bridge}
+\label{lista-interfaces-bridge}
+\end{center}
+\end{figure}
+ Escoger el menú \textbf{IP} $\rightarrow$  \textbf{Address}  $\rightarrow$ \textcolor{red}{\textbf{+}}\\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura077.png}
+\caption{Configurar IP}
+\label{configurar-ip}
+\end{center}
+\end{figure}
+ Escoger el menú \textbf{Wireless} 
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura078.png}
+\caption{Lista Interfaces Wireless disponibles}
+\label{lista-interfaces-wireless-disponibles}
+\end{center}
+\end{figure}
+ Escoger el menú \textbf{Wireless} $\rightarrow$  \textbf{wlan1}  $\rightarrow$ \textbf{Wireless}\\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura079.png}
+\caption{Configurar Wireless Station}
+\label{configurar-wireless-station}
+\end{center}
+\end{figure}
+% Bridge y WDS escribir algo sobre estos dos bichos.. 
+Escoger el menú \textbf{Wireless} $\rightarrow$  \textbf{wlan1}  $\rightarrow$ \textbf{WDS}\\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura080.png}
+\caption{Configura interface en la Bridge y WDS}
+\label{configura-interface-bridge-wds}
+\end{center}
+\end{figure}
+ 
+\section{Configuración de VPN}
+
+La especificación para PPTP fue publicada por el RFC 2637\cite{rfc:2637}, aunque no ha sido ratificada como estándar por el IETF.\\
+
+Point-To-Point Tunneling Protocol (\Gls{pptp}) permite el intercambio seguro de datos de un cliente a un servidor formando una Red Privada Virtual (VPN, por el anglicismo Virtual Private Network), basado en una red de trabajo vía \Gls{tcp/ip}. El punto fuerte del PPTP es su habilidad para proveer en la demanda, multi-protocolo soporte existiendo una infraestructura de área de trabajo, como INTERNET. Esta habilidad permitirá a una compañía usar Internet para establecer una red privada virtual (VPN) sin el gasto de una línea alquilada.
+ 
+Escoger el menú \textbf{New Terminal} $\rightarrow$  \textbf{system-reset} \\
+\subsection{Configuración VPN Server} 
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura081.png}
+\caption{Restaurar configuraciones MK1}
+\label{restaurar-configuraciones-mk1}
+\end{center}
+\end{figure}
+
+ Escoger el menú \textbf{Mac Address} $\rightarrow$  \textbf{Connect}\\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura082.png}
+\caption{Winbox con el MK1 ya con las configuraciones de fabrica}
+\label{Winbox-mk1-configuraciones-fabrica}
+\end{center}
+\end{figure}
+ 
+Escoger el menú \textbf{Remove Configuration} \\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura083.png}
+\caption{Remover configuraciones}
+\label{remover-configuraciones-83}
+\end{center}
+\end{figure}
+
+Escoger el menú \textbf{IP} $\rightarrow$  \textbf{Address}  $\rightarrow$ \textcolor{red}{\textbf{+}}\\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura084.png}
+\caption{Configurar IP}
+\label{configurar-ip-84}
+\end{center}
+\end{figure}
+
+ Escoger el menú \textbf{Wireless} $\rightarrow$  \textbf{wlan1}  $\rightarrow$ \textbf{Wireless}\\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura085.png}
+\caption{Conectar al WIFI del Celular}
+\label{conectar-wifi-celular-85}
+\end{center}
+\end{figure}
+
+ Escoger el menú \textbf{Wireless} $\rightarrow$  \textbf{Security Profiles}  $\rightarrow$ \textcolor{red}{\textbf{+}}\\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura086.png}
+\caption{Configuraciones de Seguridad del WIFI}
+\label{confi-seguridad-wifi-86}
+\end{center}
+\end{figure}
+ 
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .3]{./figuras/figura102.png}
+\caption{MK1 y MK4 conectado al Celular}
+\label{mk-conectado-cel}
+\end{center}
+\end{figure}
+ 
+
+Habilitamos el PPTP Server, para eso nos vamos a la opcion de /PPP Interface; acemos clic e el boton PPTP Server hacemos click en Enabled y en default Profile escogemos default-encryptation. Aplicamos, de esta forma estamos hablilitando al servidor para que permita coneccione PPTP.
+
+Escoger el menú \textbf{PPP} $\rightarrow$  \textbf{PPTP-Server} \\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura087.png}
+\caption{Habilitar Server PPTP}
+\label{habilitar-server-pptp}
+\end{center}
+\end{figure}
+ 
+Ahora agregamos nuestros Clientes VPN, Para eso nos vamos a la pestaña Secrets, y agregamos los usuarios que sean necesarios.\\
+
+\textbf{Name:} Nombre de Usuario VPN\\
+\textbf{Password:} Contraseña del Usuario VPN\\
+\textbf{Service:} Tipo de Protocolo que usara el cliente para su coneccion con el servidor.\\
+\textbf{Profile:} Perfil de encryptacion \\
+\textbf{Local Address:} Dirección IP del equipo anfitrión, del router local (La IP de puerta de enlace de nuestra LAN anfitrión.)\\
+\textbf{Remote address:} Direccion IP con la cual el equipo cliente se identificara en nuestra re LAN.\\
+
+Escoger el menú \textbf{ppp} $\rightarrow$  \textbf{Secret}  $\rightarrow$ \textcolor{red}{\textbf{+}}\\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura088.png}
+\caption{Crear usuario para Túnel por medio del Enlace}
+\label{usuario-tunel-enlace}
+\end{center}
+\end{figure}
+
+Escoger el menú \textbf{ppp} $\rightarrow$  \textbf{Secret}  $\rightarrow$ \textcolor{red}{\textbf{+}}\\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura089.png}
+\caption{Crear usuario para el Túnel por medio de Internet}
+\label{usuario-tunel-internet}
+\end{center}
+\end{figure}
+
+ Escoger el menú \textbf{PPP} $\rightarrow$  \textbf{Interfaces}\\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura090.png}
+\caption{Túnel ya online}
+\label{tunel-online}
+\end{center}
+\end{figure}
+
+ Escoger el menú \textbf{IP} $\rightarrow$  \textbf{Address List}\\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura091.png}
+\caption{Listado de IP del MK1}
+\label{listado-ip-mk1}
+\end{center}
+\end{figure} 
+
+ \subsection{Configuración VPN Cliente}
+
+Escoger el menú \textbf{New Terminal} $\rightarrow$ \textbf{system reset-configuration}\\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura092.png}
+\caption{Remover configuraciones}
+\label{remover-configuraciones}
+\end{center}
+\end{figure}
+Escoger el menú \textbf{Remove Configuration} \\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura093.png}
+\caption{Remover configuraciones por defecto}
+\label{remover-configuraciones-defecto}
+\end{center}
+\end{figure}
+
+Escoger el menú \textbf{Wireless} $\rightarrow$  \textbf{wlan1} $\rightarrow$ \textbf{Wireless}\\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura094.png}
+\caption{configurar WIFI}
+\label{configurar-wifi}
+\end{center}
+\end{figure}
+
+Escoger el menú \textbf{Wireless} $\rightarrow$  \textbf{Security Profiles}  $\rightarrow$ \textcolor{red}{\textbf{+}}\\
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura095.png}
+\caption{Perfil de seguridad del WIFI}
+\label{perfil-seguridad-wifi}
+\end{center}
+\end{figure}
+
+ Escoger el menú \textbf{IP} $\rightarrow$  \textbf{Address List}  
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura096.png}
+
+\caption{Lista de IP configurado MK4}
+\label{lista-ip-configurado-mk4}
+\end{center}
+\end{figure}
+ Escoger el menú \textbf{ppp} $\rightarrow$ \\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura097.png}
+\caption{Lista de Discadores Clientes}
+\label{lista-discadores-conectado}
+\end{center}
+\end{figure}
+
+\lhead{Configurar VPN - Discadores}
+\textbf{Configurar Discadores:}\\
+\textbf{Connect To:} Dirección IP con la cual el equipo cliente se identificara en nuestra re LAN\\
+\textbf{Name:} Nombre de Usuario VPN\\
+\textbf{Password:} Contraseña del Usuario VPN\\
+\textbf{Profile:} Perfil de encryptacion
+Escoger el menú \textbf{PPP} $\rightarrow$  \textbf{Secret}  $\rightarrow$ \textcolor{red}{\textbf{+}}\\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura098.png}
+\caption{Datos Discador Cliente por Internet}
+\label{discador-cliente-internet}
+\end{center}
+\end{figure}
+ Escoger el menú \textbf{ppp} $\rightarrow$  \textbf{Secret}  $\rightarrow$ \textcolor{red}{\textbf{+}}\\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura099.png}
+\caption{Datos Discador Cliente VPN por Enlace}
+\label{discador-cliente-enlace}
+\end{center}
+\end{figure}
+ Escoger el menú \textbf{IP} $\rightarrow$  \textbf{Routes} $\rightarrow$ \textcolor{red}{\textbf{+}}\\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura100.png}
+\caption{Configuraciones de Puertas de enlace}
+\label{config-puerta-enlace}
+\end{center}
+\end{figure}
+
+Escoger el menú \textbf{Inicio} $\rightarrow$  \textbf{ejecutar}  $\rightarrow$ \textbf{cmd}\\
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura101.png}
+\caption{Prueba de \gls{traceroute} desde la maquina Sucursal 1}
+\label{prueba-tracert}
+\end{center}
+\end{figure}

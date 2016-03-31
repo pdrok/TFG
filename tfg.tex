@@ -1,0 +1,85 @@
+% !TeX document-id = {178731f6-cadc-4d9d-8cf4-1a746c69493c}
+% !TeX program = PdfLaTeX
+% !TeX encoding = ISO-8859-1
+% !TeX spellcheck = es_ES, en_US
+
+\documentclass[12pt,a4paper,oneside]{book}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{fancyhdr}
+\usepackage[colorlinks]{hyperref}
+\usepackage{datatool}
+\usepackage[acronym]{glossaries}
+\usepackage{makeidx}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{colortbl}
+\usepackage{cite}
+\usepackage{enumerate}
+\usepackage{subfig}
+\usepackage{array}
+\usepackage{float}
+%\usepackage{flexbib}
+\makeindex
+\pagestyle{fancy}
+
+\makeglossaries % este comando debe estar en el preambulo
+
+\begin{document}
+
+\renewcommand{\glossaryname}{Glosario}
+
+\renewcommand\listtablename{\'Indice de Tablas}
+%\listtablename
+
+\renewcommand{\tablename}{Tabla}
+\renewcommand{\acronymname}{Acr\'onimos y s\'imbolos}
+\renewcommand{\bibname}{Referencias bibliogr\'aficas}
+%\glsaddall
+\frontmatter
+\include{./portada_y_ficha_catalografica/portada_y_ficha_catalografica}
+\include{./hoja_aprobacion/hoja_aprobacion}
+\include{./dedicatoria/dedicatoria}
+\include{./agradecimientos/agradecimientos}
+\include{./epigrafe/epigrafe}
+\include{./resumen/resumen}
+\addcontentsline{toc}{chapter}{Resumen}
+\include{./abstract/abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+\tableofcontents
+\listoffigures
+\addcontentsline{toc}{chapter}{\'Indice de figuras}
+\listoftables
+\addcontentsline{toc}{chapter}{\'Indice de tablas}
+\printglossary[type=\acronymtype] % imprime solo la lista de acrónimos
+%\cleardoublepage
+\addcontentsline{toc}{chapter}{Acr\'onimos y s\'imbolos}
+\mainmatter
+\include{./capitulo_01/introduccion}
+\include{./capitulo_01/capitulo1}
+\include{./capitulo_02/capitulo2}
+\include{./capitulo_03/capitulo3}
+\include{./capitulo_04/capitulo4}
+\include{./capitulo_05/capitulo5}
+\include{./capitulo_06/capitulo6}
+\backmatter
+
+\cleardoublepage
+\addcontentsline{toc}{chapter}{Glosario}
+\printglossary
+
+\cleardoublepage
+%\addcontentsline{toc}{chapter}{Anexos}
+\include{./anexos/anexo}
+
+\cleardoublepage
+\addcontentsline{toc}{chapter}{Referencias bibliogr\'aficas}
+
+\bibliographystyle{IEEEtran}
+\bibliography{test}
+\end{document}

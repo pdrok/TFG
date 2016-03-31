@@ -1,0 +1,98 @@
+\fancyhead{}
+\fancyfoot{}
+
+
+\lhead{Realizar un radio enlace y túnel redundante}
+
+\subsection{Configuración Estación.}
+La configuración de nuestra estación es mucho más sencilla ya que como estación tendremos que configurar únicamente los siguientes parámetros:\\
+
+\textbf{General}\\
+\textbf{Name:} Permite cambiar el nombre de la interface en la que os encontramos.\\\
+\textbf{Type:} Muestra el tipo de chip que utiliza la mini PcI.MTU (unidad máxima de transferencia): Expresa el tamaño en byte de la unidad de datos más grande que puede enviarse usando un Protocolo de Internet. \\
+\textbf{Wireless}\\
+\textbf{Mode:} Designa el modo de funcionamiento de la interfaz en este caso AP Bridge.\\
+\textbf{Band:} hace referencia al rango de frecuencia sobre el cual se va a trabajar. 
+\textbf{Frecuencia:} Especifica el canal permanente sobre el cual se va a traficar información dado por el AP al que se conecta.\\
+\textbf{SSID:} Ya que la estación pertenecerá a la misma red del AP, esta tendrá que utilizar el mismo SSID.\\
+\textbf{Security Profile:} Al igual que con el SSID, la estación debe tener la misma seguridad para comunicar los dos equipos.\\
+\textbf{Antena Mode:} Ya que las targejas miniPCI dispones para dos conectores, en el momento que este se conecta en el principal (main), colocamos como antena a, si por el contrario decidimos conectar al otro puerto (aux), el modo será antena b.\\
+\textbf{Antena Gain:} Ganancia de la antena externa que estemos utilizando (en dBi).\\
+\textbf{Tx-Power:} En la opción de potencia podremos controlar la potencia de salida de las miniPCI, (en dBi).\\
+Escoger el menú \textbf{New Terminal} $\rightarrow$  \textbf{system reset-configuration} 
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura073.png}
+\caption{Reestablecer Configuraciones MK3}
+\label{reestablecer-configuraciones-mk3}
+\end{center}
+\end{figure}
+ Escoger el menú \textbf{Remove Configuration} 
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura074.png}
+\caption{Remover configuraciones}
+\label{remover-configuraciones-74}
+\end{center}
+\end{figure}
+ Escoger el menú \textbf{Brige} $\rightarrow$ \textcolor{red}{\textbf{+}}\\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura075.png}
+\caption{Crear Bridge}
+\label{crear-bridge}
+\end{center}
+\end{figure}
+ Escoger el menú \textbf{Bridge} $\rightarrow$  \textbf{Ports} 
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura076.png}
+\caption{Lista de interfaces en el Bridge}
+\label{lista-interfaces-bridge}
+\end{center}
+\end{figure}
+ Escoger el menú \textbf{IP} $\rightarrow$  \textbf{Address}  $\rightarrow$ \textcolor{red}{\textbf{+}}\\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura077.png}
+\caption{Configurar IP}
+\label{configurar-ip}
+\end{center}
+\end{figure}
+ Escoger el menú \textbf{Wireless} 
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura078.png}
+\caption{Lista Interfaces Wireless disponibles}
+\label{lista-interfaces-wireless-disponibles}
+\end{center}
+\end{figure}
+ Escoger el menú \textbf{Wireless} $\rightarrow$  \textbf{wlan1}  $\rightarrow$ \textbf{Wireless}\\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura079.png}
+\caption{Configurar Wireless Station}
+\label{configurar-wireless-station}
+\end{center}
+\end{figure}
+% Bridge y WDS escribir algo sobre estos dos bichos.. 
+Escoger el menú \textbf{Wireless} $\rightarrow$  \textbf{wlan1}  $\rightarrow$ \textbf{WDS}\\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .5]{./figuras/figura080.png}
+\caption{Configura interface en la Bridge y WDS}
+\label{configura-interface-bridge-wds}
+\end{center}
+\end{figure}
+ 
+
+\newglossaryentry{ietf}
+{
+name=IETF,
+description={The Internet Engineering Task Force (IETF®)}
+}
+\newglossaryentry{tcp/ip}
+{
+name=TCP/IP,
+description={Protocolo de control de transmisión/Protocolo de Internet}
+}

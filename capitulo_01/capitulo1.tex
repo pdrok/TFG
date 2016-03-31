@@ -1,0 +1,46 @@
+\fancyhead{}
+\fancyfoot{}
+\newtheorem{teorema}{Teorema}
+
+\lhead{Conceptos fundamentales, teorías y antecedentes}
+%\rhead{\today}
+%\rfoot{\thepage}
+
+\section{Resultado del Diagnóstico.}
+Dar un solución rapida a los problemas de servidores, en especial cuando estas están en alguna regiones donde el acceso se hace difícil, ya sea por inclemencia de tiempo o algún otro factor, puede provocar que no se pueda poner el linea a estos, por días e inclusive semanas, dejando a las unidades sin funcionamiento. ya que resulta mas fácil para el usuario común conectarse desde otra máquina en algun lugar con conexión a \Gls{internet}, que intentar reparar el servidor.
+\subsection{Relevamiento}
+La elaboración de este trabajo obedece a la necesidad de satisfacer las necesidades de centralizar los servidores de una empresa, con la finalidad de unificar la red y por ende los datos e informaciones de suma sustancialidad para la empresa. 
+En este sentido se propone dotar al sistema de una infraestructura sólida, segura y económica mediante el uso de radio enlaces entre sucursales de la empresa seleccionada, teniendo como respaldo el uso de VPN a fin de garantizar la comunicación del servicio aumentando su resiliencia, la robustez del enlace, y contribuyendo con la seguridad de los datos, el activo primordial de toda empresa u organización.
+El alcance del trabajo no cubre la implementación de la seguridad en los servidores, solo la conexión de las filiales con la central y se limita exclusivamente a la orientación técnica partiendo de requisitos básicos necesarios para la centralización de datos a través de conexiones redundantes utilizando túneles VPN.
+
+\subsection{Planteamiento del Problema}
+El problema que se desea solucionar es la perdida la de señal entre la central y las filiales, la replicación de los datos. Como se muestra en la (Fig. \ref{situacion-actual}), cada sucursal tiene su propio servidor, dificultando la replicación de los datos a los servidores de la central\\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .8]{figuras/figura003.png}
+\caption{Situacion Actual, donde cada filial tiene un servidor para cada servicio.}
+\label{situacion-actual}
+\end{center}
+\end{figure}
+Una vez realizado la conexión por medio de tuneles redundates, como se puede ver en la (Fig. \ref{situacion-esperada}), los datos quedan almacenado en el servidor de la central, de esta manera reducir al minino los problemas de incoherencia a causas de replicaciones.\\
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale = .8]{figuras/figura004.png}
+\caption{Situacion Esperada, con la implementacion de los tuneles redundates, los servidores quedan centalizados.}
+\label{situacion-esperada}
+\end{center}
+\end{figure}
+\subsection{Pregunta General}
+?`Cuál es la manera para conectar sucursales con la central a través de VPNs?
+\subsection{Preguntas Específicas}
+?`Cuál es el modelo de infraestructura que responde de manera más eficiente para la centralización de datos utilizando VPN?\\
+?`Cuáles son los equipos hardware y software a ser utilizado para la implementación de la centralización de datos a través de VPN? \\
+?`Qué cantidad de recursos humanos serán necesarios y cuál será el orden de desarrollo del trabajo para la implementación de la centralización de datos a través de VPN? \\
+?`Cuáles son las recomendaciones para tener una seguridad mínima en la centralización de los datos a través de VPN?
+
+\section{Antecedentes}
+La importancia de la tecnología de las redes de datos para las comunicaciones en las organizaciones (empresas, instituciones gubernamentales, no gubernamentales) ha sido fundamental para su desarrollo y crecimiento, tanto en el aspecto económico y funcional, siendo una herramienta estratégica que brinda soporte y permite el desenvolvimiento y transformación de dichas organizaciones. Hoy en día no se puede concebir, a nivel organizacional, algún cambio, fusión u unión sin considerar las comunicaciones y las tecnologías de información que le dan soporte.\\
+Ya se realizaron varios trabajos relacionados a \Gls{vpn}, cada una de ellas con sus particularidades. 
+Cabe destacar \textit{``Redes VPNs de Acceso Remoto''}, realizado por Mario Rubén Mansilla y Eduardo Rodolfo Colombres, donde los objetivos generales fueron: Investigar las características, componentes, mecanismos de una VPN de acceso remoto y como solucionan la necesidad de un ingreso seguro a los recursos informáticos de la organización desde cualquier sitio y Aplicar los conceptos de VPN de acceso remoto a través de una solución que implemente un cliente VPN portátil que evite la instalación de programas para esta tarea.\cite{red:vpn}
+\textit{``Las comunicaciones en las redes privadas virtuales''} de Jesús y Juan Hernández donde el objetivo principal es implementar VPN en una plataforma Windows.\cite{protocolo:2003}
+En otro trabajo similar, \textit{``Estudio e implementación de un radio enlace con tecnología mikrotik para el ISP Sistemas en el cantón gualaquiza, provincia morona santiago''}, de Klever Mauricio Suqui Carchipulla . Estos autores estudian las propiedades de los radios enlaces a profundidad.\cite{suqui:2010}
