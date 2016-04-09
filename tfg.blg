@@ -71,7 +71,6 @@ I was expecting a `,' or a `}'---line 196 of file test.bib
  :   url   = "http://www.profisica.cl/comofuncionan/como.php?id=45"
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "wireless:desarrolo"
 -- IEEEtran.bst version 1.13 (2008/09/30) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
@@ -81,7 +80,7 @@ Warning--missing publisher in redes:tanen
 Done.
 You've used 28 entries,
             4039 wiz_defined-function locations,
-            939 strings with 10658 characters,
+            938 strings with 10640 characters,
 and the built_in function-call counts, 9423 in all, are:
 = -- 651
 > -- 109

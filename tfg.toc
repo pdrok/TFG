@@ -18,100 +18,95 @@
 \contentsline {subsection}{\numberline {1.5.1}Investigaci\'on Tecnol\'ogica}{5}{subsection.1.5.1}
 \contentsline {subsection}{\numberline {1.5.2}Modalidad}{5}{subsection.1.5.2}
 \contentsline {section}{\numberline {1.6}Resultado del Diagn\'ostico.}{6}{section.1.6}
-\contentsline {subsection}{\numberline {1.6.1}Relevamiento}{6}{subsection.1.6.1}
-\contentsline {subsection}{\numberline {1.6.2}Planteamiento del Problema}{6}{subsection.1.6.2}
-\contentsline {subsection}{\numberline {1.6.3}Pregunta General}{8}{subsection.1.6.3}
-\contentsline {subsection}{\numberline {1.6.4}Preguntas Espec\IeC {\'\i }ficas}{8}{subsection.1.6.4}
-\contentsline {section}{\numberline {1.7}Antecedentes}{8}{section.1.7}
-\contentsline {chapter}{\numberline {2}RadioFrecuencia}{10}{chapter.2}
-\contentsline {section}{\numberline {2.1}Marco Te\'orico}{10}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Radiofrecuencia}{11}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Ancho de Banda}{12}{subsection.2.1.2}
-\contentsline {subsection}{\numberline {2.1.3}Ondas Electromagn\'eticas}{12}{subsection.2.1.3}
-\contentsline {subsection}{\numberline {2.1.4}Polarizaci\'on}{13}{subsection.2.1.4}
-\contentsline {subsection}{\numberline {2.1.5}Tipos de Polarizaci\'on}{13}{subsection.2.1.5}
-\contentsline {subsection}{\numberline {2.1.6}Usos de la Polarizaci\'on}{14}{subsection.2.1.6}
-\contentsline {subsection}{\numberline {2.1.7}Caracter\IeC {\'\i }sticas fundamentales de las ondas de radio}{14}{subsection.2.1.7}
-\contentsline {subsection}{\numberline {2.1.8}Reflexi\'on Y Refracci\'on De Ondas}{15}{subsection.2.1.8}
-\contentsline {subsection}{\numberline {2.1.9}Reflexi\'on y Transmisi\'on}{15}{subsection.2.1.9}
-\contentsline {subsection}{\numberline {2.1.10}Refracci\'on}{15}{subsection.2.1.10}
-\contentsline {subsection}{\numberline {2.1.11}Dispersi\'on}{17}{subsection.2.1.11}
-\contentsline {subsection}{\numberline {2.1.12}Difracci\'on}{17}{subsection.2.1.12}
-\contentsline {subsection}{\numberline {2.1.13}Transmisi\'on y Recepci\'on}{18}{subsection.2.1.13}
-\contentsline {subsection}{\numberline {2.1.14}Usos de la radiofrecuencia}{19}{subsection.2.1.14}
-\contentsline {subsection}{\numberline {2.1.15}Caracter\IeC {\'\i }sticas y tipos de enlaces}{20}{subsection.2.1.15}
-\contentsline {subsection}{\numberline {2.1.16}Propagaci\'on radioel\'ectrica}{20}{subsection.2.1.16}
-\contentsline {subsection}{\numberline {2.1.17}Sistemas de radiocomunicaciones inal\'ambricas}{21}{subsection.2.1.17}
-\contentsline {subsection}{\numberline {2.1.18}L\IeC {\'\i }nea de vista directa}{21}{subsection.2.1.18}
-\contentsline {subsection}{\numberline {2.1.19}La Zona de Fresnel}{22}{subsection.2.1.19}
-\contentsline {subsection}{\numberline {2.1.20}Energ\IeC {\'\i }a}{22}{subsection.2.1.20}
-\contentsline {subsection}{\numberline {2.1.21}C\'alculo en dBs}{23}{subsection.2.1.21}
-\contentsline {subsection}{\numberline {2.1.22}Ventajas de un enlace inal\'ambrico}{24}{subsection.2.1.22}
-\contentsline {subsection}{\numberline {2.1.23}Estructura de un radio enlace}{25}{subsection.2.1.23}
-\contentsline {subsection}{\numberline {2.1.24}Enlaces Punto - Punto}{26}{subsection.2.1.24}
-\contentsline {subsection}{\numberline {2.1.25}Enlaces Punto - Multipunto}{27}{subsection.2.1.25}
-\contentsline {subsection}{\numberline {2.1.26}Conexi\'on De Rejilla O Malla}{28}{subsection.2.1.26}
-\contentsline {subsection}{\numberline {2.1.27}Distribuci\'on De Acceso Inal\'ambrico (HotSpot)}{29}{subsection.2.1.27}
-\contentsline {subsection}{\numberline {2.1.28}Sistemas de microondas}{29}{subsection.2.1.28}
-\contentsline {subsection}{\numberline {2.1.29}Radiocomunicaciones por sat\'elite}{29}{subsection.2.1.29}
-\contentsline {subsection}{\numberline {2.1.30}Red Privada}{30}{subsection.2.1.30}
-\contentsline {subsection}{\numberline {2.1.31}Red P\'ublica}{31}{subsection.2.1.31}
-\contentsline {subsection}{\numberline {2.1.32}Red Privada Virtual}{31}{subsection.2.1.32}
-\contentsline {chapter}{\numberline {3}Definici\'on de VPN}{33}{chapter.3}
-\contentsline {subsection}{\numberline {3.0.1}Terminolog\IeC {\'\i }a}{34}{subsection.3.0.1}
-\contentsline {subsection}{\numberline {3.0.2}Clasificaci\'on}{36}{subsection.3.0.2}
-\contentsline {subsection}{\numberline {3.0.3}VPNs provistas por el cliente o por el proveedor}{37}{subsection.3.0.3}
-\contentsline {subsection}{\numberline {3.0.4}VPNS provistas por el cliente (CE o CPE VPN)}{37}{subsection.3.0.4}
-\contentsline {subsection}{\numberline {3.0.5}VPNs provistas por el Proveedor (PPVPN)}{38}{subsection.3.0.5}
-\contentsline {subsection}{\numberline {3.0.6}VPNs Sitio a Sitio y de Acceso Remoto}{40}{subsection.3.0.6}
-\contentsline {subsection}{\numberline {3.0.7}VPNs de capa 2 y capa 3}{42}{subsection.3.0.7}
-\contentsline {subsection}{\numberline {3.0.8}Integraci\'on de las clasificaciones}{42}{subsection.3.0.8}
-\contentsline {subsection}{\numberline {3.0.9}VPN VPWS}{43}{subsection.3.0.9}
-\contentsline {subsection}{\numberline {3.0.10}VPN VPLS}{43}{subsection.3.0.10}
-\contentsline {subsection}{\numberline {3.0.11}VPN IPLS}{44}{subsection.3.0.11}
-\contentsline {subsection}{\numberline {3.0.12}VPN Sitio a Sitio Provistas por el Proveedor de Capa 3 (L3VPN)}{44}{subsection.3.0.12}
-\contentsline {subsection}{\numberline {3.0.13}Confiables y Seguras}{45}{subsection.3.0.13}
-\contentsline {subsection}{\numberline {3.0.14}Overlay y Peer}{45}{subsection.3.0.14}
-\contentsline {subsection}{\numberline {3.0.15}VPNs de capa de transporte/aplicaci\'on}{47}{subsection.3.0.15}
-\contentsline {subsection}{\numberline {3.0.16}VPN multiservicio}{48}{subsection.3.0.16}
-\contentsline {subsection}{\numberline {3.0.17}Aplicaciones}{48}{subsection.3.0.17}
-\contentsline {subsection}{\numberline {3.0.18}Extranets}{49}{subsection.3.0.18}
-\contentsline {subsection}{\numberline {3.0.19}Servicio VPN provisto por un proveedor}{50}{subsection.3.0.19}
-\contentsline {subsection}{\numberline {3.0.20}Calidad de servicio (QoS) y Acuerdos de nivel de servicio (SLA)}{51}{subsection.3.0.20}
-\contentsline {subsection}{\numberline {3.0.21}Creaci\'on de T\'uneles.}{54}{subsection.3.0.21}
-\contentsline {subsection}{\numberline {3.0.22}Tunneling}{54}{subsection.3.0.22}
-\contentsline {subsection}{\numberline {3.0.23}Comparativa entre tecnolog\IeC {\'\i }as VPN}{54}{subsection.3.0.23}
-\contentsline {subsubsection}{PPTP}{54}{section*.31}
-\contentsline {subsubsection}{L2F}{54}{section*.32}
-\contentsline {subsubsection}{L2TP}{55}{section*.33}
-\contentsline {subsubsection}{IPSEC}{55}{section*.34}
-\contentsline {subsubsection}{SSH}{56}{section*.35}
-\contentsline {subsection}{\numberline {3.0.24}Aspectos Legales}{56}{subsection.3.0.24}
-\contentsline {chapter}{\numberline {4}Software RouterOS.}{57}{chapter.4}
-\contentsline {section}{\numberline {4.1}Winbox.}{57}{section.4.1}
-\contentsline {section}{\numberline {4.2}Configuraci\'on IP.}{59}{section.4.2}
-\contentsline {section}{\numberline {4.3}Telnet}{63}{section.4.3}
-\contentsline {section}{\numberline {4.4}Webbox}{65}{section.4.4}
-\contentsline {section}{\numberline {4.5}SSH}{65}{section.4.5}
-\contentsline {section}{\numberline {4.6}Radio Mobile}{66}{section.4.6}
-\contentsline {section}{\numberline {4.7}Google Earth}{68}{section.4.7}
-\contentsline {chapter}{\numberline {5}Procedimientos generales para la instalaci\'on de los enlaces}{70}{chapter.5}
-\contentsline {section}{\numberline {5.1}Equipos a ser utilizados}{71}{section.5.1}
-\contentsline {section}{\numberline {5.2}Configuraci\'on de radios}{73}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Mikrotik RouterOS - enlaces punto - punto.}{73}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Configuraci\'on AP}{74}{subsection.5.2.2}
-\contentsline {subsubsection}{General}{75}{section*.72}
-\contentsline {subsubsection}{Wireless}{76}{section*.73}
-\contentsline {subsubsection}{Configuraci\'on Bridge.}{78}{section*.78}
-\contentsline {subsection}{\numberline {5.2.3}Configuraci\'on Estaci\'on.}{81}{subsection.5.2.3}
-\contentsline {section}{\numberline {5.3}Configuraci\'on de VPN}{86}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Configuraci\'on VPN Server}{86}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Configuraci\'on VPN Cliente}{93}{subsection.5.3.2}
-\contentsline {chapter}{\numberline {6}Conclusi\'on y recomendaciones}{98}{chapter.6}
-\contentsline {chapter}{Glosario}{99}{chapter.6}
-\contentsline {chapter}{Anexo A.}{102}{chapter*.118}
-\contentsline {section}{\numberline {6.1}Configuraciones del MK1}{102}{section.6.1}
-\contentsline {section}{\numberline {6.2}Configuraciones del MK2}{103}{section.6.2}
-\contentsline {section}{\numberline {6.3}Configuraciones del MK3}{104}{section.6.3}
-\contentsline {section}{\numberline {6.4}Configuraciones del MK4}{107}{section.6.4}
-\contentsline {chapter}{Referencias bibliogr\'aficas}{110}{section.6.4}
+\contentsline {subsection}{\numberline {1.6.1}Planteamiento del Problema}{6}{subsection.1.6.1}
+\contentsline {section}{\numberline {1.7}Antecedentes}{7}{section.1.7}
+\contentsline {chapter}{\numberline {2}Conceptos Fundamentales y Antecedente }{9}{chapter.2}
+\contentsline {section}{\numberline {2.1}Valor de la Informaci\'on}{9}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Radiofrecuencia}{10}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Ancho de Banda}{11}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Ondas Electromagn\'eticas}{11}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.4}Caracter\IeC {\'\i }sticas fundamentales de las ondas de radio}{12}{subsection.2.1.4}
+\contentsline {subsection}{\numberline {2.1.5}Reflexi\'on Y Refracci\'on de Ondas}{12}{subsection.2.1.5}
+\contentsline {subsection}{\numberline {2.1.6}Reflexi\'on}{12}{subsection.2.1.6}
+\contentsline {subsection}{\numberline {2.1.7}Refracci\'on}{13}{subsection.2.1.7}
+\contentsline {subsection}{\numberline {2.1.8}Dispersi\'on}{14}{subsection.2.1.8}
+\contentsline {subsection}{\numberline {2.1.9}Difracci\'on}{14}{subsection.2.1.9}
+\contentsline {subsection}{\numberline {2.1.10}Transmisi\'on y Recepci\'on}{16}{subsection.2.1.10}
+\contentsline {subsection}{\numberline {2.1.11}Usos de la radiofrecuencia}{17}{subsection.2.1.11}
+\contentsline {subsection}{\numberline {2.1.12}Caracter\IeC {\'\i }sticas y tipos de enlaces}{17}{subsection.2.1.12}
+\contentsline {subsection}{\numberline {2.1.13}Propagaci\'on radioel\'ectrica}{17}{subsection.2.1.13}
+\contentsline {subsection}{\numberline {2.1.14}Sistemas de radiocomunicaciones inal\'ambricas}{18}{subsection.2.1.14}
+\contentsline {subsection}{\numberline {2.1.15}L\IeC {\'\i }nea de vista directa}{19}{subsection.2.1.15}
+\contentsline {subsection}{\numberline {2.1.16}La Zona de Fresnel}{19}{subsection.2.1.16}
+\contentsline {subsection}{\numberline {2.1.17}Energ\IeC {\'\i }a}{20}{subsection.2.1.17}
+\contentsline {subsection}{\numberline {2.1.18}C\'alculo en dBs}{21}{subsection.2.1.18}
+\contentsline {subsection}{\numberline {2.1.19}Ventajas de un enlace inal\'ambrico}{22}{subsection.2.1.19}
+\contentsline {subsection}{\numberline {2.1.20}Estructura de un radio enlace}{22}{subsection.2.1.20}
+\contentsline {subsection}{\numberline {2.1.21}Conceptos de dise\~no}{23}{subsection.2.1.21}
+\contentsline {subsection}{\numberline {2.1.22}Enlaces Punto - Punto}{24}{subsection.2.1.22}
+\contentsline {subsection}{\numberline {2.1.23}Enlaces Punto - Multipunto}{25}{subsection.2.1.23}
+\contentsline {subsection}{\numberline {2.1.24}Conexi\'on De Rejilla O Malla}{26}{subsection.2.1.24}
+\contentsline {subsection}{\numberline {2.1.25}Distribuci\'on De Acceso Inal\'ambrico (HotSpot)}{26}{subsection.2.1.25}
+\contentsline {subsection}{\numberline {2.1.26}Sistemas de microondas}{26}{subsection.2.1.26}
+\contentsline {subsection}{\numberline {2.1.27}Radiocomunicaciones por sat\'elite}{27}{subsection.2.1.27}
+\contentsline {subsection}{\numberline {2.1.28}Red Privada}{28}{subsection.2.1.28}
+\contentsline {subsection}{\numberline {2.1.29}Red P\'ublica}{28}{subsection.2.1.29}
+\contentsline {subsection}{\numberline {2.1.30}Red Privada Virtual}{29}{subsection.2.1.30}
+\contentsline {chapter}{\numberline {3}Definici\'on de VPN}{31}{chapter.3}
+\contentsline {section}{\numberline {3.1}Terminolog\IeC {\'\i }a}{32}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Clasificaci\'on}{34}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}VPNs provistas por el cliente o por el proveedor}{35}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}VPNS provistas por el cliente (CE o CPE VPN)}{35}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.4}VPNs provistas por el Proveedor (PPVPN)}{36}{subsection.3.1.4}
+\contentsline {subsection}{\numberline {3.1.5}VPNs Sitio a Sitio y de Acceso Remoto}{38}{subsection.3.1.5}
+\contentsline {subsection}{\numberline {3.1.6}VPNs de capa 2 y capa 3}{40}{subsection.3.1.6}
+\contentsline {subsection}{\numberline {3.1.7}Integraci\'on de las clasificaciones}{40}{subsection.3.1.7}
+\contentsline {subsection}{\numberline {3.1.8}VPN VPWS}{41}{subsection.3.1.8}
+\contentsline {subsection}{\numberline {3.1.9}VPN VPLS}{41}{subsection.3.1.9}
+\contentsline {subsection}{\numberline {3.1.10}VPN IPLS}{42}{subsection.3.1.10}
+\contentsline {subsection}{\numberline {3.1.11}VPN Sitio a Sitio Provistas por el Proveedor de Capa 3 (L3VPN)}{42}{subsection.3.1.11}
+\contentsline {subsection}{\numberline {3.1.12}Confiables y Seguras}{43}{subsection.3.1.12}
+\contentsline {subsection}{\numberline {3.1.13}Overlay y Peer}{43}{subsection.3.1.13}
+\contentsline {subsection}{\numberline {3.1.14}VPNs de capa de transporte/aplicaci\'on}{45}{subsection.3.1.14}
+\contentsline {subsection}{\numberline {3.1.15}VPN multiservicio}{46}{subsection.3.1.15}
+\contentsline {subsection}{\numberline {3.1.16}Aplicaciones}{46}{subsection.3.1.16}
+\contentsline {subsection}{\numberline {3.1.17}Extranets}{47}{subsection.3.1.17}
+\contentsline {subsection}{\numberline {3.1.18}Servicio VPN provisto por un proveedor}{48}{subsection.3.1.18}
+\contentsline {subsection}{\numberline {3.1.19}Calidad de servicio (QoS) y Acuerdos de nivel de servicio (SLA)}{49}{subsection.3.1.19}
+\contentsline {subsection}{\numberline {3.1.20}Creaci\'on de T\'uneles.}{52}{subsection.3.1.20}
+\contentsline {subsection}{\numberline {3.1.21}Tunneling}{52}{subsection.3.1.21}
+\contentsline {subsection}{\numberline {3.1.22}Comparativa entre tecnolog\IeC {\'\i }as VPN}{52}{subsection.3.1.22}
+\contentsline {subsubsection}{PPTP}{52}{section*.30}
+\contentsline {subsubsection}{L2F}{52}{section*.31}
+\contentsline {subsubsection}{L2TP}{53}{section*.32}
+\contentsline {subsubsection}{IPSEC}{53}{section*.33}
+\contentsline {subsubsection}{SSH}{54}{section*.34}
+\contentsline {subsection}{\numberline {3.1.23}Aspectos Legales}{54}{subsection.3.1.23}
+\contentsline {chapter}{\numberline {4}Software RouterOS.}{55}{chapter.4}
+\contentsline {section}{\numberline {4.1}Winbox.}{55}{section.4.1}
+\contentsline {section}{\numberline {4.2}Configuraci\'on IP.}{57}{section.4.2}
+\contentsline {section}{\numberline {4.3}Telnet}{61}{section.4.3}
+\contentsline {section}{\numberline {4.4}Webbox}{63}{section.4.4}
+\contentsline {section}{\numberline {4.5}SSH}{63}{section.4.5}
+\contentsline {section}{\numberline {4.6}Radio Mobile}{64}{section.4.6}
+\contentsline {section}{\numberline {4.7}Google Earth}{66}{section.4.7}
+\contentsline {chapter}{\numberline {5}Procedimientos generales para la instalaci\'on de los enlaces}{68}{chapter.5}
+\contentsline {section}{\numberline {5.1}Equipos a ser utilizados}{69}{section.5.1}
+\contentsline {section}{\numberline {5.2}Configuraci\'on de radios}{71}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Mikrotik RouterOS - enlaces punto - punto.}{71}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Configuraci\'on AP}{72}{subsection.5.2.2}
+\contentsline {subsubsection}{General}{73}{section*.71}
+\contentsline {subsubsection}{Wireless}{74}{section*.72}
+\contentsline {subsubsection}{Configuraci\'on Bridge.}{76}{section*.77}
+\contentsline {subsection}{\numberline {5.2.3}Configuraci\'on Estaci\'on.}{79}{subsection.5.2.3}
+\contentsline {section}{\numberline {5.3}Configuraci\'on de VPN}{84}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Configuraci\'on VPN Server}{84}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Configuraci\'on VPN Cliente}{91}{subsection.5.3.2}
+\contentsline {chapter}{\numberline {6}Conclusi\'on y recomendaciones}{96}{chapter.6}
+\contentsline {chapter}{Glosario}{97}{chapter.6}
+\contentsline {chapter}{Anexo A.}{100}{chapter*.117}
+\contentsline {section}{\numberline {6.1}Configuraciones del MK1}{100}{section.6.1}
+\contentsline {section}{\numberline {6.2}Configuraciones del MK2}{101}{section.6.2}
+\contentsline {section}{\numberline {6.3}Configuraciones del MK3}{102}{section.6.3}
+\contentsline {section}{\numberline {6.4}Configuraciones del MK4}{105}{section.6.4}
+\contentsline {chapter}{Referencias bibliogr\'aficas}{108}{section.6.4}

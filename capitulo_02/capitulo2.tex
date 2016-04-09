@@ -4,15 +4,15 @@
 
 \lhead{Radiofrecuencia, su historia, sus protocolos de señalización}
 
-\chapter{RadioFrecuencia}
+\chapter{Conceptos Fundamentales y Antecedente }
 
-\section{Marco Teórico}
+\section{Valor de la Información}
 Es de sobra conocido que vivimos en la era de la información. Este hecho tiene unas connotaciones inmediatas que también son conocidas universalmente. La primera de ellas es que en la sociedad actual la información tiene un gran valor, es más, en muchas ocasiones la información es el propio ``valor'' o, al menos, la información es el valor que marca la diferencia. \\
 Muchas empresas y organizaciones, solo gestionan y negocian con información. Para ellas, la información es el único activo y, por lo tanto, el más valioso. Como tal elemento de valor, la información debe ser custodiada con el máximo cuidado porque, sin lugar a duda, será buscada por otros. \cite{gutierrez:2003}\\
 Hoy en día así como han crecido potencialmente las tecnologías, la masificación del uso de Internet y el uso de aplicaciones en red, también han crecido las amenazas informáticas, las cuales pueden provocar desde una infección en la computadora con virus hasta interrumpir completamente la funcionalidad de un sistema empresarial.\cite{sanchez:2012}\\
 A fin de garantizar la seguridad de este bien de las empresas u organizaciones, es imprescindible protegerla, de forma a que se evite las pérdidas por eventos accidentales o intencionales.\\
 
-Entre los términos de seguridad dentro del ámbito de las Tics, se pueden definir los siguientes:\\
+Entre los términos de seguridad dentro del ámbito de las \Gls{tics}, se pueden definir los siguientes:\\
 \begin{itemize}
 	\item Amenaza es un evento que puede desencadenar un incidente en la organización propietaria, produciendo daños materiales o perdidas inmateriales en sus activos.
 	\item Activos son recursos para que la organización funcione correctamente con el fin de alcanzar sus objetivos propuestos. En el caso que nos compete, el activo principal es la información y los activos secundarios son los propios sistemas informáticos (hardware). 
@@ -21,11 +21,11 @@ Entre los términos de seguridad dentro del ámbito de las Tics, se pueden definir
 	\item Riesgo es la probabilidad de que se produzca un impacto determinado en un activo de la organización.\cite{seguridad:2013}
 \end{itemize}
 
-Desde del inicio de las telecomunicaciones, cuando una información es transmitida por un canal de comunicación está sometida a riesgos porque existe amenazas y el canal de comunicación tiene vulnerabilidades (un canal de comunicación es, en la mayoría de los casos, esencialmente inseguro e inestable).\cite{seguridad:2004}\\
+Desde el inicio de las telecomunicaciones, cuando una información es transmitida por un canal de comunicación está sometida a riesgos porque existen amenazas y el canal de comunicación tiene vulnerabilidades (un canal de comunicación es, en la mayoría de los casos, esencialmente inseguro e inestable).\cite{seguridad:2004}\\
 
 \subsection{Radiofrecuencia} 
 Cuando hablamos de radio, la mayoría de la gente piensa en la radio FM, que usa una frecuencia de alrededor de 100 MHz. Entre la radio y el infrarrojo encontramos la región de las microondas con frecuencias de 1 GHz a 300 GHz, y longitudes de onda de 30 cm a 1 mm.\\
-Las frecuencias más importantes para nosotros son las de 2 400 - 2 495 MHz, usadas por los estándares 802.11b y 802.11g (correspondientes a longitudes de onda de alrededor de 12.5 cm), y las de 5.150 - 5.850 GHz (correspondientes a longitudes de onda de alrededor de 5 a 6 cm), usadas por 802.11a. El estándar 802.11n puede trabajar en cualquiera de estas bandas. en la (Fig. \ref{espectro-electromagnetico}) nos muestra el uso de cada frecuencia.
+Las frecuencias más importantes para realizar los radio enlaces son las de 2400 - 2495 MHz, usadas por los estándares 802.11b y 802.11g (correspondientes a longitudes de onda de alrededor de 12.5 cm), y las de 5.150 - 5.850 GHz (correspondientes a longitudes de onda de alrededor de 5 a 6 cm), usadas por 802.11a. El estándar 802.11n puede trabajar en cualquiera de estas bandas. en la (Fig. \ref{espectro-electromagnetico}) nos muestra el uso de cada frecuencia.
 
 \begin{figure}[H]
 \begin{center}
@@ -36,29 +36,12 @@ Las frecuencias más importantes para nosotros son las de 2 400 - 2 495 MHz, usad
 \end{figure}
 \subsection{Ancho de Banda}
 Un término que vamos a encontrar a menudo en la física de radio es ancho de banda. El ancho de banda es simplemente una medida de rango de frecuencia. Si un dispositivo usa el rango de 2.40 GHz a 2.48 GHz, decimos que el ancho de banda sería 0.08 GHz (es decir 80 MHz).
-Se puede ver fácilmente que el ancho de banda que defnimos aquí esta muy relacionado con la cantidad de datos que se pueden trasmitir a mayor cantidad de frecuencias disponibles, mayor cantidad de datos se pueden transmitir en un momento dado. El término ancho de banda es a menudo utilizado para algo que deberíamos más bien denominar tasa de transmisión de datos, por ejemplo ``mi conexión a Internet tiene 1 Mbps de ancho de banda'', lo que signifca que ésta puede trasmitir datos a 1 megabit por segundo.\cite{wireless:desarrollo}
+Se puede ver fácilmente que el ancho de banda que definimos aquí esta muy relacionado con la cantidad de datos que se pueden trasmitir a mayor cantidad de frecuencias disponibles, mayor cantidad de datos se pueden transmitir en un momento dado. El término ancho de banda es a menudo utilizado para algo que deberíamos más bien denominar tasa de transmisión de datos, por ejemplo ``la conexión a Internet tiene 1(un) Mbps de ancho de banda'', lo que signifca que ésta puede trasmitir datos a 1(un) megabit por segundo.\cite{wireless:desarrollo}
 
 \subsection{Ondas Electromagnéticas}
 La forma de propagación de las ondas electromagnéticas se genera por la aceleración de una carga eléctrica. Estas viajan a una velocidad cercana a los 300.000 km/s, sin embargo cuando esta viaja a través de la materia las velocidades que alcanza son mucho menores, a mayor densidad menor velocidad.\cite{wireless:desarrollo}\\
 La radiación electromagnética se propaga por el universo como ondas interactivas de campos eléctricos y magnéticos; y se puede ordenar en un espectro que va desde ondas de frecuencias elevadas hasta ondas con frecuencia muy bajas.\\
 Existe una división del espectro de frecuencias que fue establecida por el Consejo Consultivo Internacional de las Comunicaciones de Radio (\Gls{CCIR}) en el año 1953.\cite{ccir:1927}\\
-
-
-\subsection{Polarización} 
-Es aquel fenómeno que se produce cuando el campo eléctrico oscila solo en un plano determinado, denominado plano de polarización. Este plano puede definirse por dos vectores, uno de ellos paralelo a la dirección de propagación de la onda y otro perpendicular a esa misma dirección el mismo que indica la dirección del campo eléctrico.
-
-\subsection{Tipos de Polarización}
-Como se describió anteriormente la polarización está definida por la trayectoria que describe el campo eléctrico o magnético sobre un plano, en función de esto la polarización se clasifica en: polarización lineal, circular, elíptica. En el siguiente grafico se ilustra de mejor manera dicha clasificación, en donde el campo eléctrico está representado por el color azul, los componentes X, Y por el color rojo y verde, el eje vertical representa el tiempo, y el color purpura es la trayectoria que describe el vector en el plano.
-\begin{figure}[htb]
-\begin{center}
-\includegraphics[scale = .9]{figuras/figura006.png}
-\caption{Tipos de Polarización \cite{suqui:2010}}
-\label{tipos-polarizacion}
-\end{center}
-\end{figure}
-\subsection{Usos de la Polarización}
-Cada vez que se realiza un radioenlace, necesitamos el uso de antemas para conseguir un mayor alcance para la señal a emitir, sin embargo, en el momento de instalarlas nos encontramos con la posibilidad de elegir entre una polarización horizontal o vertical, la diferencia está prácticamente que cuando se alineada verticalmente (el trozo de alambre recto), los electrones solo se mueven de arriba a abajo, no hacia los lados (porque no hay lugar hacia donde moverse) y por consiguiente los campos eléctricos solo apuntan hacia arriba o hacia abajo verticalmente. El campo que abandona el alambre y viaja como una onda tiene una polarización estrictamente lineal (y en este caso vertical). Por otra parte la polarización horizontal tendremos un movimiento de los electrones de izquierda a derecha, por lo tanto el campo que abandona el alambre viaja como una onda con polarización lineal horizontal.
-Cabe señalar que cuando se alinean dos antenas, así consigamos los mejores niveles de señal, y si estas no se encuentran polarizadas correctamente, no podremos transmitir información por el enlace
 \subsection{Características fundamentales de las ondas de radio}
 El comportamiento de las ondas dependerá del medio de transmisión, del tipo de información que se desee enviar, y de los equipos a utilizar. En resumen las características principales de las ondas de radio son:
 \begin{itemize}
@@ -68,10 +51,10 @@ El comportamiento de las ondas dependerá del medio de transmisión, del tipo de i
 	\item Las ondas con longitudes de onda más larga tienden a viajar más lejos que las que tienen longitudes de onda más cortas.
 	\item Las ondas más largas rodean los obstáculos. La distancia que una onda puede viajar depende de la relación entre la longitud de onda de la misma y el tamaño de los obstáculos en su camino de propagación.
 \end{itemize}
-\subsection{Reflexión Y Refracción De Ondas}
+\subsection{Reflexión Y Refracción de Ondas}
 Si bien es cierto las ondas electromagnéticas pueden viajar en el vacío, pero por lo general estas se propagan por un medio que puede ser elástico u homogéneo. Cuando las ondas viajan a través de un medio inicial, su trayectoria se ve afectada, produciéndose así los efectos conocidos como reflexión, refracción y dispersión de ondas.
 
-\subsection{Reflexión y Transmisión}
+\subsection{Reflexión}
 Cuando una onda viaja, y esta se encuentra con otro tipo de superficie, la mayor parte de la onda incidente que se refleja sobre dicha superficie se conoce como reflexión. La reflexión puede ser de dos tipos: especular cuando la superficie de incidencia es lisa (el ángulo de incidencia es igual al reflejado), y difusa cuando la superficie de incidencia tiene imperfecciones. La reflexión y transmisión de perturbaciones oscilatorias es común tanto a las ondas mecánicas como a la luz y ondas electromagnéticas.\\
 Las dos leyes que resumen el fenómeno de la reflexión con respecto al medio de separación son:
 \begin{enumerate}[(I)] 
@@ -102,7 +85,7 @@ Durante la transmisión de una onda cuando esta se encuentra con un segundo medio
 La velocidad de la luz en un medio dado depende de la longitud de onda. De este modo, al incidir sobre una superficie de separación con un mismo ángulo de incidencia, se refracta con un ángulo de refracción diferente para cada longitud de onda (y, por tanto, para cada frecuencia, que determina el color). Así, si se hace incidir un haz de luz blanca sobre una superficie de separación, cada color de la luz se refracta con un ángulo diferente, para formar un efecto de arco iris. Este fenómeno se denomina dispersión de la luz.
 
 \subsection{Difracción}
-Difracción es el comportamiento de las ondas cuando al incidir en un objeto dan la impresión de doblarse. Es el efecto de ?`ondas doblando las esquinas?. Imagine una onda en el agua viajando en un frente de onda plana, tal como una ola llegando a una playa oceánica. Ahora ponemos en su camino una barrera sólida, como una cerca de madera, para bloquearla. Luego practicamos una estrecha rendija en esa pared, como una pequeña puerta. Desde esta abertura va a comenzar una onda circular, y por supuesto va a alcanzar puntos que están en una línea directa detrás de esa abertura, pero también a ambos lados de ella. Si miramos este frente de onda, y pudiera ser también una onda electromagnética, como un haz de luz, sería difícil explicar cómo logra alcanzar puntos que están ocultos por una barrera. Este fenómeno se puede apreciar mejor en la siguiente figura:
+Difracción es el comportamiento de las ondas cuando al incidir en un objeto dan la impresión de doblarse. Es el efecto de ?`ondas doblando las esquinas?. Imagine una onda en el agua viajando en un frente de onda plana, tal como una ola llegando a una playa oceánica. Ahora ponemos en su camino una barrera sólida, como una cerca de madera, para bloquearla. Luego practicamos una estrecha rendija en esa pared, como una pequeña puerta. Desde esta abertura va a comenzar una onda circular, y por supuesto va a alcanzar puntos que están en una línea directa detrás de esa abertura, pero también a ambos lados de ella. Si miramos este frente de onda, y pudiera ser también una onda electromagnética, como un haz de luz, sería difícil explicar cómo logra alcanzar puntos que están ocultos por una barrera. Este fenómeno se puede apreciar mejor en la siguiente figura \ref{difraccion}:
 \begin{figure}[htb]
 \begin{center}
 \includegraphics[scale = .9]{figuras/figura009.png}
@@ -177,20 +160,21 @@ La comunicación inalámbrica inicio con la postulación de las ondas electromagnét
 Un enlace inalámbrico es aquel que no necesita de un medio guiado para la transmisión de información, este presenta grandes ventajas frente a la conexión por cable, ya que su instalación puede llegar a lugares geográficos imposible para una red cableada, con la facilidad de transportar datos y voz. En la actualidad las redes inalámbricas ofrecen igual o hasta mejor confiablidad, calidad y velocidad en comparación con algunas conexiones de Internet vía satélite, estos enlaces se realizan desde un punto donde exista la posibilidad de contratar un acceso a Internet hasta el punto donde sea necesaria dicha conexión.
 
 \subsection{Línea de vista directa}
-El término línea vista, a menudo abreviada como LOS (por su sigla en inglés, Line of Sight), es fácil de comprender cuando se habla acerca de la luz visible, si podemos ver un punto B desde un punto A donde estamos, tenemos línea de vista directa. La línea visual que necesitamos para tener una conexión inalámbrica optima desde un punto A hasta otro B, es más que simplemente una línea delgada, su forma es más bien la de un cigarro, un elipsoide. Su ancho puede ser descrito por medio del concepto de zonas de Fresnel.
+El término línea vista, a menudo abreviada como \Gls{los}, es fácil de comprender cuando se habla acerca de la luz visible, si podemos ver un punto B desde un punto A donde estamos, tenemos línea de vista directa. La línea visual que necesitamos para tener una conexión inalámbrica optima desde un punto A hasta otro B, es más que simplemente una línea delgada, su forma es más bien la de un cigarro, un elipsoide. Su ancho puede ser descrito por medio del concepto de zonas de Fresnel.
 
 \subsection{La Zona de Fresnel}
-La teoría exacta de las zonas de Fresnel es algo complicada. Sin embargo el concepto es fácilmente entendible, se sabe por el principio de Huygens que por cada punto de un frente de onda comienzan nuevas ondas circulares, por ende se sabe que los haces de microondas se ensanchan. También que las ondas de una frecuencia pueden interferir unas con otras. La teoría de zona de Fresnel simplemente examina a la línea desde A hasta B y luego al espacio alrededor de esa línea que contribuye a lo que está llegando al punto B. Algunas ondas viajan directamente desde A hasta B, mientras que otras lo hacen en trayectorias indirectas. Consecuentemente, su camino es más largo, introduciendo un desplazamiento de fase entre los rayos directos e indirectos. Siempre que el desplazamiento de fase es de una longitud de onda completa, se obtiene una interferencia constructiva, las señales se suman óptimamente. Tomando este enfoque, y haciendo los cálculos, se encuentra con que hay zonas anulares alrededor de la línea directa de A hacia B que contribuyen a que la señal llegue al punto B. Se debe tener en cuenta que existen muchas zonas de Fresnel, pero para este caso interesa principalmente la zona 1. Si ésta fuera bloqueada por un obstáculo, por ejemplo un árbol o un edificio, la señal que llegue al destino lejano será atenuada. Entonces, cuando se planea enlaces inalámbricos, se debe estar seguro de que esta zona va estará libre de obstáculos. En la práctica de redes inalámbricas ya se puede trabajar con que al menos el 60 por ciento de la primera zona de Fresnel esté libre.\cite{ipvideo:2014}\\
-\begin{figure}[htb]
+La teoría exacta de las zonas de Fresnel es algo complicada. Sin embargo el concepto es fácilmente entendible, se sabe por el principio de Huygens que por cada punto de un frente de onda comienzan nuevas ondas circulares, por ende se sabe que los haces de microondas se ensanchan. También que las ondas de una frecuencia pueden interferir unas con otras. La teoría de zona de Fresnel simplemente examina a la línea desde A hasta B y luego al espacio alrededor de esa línea que contribuye a lo que está llegando al punto B \ref{zona-fresnel} . Algunas ondas viajan directamente desde A hasta B, mientras que otras lo hacen en trayectorias indirectas. Consecuentemente, su camino es más largo, introduciendo un desplazamiento de fase entre los rayos directos e indirectos. Siempre que el desplazamiento de fase es de una longitud de onda completa, se obtiene una interferencia constructiva, las señales se suman óptimamente. Tomando este enfoque, y haciendo los cálculos, se encuentra con que hay zonas anulares alrededor de la línea directa de A hacia B que contribuyen a que la señal llegue al punto B. Se debe tener en cuenta que existen muchas zonas de Fresnel, pero para este caso interesa principalmente la zona 1. Si ésta fuera bloqueada por un obstáculo, por ejemplo un árbol o un edificio, la señal que llegue al destino lejano será atenuada. Entonces, cuando se planea enlaces inalámbricos, se debe estar seguro de que esta zona va estará libre de obstáculos. En la práctica de redes inalámbricas ya se puede trabajar con que al menos el 60 por ciento de la primera zona de Fresnel esté libre.\cite{ipvideo:2014}\\
+\begin{figure}[H]
 \begin{center}
 \includegraphics[scale = .9]{figuras/figura013.png}
 \caption{La zona de Fresnel está bloqueada parcialmente en este enlace aunque la línea visual (line of sight) no está obstruida \cite{wireless:desarrollo}}
 \label{zona-fresnel}
 \end{center}
 \end{figure}
-La siguiente ecuación es la fórmula para calcular la primera zona de Fresnel:\\
+La  ecuación \ref{zona-fresne-eq} es la fórmula para calcular la primera zona de Fresnel:\\
 \begin{equation}
 r=17.31*\sqrt{(((d1*d2)/( f*d)))}
+\label{zona-fresne-eq}
 \end{equation}
 
 Donde r es el radio de la primera zona en metros, d1 y d2 son las distancias desde el obstáculo a los extremos del enlace en metros, d es la distancia total del enlace en metros, y f es la frecuencia en MHz. Note que esta fórmula calcula el radio de la zona. Para calcular la altura sobre el terreno, debe sustraerse este resultado de una línea trazada directamente entre la cima de las dos torres.
@@ -200,6 +184,7 @@ La potencia P es clave para lograr que los enlaces inalámbricos funcionen, se ne
 
 \begin{equation}
 P \approx E^2
+\label{energia}
 \end{equation}
 En la práctica, se mide la potencia por medio de algún tipo de receptor, por ejemplo una antena y un voltímetro, un medidor de potencia, un osciloscopio, o inclusive una tarjeta inalámbrica y una computadora portátil. La potencia es proporcional al cuadrado del voltaje de la señal.
 
@@ -208,6 +193,7 @@ La técnica sin duda más importante para calcular la potencia es por decibeles (\
 
 \begin{equation}
 dB = 10 * log(P1/P0)
+\label{calc-db}
 \end{equation}
 
 Donde $P1$ y $P0$ pueden ser de los dos valores cualesquiera que se quiere comparar. Típicamente, en este caso, se tratará de potencia.\\
@@ -243,7 +229,7 @@ En cuanto a los repetidores se los puede clasificar en activos o pasivos.
 	\item Pasivos: Se comportan como espejos que reflejan la señal y se los puede dividir en pasivos convencionales, que son una pantalla reflectora y los pasivos back-back, que están constituidos por dos antenas espalda a espalda. Se los utiliza en ciertos casos para salvar obstáculos aislados y de corta distancia.
 \end{itemize}
 Los enlaces son estructuralmente sistemas en serie, de tal manera que si uno falla se pierde la comunicación a través de la red. Por ello se le exige los equipos en cada nodo posean una alta disponibilidad y confiabilidad Esto también implica que utilicen sistemas de supervisión y control de alto rendimiento para detectar fácilmente una falla en el sistema.
-Conceptos de diseño
+\subsection{Conceptos de diseño}
 Como se mencionó anteriormente la forma de garantizar el correcto funcionamiento del enlace es necesario que entre dos puntos a conectar exista línea de vista directa, es decir que entre el enlace exista una altura libre de obstáculos para la adecuada propagación en toda época del año, tomando en cuenta las variaciones de las condiciones atmosféricas de la región. Para poder calcular las alturas libres debe conocerse la topografía del terreno, así como la altura y ubicación de los obstáculos que puedan existir en el trayecto.
 El diseño de un radio enlace se puede resumir en los siguientes pasos:
 \begin{itemize}

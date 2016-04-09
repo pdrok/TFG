@@ -28,6 +28,66 @@ parent={},%
 %
 }%
 }%
+\ifglsentryexists{tics}{}%
+{%
+\gls@defglossaryentry{tics}%
+{%
+name={TICs},%
+sort={TICs},%
+type={acronym},%
+first={Tecnolog\IeC {\'\i }as de la Informaci\'on y las Comunicaci\'on\glsspace (TICs)},%
+firstplural={Tecnolog\IeC {\'\i }as de la Informaci\'on y las Comunicaci\'ons\glsspace (TICss)},%
+text={TICs},%
+plural={TICss},%
+description={Tecnologías de la Información y las Comunicación},%
+descriptionplural={Tecnologías de la Información y las Comunicación\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Tecnolog\IeC {\'\i }as de la Informaci\'on y las Comunicaci\'on},%
+longplural={Tecnolog\IeC {\'\i }as de la Informaci\'on y las Comunicaci\'ons},%
+short={TICs},%
+shortplural={TICss},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{los}{}%
+{%
+\gls@defglossaryentry{los}%
+{%
+name={LOS},%
+sort={LOS},%
+type={acronym},%
+first={Line of Sight\glsspace (LOS)},%
+firstplural={Line of Sights\glsspace (LOSs)},%
+text={LOS},%
+plural={LOSs},%
+description={Line of Sight},%
+descriptionplural={Line of Sight\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Line of Sight},%
+longplural={Line of Sights},%
+short={LOS},%
+shortplural={LOSs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
 \ifglsentryexists{vpn}{}%
 {%
 \gls@defglossaryentry{vpn}%

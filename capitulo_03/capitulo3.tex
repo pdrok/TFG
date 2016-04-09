@@ -17,7 +17,7 @@ Se puede definir a una VPN de manera más formal. Esta definición aparece publica
 De acuerdo a estas definiciones se puede decir que una red privada virtual es una red, que comunica dos o más dispositivos finales (estos a su vez pueden interconectar una red completa) que pueden estar ubicados geográficamente distantes y representan una comunidad de interés. Para esto se utiliza como medio de transmisión una estructura compartida común a varios usuarios. Ésta puede ser Internet o la red principal o backbone de un proveedor de servicios de comunicaciones.\\
 Se dice privada porque los dispositivos que no participan en esta comunicación no tienen acceso al contenido de la misma y de hecho no son conscientes de su establecimiento. El acceso a esta red y su administración está restringido solo a un número limitado de dispositivos. La privacidad se aplica también al espacio de direccionamiento y esquema de enrutamiento utilizado en una VPN, en el sentido de que están separados o difieren de aquellos instrumentados en alguna otra red privada existente o en la infraestructura de red subyacente por donde ocurre la comunicación.\\
 El concepto de virtual, por definición es la representación de un objeto no existente mediante la ejecución de funciones que simulan su existencia. En el contexto de una VPN, significa que esta última representa una red de comunicaciones, que no tiene una contraparte física real. Este concepto fundamenta la naturaleza discreta o de separación, de una red lógica privada funcionando sobre una infraestructura de comunicaciones compartida y real. El aspecto de privacidad, definido en el párrafo anterior, está en función de la virtualización.\cite{what:2001}
-\subsection{Terminología}
+\section{Terminología}
 La literatura relacionada con redes privadas virtuales está llena de acrónimos, siglas, términos muy específicos que tornan difícil la interpretación de cualquier lectura relacionada con el tema. Esta sección define los principales elementos que componen un escenario VPN.
 \begin{itemize}
 	\item Sitio: ubicación geográfica con uno o más usuarios o uno o más servidores o una combinación de servidores y usuarios. El usuario refiere al host o estación de trabajo.
@@ -174,7 +174,7 @@ Se pueden dividir a su vez en:
 \item VPN basadas en CE: En este caso los túneles son creados entre los equipos CE, mientras los PE no participan en la VPN, solo reenvían el tráfico del cliente. Se utiliza IPSec o GRE para establecer los túneles.
 \end{itemize}
 \subsection{Confiables y Seguras}
-Esta es una clasificación donde se tiene en cuenta si es o no necesaria la encriptación y autenticación de los datos a transferir entre los nodos de la VPN. Los proveedores que no utilizan encriptación para los datos de sus clientes debido a que utilizan circuitos virtuales de capa 2 se pueden definir como VPN Confiables. Podemos mencionar las redes FRAME RELAY, ATM y MPLS. En cambio en las VPN Seguras el tráfico de datos es autenticado y encriptado sobre el backbone del proveedor del servicio. Utilizan los protocolos IPSEC, SSL, L2TP asegurado mediante IPSEC, PPTP asegurado con MPPE (Microsoft Point-to-Point Encryption).
+Esta es una clasificación donde se tiene en cuenta si es o no necesaria la encriptación y autenticación de los datos a transferir entre los nodos de la VPN. Los proveedores que no utilizan encriptación para los datos de sus clientes debido a que utilizan circuitos virtuales de capa 2 se pueden definir como VPN Confiables. Podemos mencionar las redes FRAME RELAY, ATM y MPLS. En cambio en las VPN Seguras el tráfico de datos es autenticado y encriptado sobre el backbone del proveedor del servicio. Utilizan los protocolos IPSEC, \Gls{ssl}, L2TP asegurado mediante IPSEC, PPTP asegurado con MPPE (Microsoft Point-to-Point Encryption).
 
 \subsection{Overlay y Peer}
 Las VPN overlay se dan entre dispositivos CE, los dispositivos PE no participan en el enrutamiento de los clientes de la red, sino que reenvían tráfico de clientes basados en direccionamiento globalmente único, por lo tanto no tiene conocimiento del direccionamiento utilizado por el cliente.\\
@@ -387,7 +387,7 @@ Los componentes básicos de un túnel son:
     	\end{itemize}
 \end{itemize}
 
-\Gls{ssl} 
+\subsubsection{SSL}
 \begin{itemize}
 \item Punto Fuerte
 \begin{itemize}    
@@ -416,7 +416,7 @@ Los componentes básicos de un túnel son:
     	\end{itemize}
 \end{itemize}
 
-MPLS (Multiprotocol Label Switching)
+\subsubsection{MPLS }
 \begin{itemize}
 \item Puntos Fuertes
 \begin{itemize}    
