@@ -1,7 +1,7 @@
 \select@language {spanish}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Situacion Actual, donde cada filial tiene un servidor para cada servicio.\relax }}{6}{figure.caption.7}
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Situacion Esperada, con la implementacion de los tuneles redundates, los servidores quedan centalizados.\relax }}{7}{figure.caption.8}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Situacion Esperada, con la implementacion de los tuneles redundates, los servidores quedan centralizados.\relax }}{7}{figure.caption.8}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Escala del espectro electromagn\'etico \cite {wireless:desarrollo}\relax }}{11}{figure.caption.9}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Rayo incidente y reflejado \cite {suqui:2010}\relax }}{13}{figure.caption.10}

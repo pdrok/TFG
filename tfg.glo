@@ -14,6 +14,7 @@
 \glossaryentry{ATM?\glossentry{atm}|setentrycounter[]{page}\glsnumberformat}{41}
 \glossaryentry{SSH?\glossentry{ssh}|setentrycounter[]{page}\glsnumberformat}{64}
 \glossaryentry{FTP?\glossentry{ftp}|setentrycounter[]{page}\glsnumberformat}{64}
+\glossaryentry{Telnet?\glossentry{telnet}|setentrycounter[]{page}\glsnumberformat}{64}
 \glossaryentry{SSID?\glossentry{ssid}|setentrycounter[]{page}\glsnumberformat}{73}
 \glossaryentry{MTU?\glossentry{mtu}|setentrycounter[]{page}\glsnumberformat}{75}
 \glossaryentry{TCP/IP?\glossentry{tcp/ip}|setentrycounter[]{page}\glsnumberformat}{85}

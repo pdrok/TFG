@@ -41,6 +41,8 @@
 \glsgroupheading{T}\relax \glsresetentrylist %
 \glossentry{tcp/ip}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{85}}}%
+\glossentry{telnet}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{64}}}%
 \glossentry{traceroute}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{96}}}\glsgroupskip
 \glsgroupheading{V}\relax \glsresetentrylist %

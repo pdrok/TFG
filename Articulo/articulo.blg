@@ -4,17 +4,16 @@ The top-level auxiliary file: articulo.aux
 The style file: plain.bst
 I found no \bibdata command---while reading file articulo.aux
 Warning--I didn't find a database entry for "recursos"
-Warning--I didn't find a database entry for "pscience"
-Warning--I didn't find a database entry for "ieee"
-Warning--I didn't find a database entry for "Fuller"
-Warning--I didn't find a database entry for "Vidmar"
-Warning--I didn't find a database entry for "Miller"
-Warning--I didn't find a database entry for "Clarke"
-Warning--I didn't find a database entry for "Young"
-Warning--I didn't find a database entry for "Talleen"
+Warning--I didn't find a database entry for "what:2001"
+Warning--I didn't find a database entry for "icmp"
+Warning--I didn't find a database entry for "tracert"
+Warning--I didn't find a database entry for "btest"
+Warning--I didn't find a database entry for "wireless:desarrollo"
+Warning--I didn't find a database entry for "enlace"
+Warning--I didn't find a database entry for "zona-portatil"
 You've used 0 entries,
             2118 wiz_defined-function locations,
-            511 strings with 4081 characters,
+            504 strings with 4060 characters,
 and the built_in function-call counts, 18 in all, are:
 = -- 0
 > -- 0

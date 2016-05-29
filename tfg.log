@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.31)  15 APR 2016 18:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.31)  28 MAY 2016 08:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**tfg
+**tfg.tex
 (./tfg.tex
 LaTeX2e <2015/01/01>
 Babel <3.9l> and hyphenation patterns for 79 languages loaded.
@@ -4399,21 +4399,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 207--208
 
  []
 
-<./figuras/figura046.png, id=1441, 349.305pt x 338.2236pt>
+<./figuras/figura046.png, id=1442, 349.305pt x 338.2236pt>
 File: ./figuras/figura046.png Graphic file (type png)
 
 <use ./figuras/figura046.png>
 Package pdftex.def Info: ./figuras/figura046.png used on input line 214.
 (pdftex.def)             Requested size: 174.65207pt x 169.11139pt.
 
-<./figuras/figura047.png, id=1442, 320.8788pt x 233.1912pt>
+<./figuras/figura047.png, id=1443, 320.8788pt x 233.1912pt>
 File: ./figuras/figura047.png Graphic file (type png)
 
 <use ./figuras/figura047.png>
 Package pdftex.def Info: ./figuras/figura047.png used on input line 215.
 (pdftex.def)             Requested size: 160.439pt x 116.5953pt.
 
-<./figuras/figura048.png, id=1443, 483.7272pt x 306.9066pt>
+<./figuras/figura048.png, id=1444, 483.7272pt x 306.9066pt>
 File: ./figuras/figura048.png Graphic file (type png)
 
 <use ./figuras/figura048.png>
@@ -4482,14 +4482,14 @@ Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 230.
  [65 <./figuras/figura046.png> <./figuras/figura047.png> <./figuras/figura048.p
 ng>]
-<./figuras/figura049.png, id=1465, 398.4486pt x 239.9364pt>
+<./figuras/figura049.png, id=1467, 398.4486pt x 239.9364pt>
 File: ./figuras/figura049.png Graphic file (type png)
 
 <use ./figuras/figura049.png>
 Package pdftex.def Info: ./figuras/figura049.png used on input line 234.
 (pdftex.def)             Requested size: 318.75931pt x 191.94937pt.
 
-<./figuras/figura050.png, id=1466, 390.7398pt x 349.305pt>
+<./figuras/figura050.png, id=1468, 390.7398pt x 349.305pt>
 File: ./figuras/figura050.png Graphic file (type png)
 
 <use ./figuras/figura050.png>
@@ -4562,7 +4562,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 252.
 [67 <./figuras/figura050.png>]
-<./figuras/figura051.png, id=1481, 398.4486pt x 231.264pt>
+<./figuras/figura051.png, id=1483, 398.4486pt x 231.264pt>
 File: ./figuras/figura051.png Graphic file (type png)
 
 <use ./figuras/figura051.png>
@@ -4611,14 +4611,14 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 7.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 7.
-<./figuras/figura052.png, id=1487, 483.7272pt x 237.0456pt>
+<./figuras/figura052.png, id=1489, 483.7272pt x 237.0456pt>
 File: ./figuras/figura052.png Graphic file (type png)
 
 <use ./figuras/figura052.png>
 Package pdftex.def Info: ./figuras/figura052.png used on input line 12.
 (pdftex.def)             Requested size: 386.98228pt x 189.63672pt.
 
-<./figuras/figura053.png, id=1488, 483.7272pt x 294.3798pt>
+<./figuras/figura053.png, id=1490, 483.7272pt x 294.3798pt>
 File: ./figuras/figura053.png Graphic file (type png)
 
 <use ./figuras/figura053.png>
@@ -4666,14 +4666,14 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 26.
 
-<./figuras/figura054.png, id=1494, 483.7272pt x 272.217pt>
+<./figuras/figura054.png, id=1496, 483.7272pt x 272.217pt>
 File: ./figuras/figura054.png Graphic file (type png)
 
 <use ./figuras/figura054.png>
 Package pdftex.def Info: ./figuras/figura054.png used on input line 29.
 (pdftex.def)             Requested size: 386.98228pt x 217.77386pt.
 
-<./figuras/figura055.png, id=1495, 483.7272pt x 319.4334pt>
+<./figuras/figura055.png, id=1497, 483.7272pt x 319.4334pt>
 File: ./figuras/figura055.png Graphic file (type png)
 
 <use ./figuras/figura055.png>
@@ -4704,14 +4704,14 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 43.
  [70 <./figuras/figura053.png> <./figuras/figura054.png>] <./figuras/figura056.
-png, id=1502, 483.7272pt x 330.9966pt>
+png, id=1504, 483.7272pt x 330.9966pt>
 File: ./figuras/figura056.png Graphic file (type png)
 
 <use ./figuras/figura056.png>
 Package pdftex.def Info: ./figuras/figura056.png used on input line 47.
 (pdftex.def)             Requested size: 241.863pt x 165.49788pt.
 
-<./figuras/figura057.png, id=1503, 407.6028pt x 304.4976pt>
+<./figuras/figura057.png, id=1505, 407.6028pt x 304.4976pt>
 File: ./figuras/figura057.png Graphic file (type png)
 
 <use ./figuras/figura057.png>
@@ -4742,7 +4742,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 61.
  [71 <./figuras/figura055.png> <./figuras/figura056.png>] <./figuras/figura058.
-png, id=1510, 389.2944pt x 414.348pt>
+png, id=1512, 389.2944pt x 414.348pt>
 File: ./figuras/figura058.png Graphic file (type png)
 
 <use ./figuras/figura058.png>
@@ -4809,14 +4809,14 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 76.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 76.
- <./figuras/figura059.png, id=1518, 308.352pt x 312.6882pt>
+ <./figuras/figura059.png, id=1520, 308.352pt x 312.6882pt>
 File: ./figuras/figura059.png Graphic file (type png)
 
 <use ./figuras/figura059.png>
 Package pdftex.def Info: ./figuras/figura059.png used on input line 81.
 (pdftex.def)             Requested size: 154.17561pt x 156.3437pt.
 
-<./figuras/figura060.png, id=1519, 483.7272pt x 387.3672pt>
+<./figuras/figura060.png, id=1521, 483.7272pt x 387.3672pt>
 File: ./figuras/figura060.png Graphic file (type png)
 
 <use ./figuras/figura060.png>
@@ -4847,7 +4847,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 94.
  [73 <./figuras/figura059.png>]
-<./figuras/figura061.png, id=1527, 483.7272pt x 332.9238pt>
+<./figuras/figura061.png, id=1529, 483.7272pt x 332.9238pt>
 File: ./figuras/figura061.png Graphic file (type png)
 
 <use ./figuras/figura061.png>
@@ -4878,14 +4878,14 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 109.
  [74 <./figuras/figura060.png> <./figuras/figura061.png>] <./figuras/figura062.
-png, id=1536, 483.7272pt x 142.6128pt>
+png, id=1538, 483.7272pt x 142.6128pt>
 File: ./figuras/figura062.png Graphic file (type png)
 
 <use ./figuras/figura062.png>
 Package pdftex.def Info: ./figuras/figura062.png used on input line 119.
 (pdftex.def)             Requested size: 241.863pt x 71.30621pt.
 
-<./figuras/figura063.png, id=1537, 386.4036pt x 498.1812pt>
+<./figuras/figura063.png, id=1539, 386.4036pt x 498.1812pt>
 File: ./figuras/figura063.png Graphic file (type png)
 
 <use ./figuras/figura063.png>
@@ -4916,7 +4916,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 132.
  [75 <./figuras/figura062.png>]
-<./figuras/figura064.png, id=1545, 385.44pt x 495.2904pt>
+<./figuras/figura064.png, id=1547, 385.44pt x 495.2904pt>
 File: ./figuras/figura064.png Graphic file (type png)
 
 <use ./figuras/figura064.png>
@@ -4947,7 +4947,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 140.
  [76 <./figuras/figura063.png>]
-<./figuras/figura065.png, id=1551, 483.7272pt x 83.8332pt>
+<./figuras/figura065.png, id=1553, 483.7272pt x 83.8332pt>
 File: ./figuras/figura065.png Graphic file (type png)
 
 <use ./figuras/figura065.png>
@@ -4958,7 +4958,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 151--152
 
  []
 
-<./figuras/figura066.png, id=1552, 302.0886pt x 326.6604pt>
+<./figuras/figura066.png, id=1554, 302.0886pt x 326.6604pt>
 File: ./figuras/figura066.png Graphic file (type png)
 
 <use ./figuras/figura066.png>
@@ -4994,7 +4994,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 161.
 [77 <./figuras/figura064.png> <./figuras/figura065.png>]
-<./figuras/figura067.png, id=1560, 200.4288pt x 269.3262pt>
+<./figuras/figura067.png, id=1562, 200.4288pt x 269.3262pt>
 File: ./figuras/figura067.png Graphic file (type png)
 
 <use ./figuras/figura067.png>
@@ -5005,7 +5005,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 161--168
 
  []
 
-<./figuras/figura068.png, id=1561, 483.7272pt x 181.1568pt>
+<./figuras/figura068.png, id=1563, 483.7272pt x 181.1568pt>
 File: ./figuras/figura068.png Graphic file (type png)
 
 <use ./figuras/figura068.png>
@@ -5041,21 +5041,21 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 178.
 [78 <./figuras/figura066.png> <./figuras/figura067.png>]
-<./figuras/figura069.png, id=1568, 452.4102pt x 293.4162pt>
+<./figuras/figura069.png, id=1570, 452.4102pt x 293.4162pt>
 File: ./figuras/figura069.png Graphic file (type png)
 
 <use ./figuras/figura069.png>
 Package pdftex.def Info: ./figuras/figura069.png used on input line 182.
 (pdftex.def)             Requested size: 226.20454pt x 146.70773pt.
 
-<./figuras/figura070.png, id=1569, 483.7272pt x 329.5512pt>
+<./figuras/figura070.png, id=1571, 483.7272pt x 329.5512pt>
 File: ./figuras/figura070.png Graphic file (type png)
 
 <use ./figuras/figura070.png>
 Package pdftex.def Info: ./figuras/figura070.png used on input line 191.
 (pdftex.def)             Requested size: 241.863pt x 164.77518pt.
 
-<./figuras/figura071.png, id=1570, 343.5234pt x 349.305pt>
+<./figuras/figura071.png, id=1572, 343.5234pt x 349.305pt>
 File: ./figuras/figura071.png Graphic file (type png)
 
 <use ./figuras/figura071.png>
@@ -5087,7 +5087,7 @@ Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 204.
  [79 <./figuras/figura068.png> <./figuras/figura069.png> <./figuras/figura070.p
 ng>]
-<./figuras/figura072.png, id=1579, 483.7272pt x 279.9258pt>
+<./figuras/figura072.png, id=1581, 483.7272pt x 279.9258pt>
 File: ./figuras/figura072.png Graphic file (type png)
 
 <use ./figuras/figura072.png>
@@ -5110,7 +5110,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 214--215
 
  []
 
-<./figuras/figura073.png, id=1580, 483.7272pt x 338.7054pt>
+<./figuras/figura073.png, id=1582, 483.7272pt x 338.7054pt>
 File: ./figuras/figura073.png Graphic file (type png)
 
 <use ./figuras/figura073.png>
@@ -5141,7 +5141,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 235.
  [80 <./figuras/figura071.png> <./figuras/figura072.png>] <./figuras/figura074.
-png, id=1588, 483.7272pt x 335.3328pt>
+png, id=1590, 483.7272pt x 335.3328pt>
 File: ./figuras/figura074.png Graphic file (type png)
 
 <use ./figuras/figura074.png>
@@ -5172,7 +5172,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 244.
  [81 <./figuras/figura073.png>]
-<./figuras/figura075.png, id=1594, 302.0886pt x 326.1786pt>
+<./figuras/figura075.png, id=1596, 302.0886pt x 326.1786pt>
 File: ./figuras/figura075.png Graphic file (type png)
 
 <use ./figuras/figura075.png>
@@ -5183,7 +5183,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 244--251
 
  []
 
-<./figuras/figura076.png, id=1595, 450.9648pt x 279.444pt>
+<./figuras/figura076.png, id=1597, 450.9648pt x 279.444pt>
 File: ./figuras/figura076.png Graphic file (type png)
 
 <use ./figuras/figura076.png>
@@ -5214,7 +5214,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 260.
  [82 <./figuras/figura074.png> <./figuras/figura075.png>] <./figuras/figura077.
-png, id=1602, 195.6108pt x 186.9384pt>
+png, id=1604, 195.6108pt x 186.9384pt>
 File: ./figuras/figura077.png Graphic file (type png)
 
 <use ./figuras/figura077.png>
@@ -5225,14 +5225,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 260--267
 
  []
 
-<./figuras/figura078.png, id=1603, 483.7272pt x 152.2488pt>
+<./figuras/figura078.png, id=1605, 483.7272pt x 152.2488pt>
 File: ./figuras/figura078.png Graphic file (type png)
 
 <use ./figuras/figura078.png>
 Package pdftex.def Info: ./figuras/figura078.png used on input line 271.
 (pdftex.def)             Requested size: 241.863pt x 76.1242pt.
 
-<./figuras/figura079.png, id=1604, 336.2964pt x 451.9284pt>
+<./figuras/figura079.png, id=1606, 336.2964pt x 451.9284pt>
 File: ./figuras/figura079.png Graphic file (type png)
 
 <use ./figuras/figura079.png>
@@ -5268,7 +5268,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 285.
 [83 <./figuras/figura076.png> <./figuras/figura077.png> <./figuras/figura078.pn
-g>] <./figuras/figura080.png, id=1612, 334.851pt x 451.9284pt>
+g>] <./figuras/figura080.png, id=1614, 334.851pt x 451.9284pt>
 File: ./figuras/figura080.png Graphic file (type png)
 
 <use ./figuras/figura080.png>
@@ -5337,14 +5337,14 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 301.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 301.
-<./figuras/figura081.png, id=1622, 483.7272pt x 334.851pt>
+<./figuras/figura081.png, id=1624, 483.7272pt x 334.851pt>
 File: ./figuras/figura081.png Graphic file (type png)
 
 <use ./figuras/figura081.png>
 Package pdftex.def Info: ./figuras/figura081.png used on input line 304.
 (pdftex.def)             Requested size: 241.863pt x 167.42508pt.
 
-<./figuras/figura082.png, id=1623, 396.5214pt x 405.6756pt>
+<./figuras/figura082.png, id=1625, 396.5214pt x 405.6756pt>
 File: ./figuras/figura082.png Graphic file (type png)
 
 <use ./figuras/figura082.png>
@@ -5380,7 +5380,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 318.
 [85 <./figuras/figura081.png>]
-<./figuras/figura083.png, id=1631, 483.7272pt x 333.8874pt>
+<./figuras/figura083.png, id=1633, 483.7272pt x 333.8874pt>
 File: ./figuras/figura083.png Graphic file (type png)
 
 <use ./figuras/figura083.png>
@@ -5391,7 +5391,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 319--326
 
  []
 
-<./figuras/figura084.png, id=1632, 193.2018pt x 187.902pt>
+<./figuras/figura084.png, id=1634, 193.2018pt x 187.902pt>
 File: ./figuras/figura084.png Graphic file (type png)
 
 <use ./figuras/figura084.png>
@@ -5427,7 +5427,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 336.
 [86 <./figuras/figura082.png> <./figuras/figura083.png>]
-<./figuras/figura085.png, id=1639, 423.0204pt x 456.7464pt>
+<./figuras/figura085.png, id=1641, 423.0204pt x 456.7464pt>
 File: ./figuras/figura085.png Graphic file (type png)
 
 <use ./figuras/figura085.png>
@@ -5438,7 +5438,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 337--344
 
  []
 
-<./figuras/figura086.png, id=1640, 298.2342pt x 310.2792pt>
+<./figuras/figura086.png, id=1642, 298.2342pt x 310.2792pt>
 File: ./figuras/figura086.png Graphic file (type png)
 
 <use ./figuras/figura086.png>
@@ -5474,7 +5474,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 354.
 [87 <./figuras/figura084.png> <./figuras/figura085.png>]
-<./figuras/figura102.png, id=1647, 722.7pt x 1284.8pt>
+<./figuras/figura102.png, id=1649, 722.7pt x 1284.8pt>
 File: ./figuras/figura102.png Graphic file (type png)
 
 <use ./figuras/figura102.png>
@@ -5505,7 +5505,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 362.
  [88 <./figuras/figura086.png>]
-<./figuras/figura087.png, id=1653, 245.2362pt x 166.221pt>
+<./figuras/figura087.png, id=1655, 245.2362pt x 166.221pt>
 File: ./figuras/figura087.png Graphic file (type png)
 
 <use ./figuras/figura087.png>
@@ -5550,7 +5550,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 377--383
 
  []
 
-<./figuras/figura088.png, id=1659, 244.7544pt x 286.1892pt>
+<./figuras/figura088.png, id=1661, 244.7544pt x 286.1892pt>
 File: ./figuras/figura088.png Graphic file (type png)
 
 <use ./figuras/figura088.png>
@@ -5561,7 +5561,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 384--391
 
  []
 
-<./figuras/figura089.png, id=1660, 245.2362pt x 283.7802pt>
+<./figuras/figura089.png, id=1662, 245.2362pt x 283.7802pt>
 File: ./figuras/figura089.png Graphic file (type png)
 
 <use ./figuras/figura089.png>
@@ -5597,7 +5597,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 401.
 [90 <./figuras/figura087.png> <./figuras/figura088.png>]
-<./figuras/figura090.png, id=1667, 483.7272pt x 217.2918pt>
+<./figuras/figura090.png, id=1669, 483.7272pt x 217.2918pt>
 File: ./figuras/figura090.png Graphic file (type png)
 
 <use ./figuras/figura090.png>
@@ -5608,7 +5608,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 402--409
 
  []
 
-<./figuras/figura091.png, id=1668, 249.0906pt x 242.3454pt>
+<./figuras/figura091.png, id=1670, 249.0906pt x 242.3454pt>
 File: ./figuras/figura091.png Graphic file (type png)
 
 <use ./figuras/figura091.png>
@@ -5631,7 +5631,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 420.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 420.
-<./figuras/figura092.png, id=1669, 483.7272pt x 334.3692pt>
+<./figuras/figura092.png, id=1671, 483.7272pt x 334.3692pt>
 File: ./figuras/figura092.png Graphic file (type png)
 
 <use ./figuras/figura092.png>
@@ -5667,7 +5667,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 429.
 [91 <./figuras/figura089.png> <./figuras/figura090.png> <./figuras/figura091.pn
-g>] <./figuras/figura093.png, id=1678, 483.7272pt x 334.851pt>
+g>] <./figuras/figura093.png, id=1680, 483.7272pt x 334.851pt>
 File: ./figuras/figura093.png Graphic file (type png)
 
 <use ./figuras/figura093.png>
@@ -5678,7 +5678,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 430--437
 
  []
 
-<./figuras/figura094.png, id=1679, 338.7054pt x 452.4102pt>
+<./figuras/figura094.png, id=1681, 338.7054pt x 452.4102pt>
 File: ./figuras/figura094.png Graphic file (type png)
 
 <use ./figuras/figura094.png>
@@ -5718,14 +5718,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 448--449
 
  []
 
-<./figuras/figura095.png, id=1686, 277.9986pt x 357.4956pt>
+<./figuras/figura095.png, id=1688, 277.9986pt x 357.4956pt>
 File: ./figuras/figura095.png Graphic file (type png)
 
 <use ./figuras/figura095.png>
 Package pdftex.def Info: ./figuras/figura095.png used on input line 452.
 (pdftex.def)             Requested size: 138.99895pt x 178.74736pt.
 
-<./figuras/figura096.png, id=1687, 250.0542pt x 255.8358pt>
+<./figuras/figura096.png, id=1689, 250.0542pt x 255.8358pt>
 File: ./figuras/figura096.png Graphic file (type png)
 
 <use ./figuras/figura096.png>
@@ -5756,7 +5756,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 467.
  [93 <./figuras/figura094.png> <./figuras/figura095.png>] <./figuras/figura097.
-png, id=1694, 483.7272pt x 231.7458pt>
+png, id=1696, 483.7272pt x 231.7458pt>
 File: ./figuras/figura097.png Graphic file (type png)
 
 <use ./figuras/figura097.png>
@@ -5767,7 +5767,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 467--474
 
  []
 
-<./figuras/figura098.png, id=1695, 301.125pt x 322.3242pt>
+<./figuras/figura098.png, id=1697, 301.125pt x 322.3242pt>
 File: ./figuras/figura098.png Graphic file (type png)
 
 <use ./figuras/figura098.png>
@@ -5803,7 +5803,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 490.
 [94 <./figuras/figura096.png> <./figuras/figura097.png>]
-<./figuras/figura099.png, id=1702, 298.2342pt x 324.2514pt>
+<./figuras/figura099.png, id=1704, 298.2342pt x 324.2514pt>
 File: ./figuras/figura099.png Graphic file (type png)
 
 <use ./figuras/figura099.png>
@@ -5814,7 +5814,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 490--497
 
  []
 
-<./figuras/figura100.png, id=1703, 483.7272pt x 264.99pt>
+<./figuras/figura100.png, id=1705, 483.7272pt x 264.99pt>
 File: ./figuras/figura100.png Graphic file (type png)
 
 <use ./figuras/figura100.png>
@@ -5854,7 +5854,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 507--508
 
  []
 
-<./figuras/figura101.png, id=1710, 483.7272pt x 243.309pt>
+<./figuras/figura101.png, id=1712, 483.7272pt x 243.309pt>
 File: ./figuras/figura101.png Graphic file (type png)
 
 <use ./figuras/figura101.png>
@@ -6625,13 +6625,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 85.
  ) 
 Here is how much of TeX's memory you used:
- 16458 strings out of 493089
- 252872 string characters out of 6134842
- 425026 words of memory out of 5000000
+ 16459 strings out of 493089
+ 252882 string characters out of 6134842
+ 425027 words of memory out of 5000000
  18999 multiletter control sequences out of 15000+600000
  12946 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 61i,17n,96p,1807b,791s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 61i,17n,96p,1811b,791s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><
 /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><
@@ -6645,10 +6645,10 @@ l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local
 texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/public/amsfonts/latxfont/lasy10.pfb>
-Output written on tfg.pdf (130 pages, 17027036 bytes).
+Output written on tfg.pdf (130 pages, 17027512 bytes).
 PDF statistics:
- 1975 PDF objects out of 2073 (max. 8388607)
- 1596 compressed objects within 16 object streams
- 434 named destinations out of 1000 (max. 500000)
+ 1978 PDF objects out of 2073 (max. 8388607)
+ 1599 compressed objects within 16 object streams
+ 435 named destinations out of 1000 (max. 500000)
  1328 words of extra memory for PDF output out of 10000 (max. 10000000)
 

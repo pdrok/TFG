@@ -3,8 +3,8 @@ Scanning style file ./tfg.ist.............................done (29 attributes re
 Scanning input file tfg.glo...
 !! Input index error (file = tfg.glo, line = 1):
    -- Illegal space within numerals in second argument.
-.done (19 entries accepted, 1 rejected).
-Sorting entries....done (89 comparisons).
-Generating output file tfg.gls....done (49 lines written, 0 warnings).
+.done (20 entries accepted, 1 rejected).
+Sorting entries....done (94 comparisons).
+Generating output file tfg.gls....done (51 lines written, 0 warnings).
 Output written in tfg.gls.
 Transcript written in tfg.glg.
