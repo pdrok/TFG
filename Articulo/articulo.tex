@@ -80,19 +80,7 @@ La elaboración de este trabajo obedece a la necesidad de satisfacer las necesida
 En este sentido se propone dotar al sistema de una infraestructura sólida, segura y económica mediante el uso de radio enlaces entre sucursales de una empresa ya sea de medio o grande porte, teniendo como respaldo el uso de VPNs\cite{what:2001} a fin de garantizar la comunicación del servicio aumentando su resiliencia, y por lo tanto la robustez del enlace, y contribuyendo con la seguridad de los datos, el activo primordial de toda empresa u organización.
 
 \subsection{Objetivos.}
-
-\subsubsection{Objetivo General.}
-\begin{itemize}
-    \item Implementar una infraestructura de redundancia de enlaces por medio de VPNs para la centralización de servidores.
-\end{itemize}
-\subsubsection{Objetivo Específicos.}
-\begin{itemize}
-	\item Estudiar tecnologías y metodologías para el desarrollo del proyecto.
-	\item Realizar un radio enlaces. 
-	\item Configurar VPNs.
-	\item Configurar conexión respaldo por medio de Internet.
-	\item Realizar pruebas de conexión entre máquinas/clientes y servidores.
-\end{itemize}
+Implementar una infraestructura de redundancia de enlaces por medio de VPNs para la centralización de servidores.
 
 \subsection{Discusión de literatura relevante.}
 Las empresas de medio/grande portes en Paraguay, a fin de optimizar sus infraestructuras y sus recursos económicos, se ven obligados a buscar alternativas a los medios recurrentes tales como fibras ópticas, satélites o servicios de banda ancha. Ya que en muchas localidades servicios no se encuentran disponibles por el alto costo que implica su cobertura para las operadoras. Por tales motivos soluciones robustas como el uso de radio enlaces utilizando espectros libres, son una opción ideal.\\
@@ -123,13 +111,21 @@ Desde maquina que estaban conectados a los enrutadores, se realizo pruebas de Pi
 
 Se dividen en 4 puntos: \textit{Pruebas de tasa de transferencia}, \textit{Rutas por defecto}, \textit{Ping}, \textit{Traceroute}. 
 \subsection{Prueba de tasa transferencia}
-Rendimiento obtenido con metricas de Carga general del enlace. 
+Rendimiento obtenido con métricas de carga general del enlace. 
 
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width=0.5\textwidth]{./figura001-1.png}
-\caption{Prueba de tasa de traferencia de los enlaces}
+\caption{Prueba de tasa de transferencia de los enlaces}
 \label{tasa-transferencia}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.5\textwidth]{./figura001-3.png}
+\caption{Prueba de tasa de transferencia de los enlaces}
+\label{tasa-transferencia-2}
 \end{center}
 \end{figure}
 
@@ -143,21 +139,21 @@ Las rutas secundaria activada y la otras rutas en modo de espera.
 \label{rutas}
 \end{center}
 \end{figure}
-\textbf{En Negro}: las puertas de enlaces que estan activas.\\
-\textbf{En Azul}: las puertas de enlaces que estan inactivas activas.
+\textbf{En Negro}: las puertas de enlaces que están activas.\\
+\textbf{En Azul}: las puertas de enlaces que están inactivas activas.
 
 \subsection{Ping}
-Ping desde la maquina de la sucursal a los demas equipos. 
+Prueba de estabilidad de ping a al enrutador que realiza el enlace.
 
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width=0.5\textwidth]{./figura003-1.png}
-\caption{Ping desde la maquina al router de la sucursal}
+\caption{Ping desde la maquina al enrutador de la sucursal}
 \label{ping-enlace}
 \end{center}
 \end{figure}
-Prueba de estabilidad de ping a al entuteador que realiza el enlace.
 
+Prueba de estabilidad de la conexión de las maquinas por medio del IP secudario configurado para tener acceso a las radios.
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width=0.5\textwidth]{./figura003-2.png}
@@ -165,7 +161,7 @@ Prueba de estabilidad de ping a al entuteador que realiza el enlace.
 \label{ping-internet}
 \end{center}
 \end{figure}
-Prueba de estabilidad de la conexión de las maquinas por medio del IP secudario configurado para tener acceso a las radios.
+
 
 \subsection{Traceroute}
 Traceroute permite obtener la ruta mas probable que siguen los paquetes IP desde un origen IP. Es decir, devuelve una lista con los enrutadores intermedios existentes entre los dos equipos. 
@@ -177,7 +173,7 @@ Traceroute permite obtener la ruta mas probable que siguen los paquetes IP desde
 \label{traceroute-enlace}
 \end{center}
 \end{figure}
-Con el radio enlace habilitado, la comunicacion de los equipos se realiza por tunel primario.
+Con el enlace funcionando, al hacer el traceroute desde la maquina de la sucursal a la central, esta muestra que pasa por el MK4 después llegando al enrutador MK1 por medio del túnel hecho sobre el enlace pues la faja de ip es el 11.0.0.1
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width=0.5\textwidth]{./figura004-2.png}
@@ -185,7 +181,7 @@ Con el radio enlace habilitado, la comunicacion de los equipos se realiza por tu
 \label{traceroute-internet}
 \end{center}
 \end{figure}
-Con el radio enlace inahabilitado, la comunicacion de los equipos se realiza por tunel secudario configurado sobre el Internet.
+Con el enlace fuera de linea asume el túnel por medio del internet, al hacer el traceroute desde la maquina de la sucursal a la central, esta muestra que pasa por el MK4, después llegando al enrutador MK1 por medio del túnel hecho sobre el internet pues la faja de IP es el 12.0.0.1
 \section{Discusión.}
 El modelo de infraestructura que responde de manera más práctica y eficiente para la centralización de datos es utilizando VPN a través de radio enlaces y reforzando con enlaces de internet.\\
 Los equipos hardware y software utilizados para la implementación de la centralización de datos a través de VPN responden de manera eficiente al costo beneficio, la marca Mikrotik es mucha más barata que otras tecnologías de su competencia.Presenta la robustez necesaria para los radios enlaces.\\
